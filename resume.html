@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__name">NameSite</div>
+</header>
+
+<section class="who-am-i main-block">
+  <h1>I am Lorem Ipsum</h1>
+  <p>Lorem Ipsum is simply dummy text of the printing</p>
+</section>
+
+<section class="about-me main-block">
+  <h2 class="about-me__header">About me</h2>
+</section>
+
+<section class="skills main-block">
+  <h2 class="skills__header">Skills</h2>
+</section>
+
+<section class="works main-block">
+  <h2 class="works__header">Works</h2>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</section>
+
+
+<section class="experience main-block">
+  <h2 class="works__header">Experience</h2>
+</section>
+
+<section class="contact main-block">
+  <h2 class="contact__header">Contacts</h2>
+</section>
+
+<style>
+  * {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    font-family: 'Times New Roman', sans-serif;
+  }
+
+  html,
+  body {
+
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+
+  .header {
+    padding: 64px;
+  }
+
+  .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+  }
+
+  .main-block:nth-child(2n) {
+    background: #272727;
+    color: white;
+  }
+
+
+</style>
+
+</body>
+</html>

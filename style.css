@@ -1,0 +1,201 @@
+:root {
+  --accent: #d2c0b9;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  font-family: "EB Garamond", serif;
+  line-height: 1.6;
+}
+
+html,
+body {
+  background: #131313;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.center-block {
+  padding: 0 120px;
+}
+
+.btn {
+  padding: 16px 24px;
+  border-radius: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  color: black;
+  padding: 24px;
+  position: sticky;
+  top: 0;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .btn {
+  background: #181818;
+  color: white;
+}
+
+.who-am-i {
+
+}
+
+.who-am-i .center-block {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  min-height: calc(100vh - 120px);
+}
+
+.who-am-i__titles h1 {
+  font-size: 150px;
+  line-height: 200px;
+  font-weight: 400;
+  font-family: "Abril Fatface", sans-serif;
+  color: var(--accent);
+  margin: 0;
+  padding: 0;
+}
+
+.who-am-i__titles-subhead {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.who-am-i__titles-subhead strong {
+  font-weight: 700;
+  font-size: 80px;
+  font-family: "Georgia", sans-serif;
+  min-width: max-content;
+  line-height: 65px;
+  font-style: italic;
+}
+
+.who-am-i__titles-subhead > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.who-am-i__text {
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+}
+
+.who-am-i__text > div {
+  max-width: 45%;
+}
+
+.about-me__header {
+  font-weight: 400;
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 50px;
+  line-height: 1.2;
+  max-width: 1000px;
+}
+
+.about-me__block {
+  display: flex;
+  gap: 64px;
+}
+
+.about-me__img {
+  border: 1px solid white;
+  min-width: 600px;
+  height: 400px;
+}
+
+.about-me__text {
+  font-size: 24px;
+}
+
+.skills__header {
+  font-weight: 400;
+  font-family: "Abril Fatface", sans-serif;
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.skills__header h2 {
+
+  font-weight: 400;
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 100px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.skills__header strong {
+  color: var(--accent);
+  font-weight: 400;
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 50px;
+  line-height: 1.2;
+  padding-bottom: 16px;
+}
+
+.skills__block {
+  display: flex;
+
+}
+
+.works {
+  padding: 0 32px;
+}
+
+.works__blocks {
+  display: grid;
+  grid-template-columns: repeat(8, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 16px;
+}
+
+.works-one {
+  background-image: url("someImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  filter: grayscale(100%);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.works-one:hover {
+  filter: grayscale(0%);
+  background-position: right;
+}
+
+.works-one__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.works-one:hover .works-one__img {
+  transform: scale(1.1);
+}
+

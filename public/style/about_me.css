@@ -1,0 +1,33 @@
+.about-me {
+
+}
+
+.about-me__header {
+
+}
+
+.about-me__header h1 {
+
+}
+
+.about-me__block {
+  display: flex;
+  gap: 80px;
+}
+
+.about-me__img {
+  min-width: 780px;
+  height: 570px;
+}
+
+.about-me__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-me__signature {
+  color: #142613;
+  text-align: right;
+  display: block;
+}

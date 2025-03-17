@@ -1,0 +1,28 @@
+.skills {
+
+}
+
+.skills__header {
+
+}
+
+.skills__block {
+  display: flex;
+  gap: 80px;
+}
+
+.skills__block > * {
+  flex: 1;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.skills__list li {
+
+
+}

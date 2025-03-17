@@ -1,0 +1,55 @@
+.contact {
+  padding-bottom: 120px;
+}
+
+.contact__header {
+
+}
+
+.contact__block {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+  width: 100%;
+}
+
+.contact__left {
+  display: flex;
+  gap: 32px;
+}
+
+.contact__qr {
+  min-width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.contact__text {
+  max-width: 360px;
+}
+
+.contact__text p:first-child {
+  margin-top: 0;
+}
+
+.contact__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.contact__right {
+
+}
+
+.contact__abov-cam {
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.contact__webcam {
+  width: 295px;
+  height: 165px;
+  background: dimgrey;
+  border-radius: 15px;
+  margin-top: 4px;
+}

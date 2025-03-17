@@ -1,0 +1,59 @@
+.experience {
+
+}
+
+.experience__header {
+
+}
+
+.experience__timeline {
+
+}
+
+.experience__timeline-point {
+  display: flex;
+  gap: 32px;
+}
+
+.experience__date {
+  width: calc(50% + 64px);
+  text-align: right;
+  padding: 16px 32px 16px 0;
+  margin: 0;
+  border-right: 2px solid black;
+  position: relative;
+}
+
+.experience__date::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  right: -13px;
+}
+
+.experience__work {
+}
+
+.experience_position {
+
+}
+
+.experience__company {
+
+}
+
+.experience__stack {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 4px;
+}
+
+.experience__stack li {
+  padding: 4px 8px;
+  font-size: 0.7em;
+}

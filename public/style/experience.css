@@ -22,6 +22,7 @@
   margin: 0;
   border-right: 2px solid black;
   position: relative;
+  flex: 1;
 }
 
 .experience__date::after {
@@ -35,15 +36,34 @@
   right: -13px;
 }
 
+
+
 .experience__work {
+  flex: 1;
+  padding-top: 11px;
+  padding-bottom: 48px;
 }
 
-.experience_position {
+.experience__position-icon {
+  width: 30px;
+  height: 30px;
+}
 
+.experience__position {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .experience__company {
+  margin-top: 4px;
+}
 
+.experience__company img {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 3px;
 }
 
 .experience__stack {
@@ -54,6 +74,34 @@
 }
 
 .experience__stack li {
-  padding: 4px 8px;
-  font-size: 0.7em;
+
+}
+
+.experience__timeline-point:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.experience__timeline-point:nth-child(2n) .experience__date {
+  border-left: 2px solid black;
+  border-right: none;
+  text-align: left;
+  padding: 16px 0 16px 32px;
+}
+
+.experience__timeline-point:nth-child(2n) .experience__date::after {
+  right: auto;
+  left: -13px;
+}
+
+.experience__timeline-point:nth-child(2n) .experience__work > * {
+  text-align: right;
+}
+
+.experience__timeline-point:nth-child(2n) .experience__stack {
+  justify-content: right;
+}
+
+.experience__timeline-point:nth-child(2n) .experience__position {
+  justify-content: right;
+  flex-direction: row-reverse;
 }

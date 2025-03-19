@@ -21,11 +21,35 @@
 .contact__qr {
   min-width: 150px;
   height: 150px;
-  border: 1px solid black;
+}
+
+.contact__qr img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contact__social {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.contact__social a {
+  background: #F0F0F0;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__social img {
+  width: 16px;
+  height: 16px;
 }
 
 .contact__text {
-  max-width: 360px;
+  max-width: 390px;
 }
 
 .contact__text p:first-child {
@@ -38,7 +62,9 @@
 }
 
 .contact__right {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contact__abov-cam {
@@ -49,7 +75,31 @@
 .contact__webcam {
   width: 295px;
   height: 165px;
-  background: dimgrey;
   border-radius: 15px;
   margin-top: 4px;
+  background-image: url("/public/imgs/webcamPhoto.webp");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact__webcam-micro {
+  background: rgba(34, 34, 34, 0.7);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 8px 0 15px 0;
+  font-family: 'Ubuntu', serif;
+  font-size: 0.8em;
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__webcam-micro img {
+  width: 16px;
+  height: 16px;
+
 }

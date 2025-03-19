@@ -9,6 +9,7 @@
 .skills__block {
   display: flex;
   gap: 80px;
+  align-items: baseline;
 }
 
 .skills__block > * {
@@ -18,8 +19,9 @@
 .skills__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
   list-style: none;
+  align-items: flex-start;
 }
 
 .skills__list li {

@@ -3,7 +3,9 @@
 }
 
 .about-me__header {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-me__header h1 {
@@ -13,6 +15,10 @@
 .about-me__block {
   display: flex;
   gap: 80px;
+}
+
+.about-me__block p:first-child {
+  margin-top: 0;
 }
 
 .about-me__img {
@@ -27,7 +33,14 @@
 }
 
 .about-me__signature {
-  color: #142613;
+  font-family: 'Eskal Font4You', cursive;
+  font-size: 40px;
+  color: #131f9d;
+  opacity: 0.9;
   text-align: right;
   display: block;
+  user-select: none;
+  margin-top: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
 }

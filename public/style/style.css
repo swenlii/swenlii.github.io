@@ -1,22 +1,31 @@
 :root {
   --accent: #142613;
-  --bg: #ffffff;
-  --heading: #000000;
-  --text: #1c1c1c;
-  --text-gray: #6e6e6e
+  --bg: #dddfe3;
+  --heading: #141623;
+  --text: #282d38;
+  --text-gray: rgb(65, 75, 91);
+  --btn-text: rgb(28, 28, 28);
+
+  --btn-bg: linear-gradient(180deg,#fff,#f5f5fa);
 }
 
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
+
 }
 
 html,
 body {
   background: var(--bg);
   color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+  font-size: 15px;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 a {
@@ -35,11 +44,76 @@ h1, h2, h3, h4 {
   margin: 160px auto 0 auto;
 }
 
-.btn {
-  padding: 8px 16px;
-  border-radius: 12px;
-  background: #f1f1f1;
+.btn, .btn-accent, .tag {
+  display: inline-flex;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--btn-text);
+  font-size: 14px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background-image: var(--btn-bg);
+  box-shadow: rgba(106, 110, 201, 0.4) 0px 11px 18px -8px;
+  transition: all .2s ease-out;
+}
+
+.tag {
+  padding: 6px 18px 3px 18px;
+  border-radius: 15px;
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 600;
+  color: rgb(28, 28, 28);
+  background-image: none;
+  background-color: var(--bg);
+  box-shadow:  4px 4px 8px #bcbec1,
+             -4px -4px 8px #feffff;
+  cursor: default;
+}
+
+.btn:hover, .btn-accent:hover{
+    box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+}
+
+.btn-accent {
+  border: 0;
+  box-shadow: rgba(68, 75, 247, 0.8) 0px 11px 18px -8px;
+  background-image: linear-gradient(to top right, #444BF7, #8084f9);
+  color: white;
+}
+
+.btn img, .btn-accent img {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 4px;
+
+}
+
+.title {
+  margin-bottom: 32px;
+  font-size: 64px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: var(--heading);
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--heading);
+}
+
+.subtext {
   color: var(--text-gray);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 0.9em;
 }
 
 .header {
@@ -56,11 +130,6 @@ h1, h2, h3, h4 {
 
 .header__logo {
   display: flex;
-}
-
-.contact .btn {
-  background: #181818;
-  color: white;
 }
 
 footer {

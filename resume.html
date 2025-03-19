@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Resume</title>
+  <title>Dyakova Irina</title>
+  <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+  <link rel="manifest" href="public/favicons/site.webmanifest">
   <link rel="stylesheet" href="public/style/style.css">
   <link rel="stylesheet" href="public/style/about_me.css">
   <link rel="stylesheet" href="public/style/skills.css">
@@ -25,7 +27,9 @@
     <a href="#">My works</a>
     <a href="#">Github</a>
     <a href="#">Email</a>
+    <a href="#" class="btn-accent"><img src="public/imgs/icons/download.svg" alt=""/>Download CV</a>
   </div>
+
 </header>
 
 <section class="who-am-i">
@@ -34,12 +38,12 @@
     <div class="who-am-i__texts">
       <div class="who-am-i__creator">
         <div>Portfolio website<br>
-          by Lorem Ipsum
+          by Dyakova Irina
 
         </div>
-        <a href="#" class="about-me__button">To GithubPage</a>
+        <a href="#" class="btn"><img src="public/imgs/icons/github-3.svg" alt=""/>To GithubPage</a>
       </div>
-      <div  class="who-am-i__description">
+      <div class="who-am-i__description">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dictum nulla, eget pellentesque felis. Etiam id dolor nisi. Suspendisse a est  nunc. Nam interdum mauris nec quam varius, in elementum nisi convallis.  Suspendisse feugiat tellus non tincidunt faucibus.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dictum nulla, eget pellentesque felis. Etiam id dolor nisi. Suspendisse a est  nunc. Nam interdum mauris nec quam varius, in elementum nisi convallis.  Suspendisse feugiat tellus non tincidunt faucibus.</p>
       </div>
@@ -54,8 +58,8 @@
 <section class="about-me">
   <div class="center-block">
     <div class="about-me__header">
-      <h1>Developer</h1>
-      <a href="#" class="about-me__button">To Page "About me"</a>
+      <h1 class="title">Developer</h1>
+      <a href="#" class="btn">To Page "About me" <img src="public/imgs/icons/arrow.svg" alt=""/></a>
     </div>
 
     <div class="about-me__block">
@@ -67,7 +71,7 @@
           eros nulla placerat nulla, ut interdum est eros et dui. Donec bibendum, nibh ut posuere congue, felis orci
           varius nibh, vitae ullamcorper purus nulla vel ligula. Aliquam sed magna sed purus lobortis pellentesque.
           Aliquam in tristique ex. Proin fermentum iaculis aliquet. </p>
-        <address class="about-me__signature" rel="author"><em>Emma Doe</em></address>
+        <address class="about-me__signature" rel="author"><em>Дьякова И. В.</em></address>
       </div>
       <div class="about-me__img"><img src="someImage.jpg" alt="it's me"/></div>
     </div>
@@ -76,28 +80,38 @@
 
 <section class="skills">
   <div class="center-block">
-    <h1 class="skills__header">Skills</h1>
+    <h1 class="skills__header title">Skills</h1>
     <div class="skills__block">
-      <p>
-        Nulla facilisi. Etiam ac justo velit. Praesent elementum quis lectus ut congue. Duis dapibus purus elementum nunc accumsan, molestie dapibus  neque iaculis.
-      </p>
+      <ul>
+        <li>
+          Nulla facilisi. Etiam ac justo velit. Praesent elementum quis lectus ut congue. Duis dapibus purus elementum nunc accumsan, molestie dapibus  neque iaculis.
+        </li>
+        <li>
+          Duis hendrerit ipsum at convallis eleifend. Sed aliquet, lorem sit amet eleifend euismod,
+          eros nulla placerat nulla, ut interdum est eros et dui. Donec bibendum, nibh ut posuere congue
+        </li>
+        <li>
+          Sed aliquet, lorem sit amet eleifend euismod,
+          eros nulla placerat nulla, ut interdum est eros et dui
+        </li>
+      </ul>
       <ul class="skills__list">
-          <li class="btn">HTML</li>
-          <li class="btn">CSS</li>
-          <li class="btn">JS</li>
-          <li class="btn">SCSS/SASS</li>
-          <li class="btn">Stylus</li>
-          <li class="btn">LESS</li>
-          <li class="btn">Vue.js</li>
-          <li class="btn">Nuxt.js</li>
-          <li class="btn">vue-router</li>
-          <li class="btn">vuex</li>
-          <li class="btn">Vue CLI</li>
-          <li class="btn">Websotrm</li>
-          <li class="btn">Figma</li>
-          <li class="btn">Jira</li>
-          <li class="btn">Photoshop</li>
-          <li class="btn">Bitrix24</li>
+          <li class="tag">HTML</li>
+          <li class="tag">CSS</li>
+          <li class="tag">JS</li>
+          <li class="tag">SCSS/SASS</li>
+          <li class="tag">Stylus</li>
+          <li class="tag">LESS</li>
+          <li class="tag">Vue.js</li>
+          <li class="tag">Nuxt.js</li>
+          <li class="tag">vue-router</li>
+          <li class="tag">vuex</li>
+          <li class="tag">Vue CLI</li>
+          <li class="tag">Websotrm</li>
+          <li class="tag">Figma</li>
+          <li class="tag">Jira</li>
+          <li class="tag">Photoshop</li>
+          <li class="tag">Bitrix24</li>
         </ul>
     </div>
   </div>
@@ -105,25 +119,25 @@
 
 <section class="experience">
   <div class="center-block">
-    <h1 class="experience__header">Experience</h1>
+    <h1 class="experience__header title">Experience</h1>
     <div class="experience__timeline">
       <div class="experience__timeline-point">
         <p class="experience__date">Aug. 2020 - Jan. 2022</p>
         <div class="experience__work">
-          <h2 class="experience__position">Senior Frontend Developer</h2>
-          <p class="experience__company"><a>ByteLearn</a></p>
+          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/school.svg" alt=""/>Applied Mathematics and Computer Science</h2>
+          <p class="experience__company subtext"><a href="#" target="_blank">Syktyvkar State University named after. Pitirim Sorokin <img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
             Sed aliquet, lorem sit amet eleifend euismod,
             eros nulla placerat nulla, ut interdum est eros et dui.</p>
           <ul class="experience__stack">
-            <li class="btn">HTML</li>
-            <li class="btn">CSS</li>
-            <li class="btn">JS</li>
-            <li class="btn">SCSS/SASS</li>
-            <li class="btn">Stylus</li>
-            <li class="btn">LESS</li>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JS</li>
+            <li class="tag">SCSS/SASS</li>
+            <li class="tag">Stylus</li>
+            <li class="tag">LESS</li>
           </ul>
         </div>
       </div>
@@ -131,20 +145,20 @@
       <div class="experience__timeline-point">
         <p class="experience__date">Aug. 2020 - Jan. 2022</p>
         <div class="experience__work">
-          <h2 class="experience__position">Senior Frontend Developer</h2>
-          <p class="experience__company"><a>ByteLearn</a></p>
+          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/work.svg" alt=""/>Junior Frontend Developer</h2>
+          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
             Sed aliquet, lorem sit amet eleifend euismod,
             eros nulla placerat nulla, ut interdum est eros et dui.</p>
           <ul class="experience__stack">
-            <li class="btn">HTML</li>
-            <li class="btn">CSS</li>
-            <li class="btn">JS</li>
-            <li class="btn">SCSS/SASS</li>
-            <li class="btn">Stylus</li>
-            <li class="btn">LESS</li>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JS</li>
+            <li class="tag">SCSS/SASS</li>
+            <li class="tag">Stylus</li>
+            <li class="tag">LESS</li>
           </ul>
         </div>
       </div>
@@ -152,20 +166,20 @@
       <div class="experience__timeline-point">
         <p class="experience__date">Aug. 2020 - Jan. 2022</p>
         <div class="experience__work">
-          <h2 class="experience__position">Senior Frontend Developer</h2>
-          <p class="experience__company"><a>ByteLearn</a></p>
+          <h2 class="experience__position subtitle">Senior Frontend Developer</h2>
+          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
             Sed aliquet, lorem sit amet eleifend euismod,
             eros nulla placerat nulla, ut interdum est eros et dui.</p>
           <ul class="experience__stack">
-            <li class="btn">HTML</li>
-            <li class="btn">CSS</li>
-            <li class="btn">JS</li>
-            <li class="btn">SCSS/SASS</li>
-            <li class="btn">Stylus</li>
-            <li class="btn">LESS</li>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JS</li>
+            <li class="tag">SCSS/SASS</li>
+            <li class="tag">Stylus</li>
+            <li class="tag">LESS</li>
           </ul>
         </div>
       </div>
@@ -178,7 +192,7 @@
   <div class="center-block">
 
     <div class="works-head">
-      <h1 class="works__header">Works</h1>
+      <h1 class="works__header title">Works</h1>
       <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
             Sed aliquet, lorem sit amet eleifend euismod,
@@ -192,10 +206,11 @@
           <a href="#"><img src="someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
-          <h2>Name of project</h2>
-          <p class="works-project__year">2022</p>
+          <h2 class="subtitle"><a href="#">Name of project</a></h2>
+          <p class="works-project__year subtext">2022</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
       <div class="works-project">
@@ -203,10 +218,47 @@
           <a href="#"><img src="someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
-          <h2>Name of project</h2>
-          <p class="works-project__year">2022</p>
+          <h2 class="subtitle"><a href="#">Name of project</a></h2>
+          <p class="works-project__year subtext">2022</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
+        </div>
+      </div>
+      <div class="works-project">
+        <div class="works-project__img">
+          <a href="#"><img src="someImage.jpg" alt="work"/></a>
+        </div>
+        <div class="works-project__text">
+          <h2 class="subtitle"><a href="#">Name of project</a></h2>
+          <p class="works-project__year subtext">2022</p>
+          <p>Aenean et massa in eros suscipit mollis.
+            Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
+        </div>
+      </div>
+      <div class="works-project">
+        <div class="works-project__img">
+          <a href="#"><img src="someImage.jpg" alt="work"/></a>
+        </div>
+        <div class="works-project__text">
+          <h2 class="subtitle"><a href="#">Name of project</a></h2>
+          <p class="works-project__year subtext">2022</p>
+          <p>Aenean et massa in eros suscipit mollis.
+            Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
+        </div>
+      </div>
+      <div class="works-project">
+        <div class="works-project__img">
+          <a href="#"><img src="someImage.jpg" alt="work"/></a>
+        </div>
+        <div class="works-project__text">
+          <h2 class="subtitle"><a href="#">Name of project</a></h2>
+          <p class="works-project__year subtext">2022</p>
+          <p>Aenean et massa in eros suscipit mollis.
+            Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
     </div>
@@ -216,11 +268,17 @@
 
 <section class="contact">
   <div class="center-block">
-    <h1 class="contact__header">Contacts</h1>
+    <h1 class="contact__header title">Contacts</h1>
     <div class="contact__block">
       <div class="contact__left">
         <div class="contact__qr">
-
+          <img src="public/imgs/qr-code.png" alt=""/>
+          <div class="contact__social">
+            <a href="#"><img src="public/imgs/icons/github-2.svg" alt=""/></a>
+            <a href="#"><img src="public/imgs/icons/telegram-2.svg" alt=""/></a>
+            <a href="#"><img src="public/imgs/icons/vk.svg" alt=""/></a>
+            <a href="#"><img src="public/imgs/icons/whatsapp-1.svg" alt=""/></a>
+          </div>
         </div>
         <div class="contact__text">
           <p>Aenean et massa in eros suscipit mollis.
@@ -231,15 +289,20 @@
             Sed aliquet, lorem sit amet eleifend euismod,
             eros placerat nulla.</p>
           <div class="contact__actions">
-            <a href="#" class="btn">Write in TG</a>
-            <a href="#" class="btn">Download CV</a>
+            <a href="#" class="btn"><img src="public/imgs/icons/send.svg" alt=""/>Send mail</a>
+            <a href="#" class="btn-accent"><img src="public/imgs/icons/download.svg" alt=""/>Download CV</a>
           </div>
         </div>
 
       </div>
       <div class="contact__right">
-        <div class="contact__abov-cam">Duis hendrerit ipsum at convallis eleifend</div>
-        <div class="contact__webcam"></div>
+        <div class="contact__abov-cam subtext">Duis hendrerit ipsum at convallis eleifend</div>
+        <div class="contact__webcam">
+          <div class="contact__webcam-micro">
+            <img src="public/imgs/icons/micro.svg" alt=""/>
+            Dyakova Irina
+          </div>
+        </div>
       </div>
     </div>
 

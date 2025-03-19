@@ -20,7 +20,7 @@
   text-align: right;
   padding: 16px 32px 16px 0;
   margin: 0;
-  border-right: 2px solid black;
+  border-right: 2px solid var(--border-color);
   position: relative;
   flex: 1;
 }
@@ -29,8 +29,8 @@
   content: '';
   position: absolute;
   border-radius: 50%;
-  background: white;
-  border: 2px solid black;
+  background: var(--bg);
+  border: 2px solid var(--border-color);
   width: 20px;
   height: 20px;
   right: -13px;
@@ -82,7 +82,7 @@
 }
 
 .experience__timeline-point:nth-child(2n) .experience__date {
-  border-left: 2px solid black;
+  border-left: 2px solid var(--border-color);
   border-right: none;
   text-align: left;
   padding: 16px 0 16px 32px;

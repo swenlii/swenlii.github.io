@@ -19,7 +19,7 @@
 .skills__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
   list-style: none;
   align-items: flex-start;
 }

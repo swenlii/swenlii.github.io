@@ -64,6 +64,14 @@
   font-size: 0.8em;
 }
 
+.works-project__stack {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 4px;
+}
+
 .works-project__link {
   display: flex;
   justify-content: center;

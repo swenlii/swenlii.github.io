@@ -1,12 +1,29 @@
 :root {
-  --accent: #142613;
-  --bg: #dddfe3;
-  --heading: #141623;
-  --text: #282d38;
-  --text-gray: rgb(65, 75, 91);
-  --btn-text: rgb(28, 28, 28);
+  --accent: #D31D4D;
+  --accent-2: #54081c;
+  --accent-3: #4B73C8;
+  --bg: #EBEBE9;
+  --heading: #42404B;
+  --text: #7D7C84;
+  --text-gray: #9a98a2;
+  --border-color: #42404B;
 
-  --btn-bg: linear-gradient(180deg,#fff,#f5f5fa);
+
+  --btn-bg: linear-gradient(180deg,#fff, #EBEBE9);
+  --btn-text: var(--heading);
+  --btn-shadow: rgba(101, 101, 128, 0.4) 0px 11px 18px -8px;
+
+  --btn-accent-bg: linear-gradient(to top right, var(--accent-3), var(--accent));
+  --btn-accent-text: white;
+  --btn-accent-shadow: rgba(43, 44, 59, 0.8) 0px 11px 18px -8px;
+
+  --tag-bg: var(--heading);
+  --tag-text: white;
+  --tag-shadow: none;
+  --tag-border: none;
+
+  --header-bg: #282828;
+  --header-color: white;
 }
 
 * {
@@ -50,16 +67,18 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
   outline: 0;
-  border: 0;
   cursor: pointer;
   font-weight: 600;
-  color: var(--btn-text);
   font-size: 14px;
   padding: 8px 24px;
   border-radius: 50px;
-  background-image: var(--btn-bg);
-  box-shadow: rgba(106, 110, 201, 0.4) 0px 11px 18px -8px;
   transition: all .2s ease-out;
+}
+
+.btn {
+  background: var(--btn-bg);
+  box-shadow: var(--btn-shadow);
+  color: var(--btn-text);
 }
 
 .tag {
@@ -68,12 +87,24 @@ h1, h2, h3, h4 {
   font-size: 13px;
   line-height: 23px;
   font-weight: 600;
-  color: rgb(28, 28, 28);
-  background-image: none;
-  background-color: var(--bg);
-  box-shadow:  4px 4px 8px #bcbec1,
-             -4px -4px 8px #feffff;
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  box-shadow: var(--tag-shadow);
   cursor: default;
+  border: var(--tag-border);
+}
+
+.tag-mini {
+  border-radius: 10px;
+  color: var(--tag-text);
+  background: var(--text-gray);
+  box-shadow: var(--tag-shadow);
+  cursor: default;
+  border: var(--tag-border);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  padding: 5px 13px 4px 13px;
 }
 
 .btn:hover, .btn-accent:hover{
@@ -81,17 +112,15 @@ h1, h2, h3, h4 {
 }
 
 .btn-accent {
-  border: 0;
-  box-shadow: rgba(68, 75, 247, 0.8) 0px 11px 18px -8px;
-  background-image: linear-gradient(to top right, #444BF7, #8084f9);
-  color: white;
+  box-shadow: var(--btn-accent-shadow);
+  background: var(--btn-accent-bg);
+  color: var(--btn-accent-text);
 }
 
 .btn img, .btn-accent img {
   width: 1.2em;
   height: 1.2em;
   margin-right: 4px;
-
 }
 
 .title {
@@ -119,12 +148,11 @@ h1, h2, h3, h4 {
 .header {
   display: flex;
   justify-content: space-between;
-  background: #181818;
-  color: white;
+  background: var(--header-bg);
+  color: var(--header-color);
   padding: 24px;
   position: sticky;
   top: 0;
-  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
   z-index: 999;
 }
 

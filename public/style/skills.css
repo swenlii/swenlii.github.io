@@ -8,12 +8,20 @@
 
 .skills__block {
   display: flex;
-  gap: 80px;
+  gap: 20px;
   align-items: baseline;
 }
 
 .skills__block > * {
   flex: 1;
+  margin: 0;
+}
+
+.skills__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 40px;
 }
 
 .skills__list {

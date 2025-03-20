@@ -28,26 +28,6 @@
   max-height: 100%;
 }
 
-.contact__social {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-
-.contact__social a {
-  background: #F0F0F0;
-  border-radius: 4px;
-  padding: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact__social img {
-  width: 16px;
-  height: 16px;
-}
-
 .contact__text {
   max-width: 390px;
 }

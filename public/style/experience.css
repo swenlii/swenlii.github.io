@@ -18,15 +18,16 @@
 .experience__date {
   width: calc(50% + 64px);
   text-align: right;
-  padding: 16px 32px 16px 0;
+  padding: 4px 32px 16px 0;
   margin: 0;
   border-right: 2px solid var(--border-color);
   position: relative;
   flex: 1;
+  top: 4px;
 }
 
 .experience__date::after {
-  content: '';
+  content:url("data:image/svg+xml,<svg width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><circle cx='10' cy='10' r='8' fill='rgb(27,27,27)'/></svg>");
   position: absolute;
   border-radius: 50%;
   background: var(--bg);
@@ -34,13 +35,30 @@
   width: 20px;
   height: 20px;
   right: -13px;
+  top: 0px;
 }
 
+.experience__timeline-point:last-child .experience__work {
+  padding-bottom: 0px;
+}
 
+.experience__timeline-point:last-child .experience__stack {
+  margin-bottom: 0;
+}
+
+.experience__timeline-point:last-child .experience__date::before {
+  content: "";
+  width: 1px;
+  height: 48px;
+  border-right: 2px dashed var(--border-color);
+  position: absolute;
+  right: -2px;
+  top: 198px;
+}
 
 .experience__work {
   flex: 1;
-  padding-top: 11px;
+  padding-top: 0px;
   padding-bottom: 48px;
 }
 
@@ -56,7 +74,7 @@
 }
 
 .experience__company {
-  margin-top: 4px;
+
 }
 
 .experience__company img {
@@ -77,31 +95,4 @@
 
 }
 
-.experience__timeline-point:nth-child(2n) {
-  flex-direction: row-reverse;
-}
 
-.experience__timeline-point:nth-child(2n) .experience__date {
-  border-left: 2px solid var(--border-color);
-  border-right: none;
-  text-align: left;
-  padding: 16px 0 16px 32px;
-}
-
-.experience__timeline-point:nth-child(2n) .experience__date::after {
-  right: auto;
-  left: -13px;
-}
-
-.experience__timeline-point:nth-child(2n) .experience__work > * {
-  text-align: right;
-}
-
-.experience__timeline-point:nth-child(2n) .experience__stack {
-  justify-content: right;
-}
-
-.experience__timeline-point:nth-child(2n) .experience__position {
-  justify-content: right;
-  flex-direction: row-reverse;
-}

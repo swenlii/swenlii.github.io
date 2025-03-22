@@ -9,7 +9,7 @@
 .skills__block {
   display: flex;
   gap: 20px;
-  align-items: baseline;
+  align-items: stretch;
 }
 
 .skills__block > * {
@@ -18,21 +18,32 @@
 }
 
 .skills__text {
+  padding: 24px;
+  border: 1px solid #e9eaf1;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  border-radius: 12px;
+}
+
+.skills__text ul {
+  padding-left: 40px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-left: 40px;
 }
 
 .skills__list {
+  padding: 24px;
+  border: 1px solid #e9eaf1;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  border-radius: 12px;
+}
+
+.skills__list ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   list-style: none;
-  align-items: flex-start;
-}
-
-.skills__list li {
-
-
+  padding: 0;
+  margin: 16px 0;
 }

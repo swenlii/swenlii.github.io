@@ -16,13 +16,12 @@
 }
 
 .experience__date {
-  width: calc(50% + 64px);
-  text-align: right;
+  width: calc(45vw - 96px);
+  text-align: center;
   padding: 4px 32px 16px 0;
   margin: 0;
   border-right: 2px solid var(--border-color);
   position: relative;
-  flex: 1;
   top: 4px;
 }
 
@@ -57,14 +56,15 @@
 }
 
 .experience__work {
-  flex: 1;
-  padding-top: 0px;
+  width: calc(55vw - 96px);
+  padding-top: 8px;
   padding-bottom: 48px;
+
 }
 
 .experience__position-icon {
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 27px;
 }
 
 .experience__position {

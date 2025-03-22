@@ -30,6 +30,7 @@
 
 .contact__text {
   max-width: 390px;
+  padding-top: 12px;
 }
 
 .contact__text p:first-child {
@@ -45,6 +46,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  padding: 24px;
+  border: 1px solid #e9eaf1;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  border-radius: 12px;
 }
 
 .contact__abov-cam {

@@ -17,16 +17,23 @@
 
 <header class="header">
   <div class="header__logo">
-    <img src="" alt="icon" class="header__img"/>
-    <div class="header__name">NameSite</div>
+    <img src="public/favicon.ico" alt="icon" class="header__img"/>
+    <div class="header__name">Ira.Swenlii</div>
+    <div class="header__menu-icons">
+      <a href="#"><img src="public/imgs/icons/github-1.svg" alt="work"/></a>
+      <a href="#"><img src="public/imgs/icons/telegram-1.svg" alt="work"/></a>
+    </div>
   </div>
 
+  <div class="header__menu-links">
+      <a href="#">Home</a>
+      <a href="#">About me</a>
+      <a href="#">My works</a>
+    </div>
+
   <div class="header__menu">
-    <a href="#">Home</a>
-    <a href="#">About me</a>
-    <a href="#">My works</a>
-    <a href="#">Github</a>
-    <a href="#">Email</a>
+
+
     <a href="#" class="btn"><img src="public/imgs/icons/download.svg" alt=""/>Download CV</a>
   </div>
 
@@ -34,24 +41,32 @@
 
 <section class="who-am-i">
   <div class="main-block">
-    <h1>Frontend developer</h1>
+    <div class="who-am-i__creator subtext">Portfolio website by Dyakova Irina</div>
+    <h1 class="title">In id dictum nulla, eget pellentesque felis. <span>Etiam id dolor nisi.</span></h1>
     <div class="who-am-i__texts">
-      <div class="who-am-i__creator">
-        <div>Portfolio website<br>
-          by Dyakova Irina
-
-        </div>
-        <a href="#" class="btn-tertiary"><img src="public/imgs/icons/github-3.svg" alt=""/>To GithubPage</a>
-      </div>
       <div class="who-am-i__description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dictum nulla, eget pellentesque felis. Etiam id dolor nisi. Suspendisse a est  nunc. Nam interdum mauris nec quam varius, in elementum nisi convallis.  Suspendisse feugiat tellus non tincidunt faucibus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dictum nulla, eget pellentesque felis. Etiam id dolor nisi. Suspendisse a est  nunc. Nam interdum mauris nec quam varius, in elementum nisi convallis.  Suspendisse feugiat tellus non tincidunt faucibus.</p>
+        <div class="who-am-i__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dictum nulla, eget pellentesque felis. Etiam id dolor nisi. Suspendisse a est  nunc. Nam interdum mauris nec quam varius, in elementum nisi convallis.  Suspendisse feugiat tellus non tincidunt faucibus.</div>
+        <div>
+          <ul class="who-am-i__numbers">
+            <li>
+              <span class="who-am-i__numbers-numb">06</span>
+              <span class="who-am-i__numbers-title">years I have been working as a developer</span>
+            </li>
+            <li>
+              <span class="who-am-i__numbers-numb">14</span>
+              <span class="who-am-i__numbers-title">projects in git profile are open for viewing</span>
+            </li>
+            <li>
+              <span class="who-am-i__numbers-numb">10</span>
+              <span class="who-am-i__numbers-title">companies I developed websites for</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="who-am-i__img">
-      <img src="someImage.jpg" alt=""/>
-    </div>
-
+  </div>
+  <div class="who-am-i__img">
+    <img src="someImage.jpg" alt=""/>
   </div>
 </section>
 
@@ -59,7 +74,7 @@
   <div class="center-block">
     <div class="about-me__header">
       <h1 class="title">Developer</h1>
-      <a href="#" class="btn-tertiary">To Page "About me" <img src="public/imgs/icons/arrow.svg" alt=""/></a>
+      <a href="#" class="btn-secondary">To Page "About me" <img src="public/imgs/icons/arrow.svg" alt=""/></a>
     </div>
 
     <div class="about-me__block">
@@ -82,20 +97,25 @@
   <div class="center-block">
     <h1 class="skills__header title">Skills</h1>
     <div class="skills__block">
-      <ul class="skills__text">
-        <li>
-          Nulla facilisi. Etiam ac justo velit. Praesent elementum quis lectus ut congue. Duis dapibus purus elementum nunc accumsan, molestie dapibus  neque iaculis.
-        </li>
-        <li>
-          Duis hendrerit ipsum at convallis eleifend. Sed aliquet, lorem sit amet eleifend euismod,
-          eros nulla placerat nulla, ut interdum est eros et dui. Donec bibendum, nibh ut posuere congue
-        </li>
-        <li>
-          Sed aliquet, lorem sit amet eleifend euismod,
-          eros nulla placerat nulla, ut interdum est eros et dui
-        </li>
-      </ul>
-      <ul class="skills__list">
+      <div class="skills__text">
+        <h2 class="subtitle">Why am I?</h2>
+        <ul>
+          <li>
+            Nulla facilisi. Etiam ac justo velit. Praesent elementum quis lectus ut congue. Duis dapibus purus elementum nunc accumsan, molestie dapibus  neque iaculis.
+          </li>
+          <li>
+            Duis hendrerit ipsum at convallis eleifend. Sed aliquet, lorem sit amet eleifend euismod,
+            eros nulla placerat nulla, ut interdum est eros et dui. Donec bibendum, nibh ut posuere congue
+          </li>
+          <li>
+            Sed aliquet, lorem sit amet eleifend euismod,
+            eros nulla placerat nulla, ut interdum est eros et dui
+          </li>
+        </ul>
+      </div>
+      <div class="skills__list">
+        <h2 class="subtitle">My stack</h2>
+        <ul>
           <li class="tag">HTML</li>
           <li class="tag">CSS</li>
           <li class="tag">JS</li>
@@ -113,6 +133,9 @@
           <li class="tag">Photoshop</li>
           <li class="tag">Bitrix24</li>
         </ul>
+        <p>Duis hendrerit ipsum at convallis eleifend. Sed aliquet, lorem sit amet eleifend euismod,
+            eros nulla placerat nulla, ut interdum est eros et dui. Donec bibendum, nibh ut posuere congue</p>
+      </div>
     </div>
   </div>
 </section>
@@ -122,7 +145,7 @@
     <h1 class="experience__header title">Experience</h1>
     <div class="experience__timeline">
       <div class="experience__timeline-point">
-        <p class="experience__date subtext">Aug. 2020 - Jan. 2022</p>
+        <p class="experience__date"><span class="subtitle-h5">Aug. 2020 - Jan. 2022</span> <span class="subtext">(6 month)</span></p>
         <div class="experience__work">
           <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/school.svg" alt=""/>Applied Mathematics and Computer Science</h2>
           <p class="experience__company subtext"><a href="#" target="_blank">Syktyvkar State University named after. Pitirim Sorokin <img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
@@ -143,7 +166,7 @@
       </div>
 
       <div class="experience__timeline-point">
-        <p class="experience__date subtext">Aug. 2020 - Jan. 2022</p>
+        <p class="experience__date"><span class="subtitle-h5">Aug. 2020 - Jan. 2022</span> <span class="subtext">(6 month)</span></p>
         <div class="experience__work">
           <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/work.svg" alt=""/>Junior Frontend Developer</h2>
           <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
@@ -164,7 +187,7 @@
       </div>
 
       <div class="experience__timeline-point">
-        <p class="experience__date subtext">Aug. 2020 - Jan. 2022</p>
+        <p class="experience__date"><span class="subtitle-h5">Aug. 2020 - Jan. 2022</span> <span class="subtext">(6 month)</span></p>
         <div class="experience__work">
           <h2 class="experience__position subtitle">Senior Frontend Developer</h2>
           <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
@@ -206,9 +229,14 @@
           <a href="#"><img src="someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
-          <h2 class="subtitle"><a href="#">Name of project</a></h2>
-          <p class="works-project__year subtext">2022</p>
-          <p>Aenean et massa in eros suscipit mollis.
+          <div class="works-project__header">
+            <span class="works-project__header-num">01</span>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
+            <p class="works-project__year subtext">(2022)</p>
+          </div>
+
+          <p>Duis hendrerit ipsum at convallis eleifend.
+            Sed aliquet, lorem sit amet eleifend euismod. Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
           <ul class="works-project__stack">
             <li class="tag-mini">HTML</li>
@@ -226,10 +254,23 @@
           <a href="#"><img src="someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
-          <h2 class="subtitle"><a href="#">Name of project</a></h2>
-          <p class="works-project__year subtext">2022</p>
-          <p>Aenean et massa in eros suscipit mollis.
+          <div class="works-project__header">
+            <span class="works-project__header-num">02</span>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
+            <p class="works-project__year subtext">(2023)</p>
+          </div>
+
+          <p>Duis hendrerit ipsum at convallis eleifend.
+            Sed aliquet, lorem sit amet eleifend euismod. Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <ul class="works-project__stack">
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">JS</li>
+            <li class="tag-mini">SCSS/SASS</li>
+            <li class="tag-mini">Stylus</li>
+            <li class="tag-mini">LESS</li>
+          </ul>
           <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
@@ -238,10 +279,23 @@
           <a href="#"><img src="someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
-          <h2 class="subtitle"><a href="#">Name of project</a></h2>
-          <p class="works-project__year subtext">2022</p>
-          <p>Aenean et massa in eros suscipit mollis.
+          <div class="works-project__header">
+            <span class="works-project__header-num">03</span>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
+            <p class="works-project__year subtext">(2023)</p>
+          </div>
+
+          <p>Duis hendrerit ipsum at convallis eleifend.
+            Sed aliquet, lorem sit amet eleifend euismod. Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <ul class="works-project__stack">
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">JS</li>
+            <li class="tag-mini">SCSS/SASS</li>
+            <li class="tag-mini">Stylus</li>
+            <li class="tag-mini">LESS</li>
+          </ul>
           <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
@@ -250,10 +304,23 @@
           <a href="#"><img src="someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
-          <h2 class="subtitle"><a href="#">Name of project</a></h2>
-          <p class="works-project__year subtext">2022</p>
-          <p>Aenean et massa in eros suscipit mollis.
+          <div class="works-project__header">
+            <span class="works-project__header-num">04</span>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
+            <p class="works-project__year subtext">(2023)</p>
+          </div>
+
+          <p>Duis hendrerit ipsum at convallis eleifend.
+            Sed aliquet, lorem sit amet eleifend euismod. Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <ul class="works-project__stack">
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">JS</li>
+            <li class="tag-mini">SCSS/SASS</li>
+            <li class="tag-mini">Stylus</li>
+            <li class="tag-mini">LESS</li>
+          </ul>
           <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
@@ -262,10 +329,23 @@
           <a href="#"><img src="someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
-          <h2 class="subtitle"><a href="#">Name of project</a></h2>
-          <p class="works-project__year subtext">2022</p>
-          <p>Aenean et massa in eros suscipit mollis.
+          <div class="works-project__header">
+            <span class="works-project__header-num">05</span>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
+            <p class="works-project__year subtext">(2024)</p>
+          </div>
+
+          <p>Duis hendrerit ipsum at convallis eleifend.
+            Sed aliquet, lorem sit amet eleifend euismod. Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.</p>
+          <ul class="works-project__stack">
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">JS</li>
+            <li class="tag-mini">SCSS/SASS</li>
+            <li class="tag-mini">Stylus</li>
+            <li class="tag-mini">LESS</li>
+          </ul>
           <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
@@ -291,8 +371,7 @@
         <div class="contact__text">
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
-            Sed aliquet, lorem sit amet eleifend euismod,
-            eros nulla placerat nulla, ut interdum est eros et dui</p>
+            Sed aliquet, lorem sit amet eleifend euismod</p>
           <p>Duis hendrerit ipsum at convallis eleifend.
             Sed aliquet, lorem sit amet eleifend euismod,
             eros placerat nulla.</p>

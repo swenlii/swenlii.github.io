@@ -16,7 +16,7 @@
 }
 
 .experience__date {
-  width: calc(45vw - 96px);
+  width: calc(40% - 32px);
   text-align: center;
   padding: 4px 32px 16px 0;
   margin: 0;
@@ -37,8 +37,12 @@
   top: 0px;
 }
 
+.experience__timeline-point:last-child {
+  margin-bottom: 64px;
+}
+
 .experience__timeline-point:last-child .experience__work {
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .experience__timeline-point:last-child .experience__stack {
@@ -52,13 +56,13 @@
   border-right: 2px dashed var(--border-color);
   position: absolute;
   right: -2px;
-  top: 198px;
+  bottom: -48px;
 }
 
 .experience__work {
-  width: calc(55vw - 96px);
+  width: calc(60% - 32px);
   padding-top: 8px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 
 }
 
@@ -73,15 +77,15 @@
   gap: 8px;
 }
 
-.experience__company {
-
+.experience__company a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .experience__company img {
   width: 1em;
   height: 1em;
-  position: relative;
-  top: 3px;
 }
 
 .experience__stack {
@@ -89,10 +93,67 @@
   padding: 0;
   display: flex;
   gap: 4px;
+  margin: 16px 0 0 0;
+  flex-wrap: wrap;
 }
 
 .experience__stack li {
 
 }
 
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .experience__date {
+    width: 100%;
+    text-align: center;
+    padding: 4px 32px 16px 0;
+    margin: 0;
+    margin-top: 0px;
+    border-right: 2px solid var(--border-color);
+    position: relative;
+    top: 4px;
+  }
+
+  .experience__work {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #e9eaf1;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  border-radius: 12px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .experience__timeline-point {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    border-left: 2px solid var(--border-color);
+    padding-left: 16px;
+  }
+
+  .experience__date::after {
+    right: inherit;
+    left: -29px;
+    top: 0px;
+  }
+
+  .experience__date {
+    text-align: left;
+    padding: 0;
+    border: none;
+  }
+
+  .experience__timeline-point:last-child .experience__date::before {
+    content: none;
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+}
 

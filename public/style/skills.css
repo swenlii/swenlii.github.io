@@ -17,6 +17,17 @@
   margin: 0;
 }
 
+.skills__block .subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.skills__block .subtitle img {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+}
+
 .skills__text {
   padding: 24px;
   border: 1px solid #e9eaf1;
@@ -46,4 +57,10 @@
   list-style: none;
   padding: 0;
   margin: 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .skills__block {
+    flex-direction: column;
+  }
 }

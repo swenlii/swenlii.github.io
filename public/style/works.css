@@ -40,8 +40,6 @@
   min-width: 305px;
   max-width: 305px;
   overflow: hidden;
-
-
 }
 
 .works-project__img a {
@@ -123,7 +121,6 @@
 }
 
 .works-page {
- padding-bottom: 120px;
 }
 
 .works-page--head p {

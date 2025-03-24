@@ -3,63 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>Dyakova Irina</title>
-  <link rel="icon" type="image/x-icon" href="public/favicon.ico">
-  <link rel="manifest" href="public/favicons/site.webmanifest">
-  <link rel="stylesheet" href="public/style/style.css">
-  <link rel="stylesheet" href="public/style/about_me.css">
-  <link rel="stylesheet" href="public/style/skills.css">
-  <link rel="stylesheet" href="public/style/who_am_i.css">
-  <link rel="stylesheet" href="public/style/works.css">
-  <link rel="stylesheet" href="public/style/people.css">
-  <link rel="stylesheet" href="public/style/experience.css">
-  <link rel="stylesheet" href="public/style/contact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
+  <link rel="manifest" href="../public/favicons/site.webmanifest">
+  <link rel="stylesheet" href="../public/style/style.css">
+  <link rel="stylesheet" href="../public/style/about_me.css">
+  <link rel="stylesheet" href="../public/style/skills.css">
+  <link rel="stylesheet" href="../public/style/who_am_i.css">
+  <link rel="stylesheet" href="../public/style/works.css">
+  <link rel="stylesheet" href="../public/style/people.css">
+  <link rel="stylesheet" href="../public/style/experience.css">
+  <link rel="stylesheet" href="../public/style/contact.css">
 </head>
 <body>
 
 <header class="header">
   <div class="header__logo">
-    <img src="public/favicon.ico" alt="icon" class="header__img"/>
-    <div class="header__name">Ira.Swenlii</div>
+    <div class="header__name">
+      <img src="../public/favicon.ico" alt="icon" class="header__img"/>
+      <div class="header__name">Dyakova.Irina</div>
+    </div>
     <div class="header__menu-icons">
-      <a href="#"><img src="public/imgs/icons/github-1.svg" alt="work"/></a>
-      <a href="#"><img src="public/imgs/icons/telegram-1.svg" alt="work"/></a>
+      <a href="https://github.com/swenlii?tab=repositories"><img src="../public/imgs/icons/github-1.svg" alt="work"/></a>
+      <a href="https://t.me/swenlii"><img src="../public/imgs/icons/telegram-1.svg" alt="work"/></a>
     </div>
   </div>
 
   <div class="header__menu-links">
-      <a href="#">Home</a>
-      <a href="#">About me</a>
-      <a href="#">My works</a>
+      <a href="index.html">Главная</a>
+      <a href="about.html">Обо мне</a>
+      <a href="projects.html">Проекты</a>
     </div>
 
   <div class="header__menu">
 
-    <a href="ru.html" class="header__menu-lang">🇬🇧 EN</a>
-    <a href="#" class="btn"><img src="public/imgs/icons/download.svg" alt=""/>Download CV</a>
+    <a href="../index.html" class="header__menu-lang">🇬🇧 EN</a>
+    <a href="../public/resume_ru.pdf" download="dyakova_cv.pdf" class="btn"><img src="../public/imgs/icons/download.svg" alt=""/>Скачать CV</a>
   </div>
 
 </header>
 
 <section class="who-am-i">
   <div class="main-block">
-    <div class="who-am-i__creator subtext">Portfolio website by Dyakova Irina</div>
+    <div class="who-am-i__creator subtext">Вебсайт-портфолио Дьяковой Ирины</div>
     <h1 class="title">In id dictum nulla, eget pellentesque felis. <span>Etiam id dolor nisi.</span></h1>
     <div class="who-am-i__texts">
       <div class="who-am-i__description">
         <div class="who-am-i__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id dictum nulla, eget pellentesque felis. Etiam id dolor nisi. Suspendisse a est  nunc. Nam interdum mauris nec quam varius, in elementum nisi convallis.  Suspendisse feugiat tellus non tincidunt faucibus.</div>
-        <div>
+        <div class="who-am-i__right">
           <ul class="who-am-i__numbers">
             <li>
               <span class="who-am-i__numbers-numb">06</span>
-              <span class="who-am-i__numbers-title">years I have been working as a developer</span>
+              <span class="who-am-i__numbers-title">лет я работаю разработчиком</span>
             </li>
             <li>
               <span class="who-am-i__numbers-numb">14</span>
-              <span class="who-am-i__numbers-title">projects in git profile are open for viewing</span>
+              <span class="who-am-i__numbers-title">проектов в гит-профиле открыты для просмотра</span>
             </li>
             <li>
               <span class="who-am-i__numbers-numb">10</span>
-              <span class="who-am-i__numbers-title">companies I developed websites for</span>
+              <span class="who-am-i__numbers-title">компаний, для которых я разработала веб-сайты</span>
             </li>
           </ul>
         </div>
@@ -67,20 +73,20 @@
     </div>
   </div>
   <div class="who-am-i__img">
-    <img src="someImage.jpg" alt=""/>
+    <img src="../someImage.jpg" alt=""/>
   </div>
 </section>
 
 <section class="about-me">
   <div class="center-block">
     <div class="about-me__header">
-      <h1 class="title">Developer</h1>
-      <a href="about.html" class="btn-secondary">Brief biography <img src="public/imgs/icons/arrow.svg" alt=""/></a>
+      <h1 class="title">Обо мне</h1>
+      <a href="about.html" class="btn-secondary"><span class="desktop">Биография</span> <span class="mobile">Больше</span> <img src="../public/imgs/icons/arrow.svg" alt=""/></a>
     </div>
 
     <div class="about-me__block">
       <div>
-        <p>Integer pellentesque congue sem. Nunc nulla risus. Sed aliquet, lorem sit amet eleifend euismod,
+        <p>👋🏽 Меня зовут Дьякова Ирина! Я создаю вебсайты. Integer pellentesque congue sem. Nunc nulla risus. Sed aliquet, lorem sit amet eleifend euismod,
           eros nulla placerat nulla, ut interdum est eros et dui. Donec bibendum, nibh ut posuere congue.</p>
         <p>Nulla porta lorem at eros euismod, elementum volutpat mi laoreet. Aenean et massa in eros suscipit mollis.
           Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend. Sed aliquet, lorem sit amet eleifend euismod,
@@ -89,17 +95,17 @@
           Aliquam in tristique ex. Proin fermentum iaculis aliquet. </p>
         <address class="about-me__signature" rel="author"><em>Дьякова И. В.</em></address>
       </div>
-      <div class="about-me__img"><img src="someImage.jpg" alt="it's me"/></div>
+      <div class="about-me__img"><img src="../someImage.jpg" alt="it's me"/></div>
     </div>
   </div>
 </section>
 
 <section class="skills">
   <div class="center-block">
-    <h1 class="skills__header title">Skills</h1>
+    <h1 class="skills__header title">Навыки</h1>
     <div class="skills__block">
       <div class="skills__text">
-        <h2 class="subtitle"><img src="public/imgs/icons/question.svg" alt=""/>Why am I?</h2>
+        <h2 class="subtitle"><img src="../public/imgs/icons/question.svg" alt=""/>Почему нужно выбрать меня?</h2>
         <ul>
           <li>
             Nulla facilisi. Etiam ac justo velit. Praesent elementum quis lectus ut congue. Duis dapibus purus elementum nunc accumsan, molestie dapibus  neque iaculis.
@@ -115,7 +121,7 @@
         </ul>
       </div>
       <div class="skills__list">
-        <h2 class="subtitle"><img src="public/imgs/icons/code.svg" alt=""/>My stack</h2>
+        <h2 class="subtitle"><img src="../public/imgs/icons/code.svg" alt=""/>Мой стэк</h2>
         <ul>
           <li class="tag">HTML</li>
           <li class="tag">CSS</li>
@@ -143,13 +149,13 @@
 
 <section class="experience">
   <div class="center-block">
-    <h1 class="experience__header title">Experience</h1>
+    <h1 class="experience__header title">Профессиональный опыт</h1>
     <div class="experience__timeline">
       <div class="experience__timeline-point">
         <p class="experience__date"><span class="subtitle-h5">Aug. 2020 - Jan. 2022</span> <span class="subtext">(6 month)</span></p>
         <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/school.svg" alt=""/>Applied Mathematics and Computer Science</h2>
-          <p class="experience__company subtext"><a href="#" target="_blank">Syktyvkar State University named after. Pitirim Sorokin <img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
+          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../public/imgs/icons/school.svg" alt=""/>Прикладная математика и информатика</h2>
+          <p class="experience__company subtext"><a href="#" target="_blank">Сыктывкарский Государственный Университет им. Питирима Сорокина <img class="experience__position-icon" src="../public/imgs/icons/link.svg" alt=""/></a></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
@@ -169,8 +175,8 @@
       <div class="experience__timeline-point">
         <p class="experience__date"><span class="subtitle-h5">Aug. 2020 - Jan. 2022</span> <span class="subtext">(6 month)</span></p>
         <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/work.svg" alt=""/>Junior Frontend Developer</h2>
-          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
+          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../public/imgs/icons/work.svg" alt=""/>Junior Frontend Developer</h2>
+          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="../public/imgs/icons/link.svg" alt=""/></a></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
@@ -190,8 +196,8 @@
       <div class="experience__timeline-point">
         <p class="experience__date"><span class="subtitle-h5">Aug. 2020 - Jan. 2022</span> <span class="subtext">(6 month)</span></p>
         <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/wallet.svg" alt=""/>Senior Frontend Developer</h2>
-          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
+          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../public/imgs/icons/wallet.svg" alt=""/>Senior Frontend Developer</h2>
+          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="../public/imgs/icons/link.svg" alt=""/></a></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
@@ -211,8 +217,8 @@
       <div class="experience__timeline-point">
         <p class="experience__date"><span class="subtitle-h5">Aug. 2020 - Jan. 2022</span> <span class="subtext">(6 month)</span></p>
         <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/home_work.svg" alt=""/>Senior Frontend Developer</h2>
-          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
+          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../public/imgs/icons/home_work.svg" alt=""/>Senior Frontend Developer</h2>
+          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="../public/imgs/icons/link.svg" alt=""/></a></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
@@ -232,8 +238,8 @@
       <div class="experience__timeline-point">
         <p class="experience__date"><span class="subtitle-h5">Aug. 2020 - Jan. 2022</span> <span class="subtext">(6 month)</span></p>
         <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="public/imgs/icons/store.svg" alt=""/>Senior Frontend Developer</h2>
-          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="public/imgs/icons/link.svg" alt=""/></a></p>
+          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../public/imgs/icons/store.svg" alt=""/>Senior Frontend Developer</h2>
+          <p class="experience__company subtext"><a href="#" target="_blank">ByteLearn<img class="experience__position-icon" src="../public/imgs/icons/link.svg" alt=""/></a></p>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
@@ -256,15 +262,15 @@
 
 <section class="people">
   <div class="center-block">
-    <h1 class="people__header title">What people says?</h1>
+    <h1 class="people__header title">Что говорят люди?</h1>
     <div>
       <div class="people__message">
         <div class="people__text">
-          <div class="people__avatar"><div><img src="public/imgs/user-1.jpg" alt=""/></div></div>
+          <div class="people__avatar"><div><img src="../public/imgs/user-1.jpg" alt=""/></div></div>
           <div class="people__message-block">
             <div class="people__user">
-              <h2 class="subtitle">Michail Korotych</h2>
-              <a href="https://t.me/korotych_m" class="people__link"><img src="public/imgs/icons/telegram-3.svg" alt=""/></a>
+              <h2 class="subtitle">Михаил Коротыч</h2>
+              <a href="https://t.me/korotych_m" class="people__link"><img src="../public/imgs/icons/telegram-3.svg" alt=""/></a>
             </div>
             <p>Duis hendrerit ipsum at convallis eleifend. Sed aliquet, lorem sit amet eleifend euismod,
               eros nulla placerat nulla, ut interdum est eros et dui. Donec bibendum, nibh ut posuere congue</p>
@@ -273,11 +279,11 @@
       </div>
       <div class="people__message">
         <div class="people__text">
-          <div class="people__avatar"><div><img src="public/imgs/user-2.jpg" alt=""/></div></div>
+          <div class="people__avatar"><div><img src="../public/imgs/user-2.jpg" alt=""/></div></div>
           <div class="people__message-block">
             <div class="people__user">
-              <h2 class="subtitle">Pavel Chernykh</h2>
-              <a href="https://vk.com/pavel_chernykh" class="people__link"><img src="public/imgs/icons/vk-2.svg" alt=""/></a>
+              <h2 class="subtitle">Павел Черных</h2>
+              <a href="https://vk.com/pavel_chernykh" class="people__link"><img src="../public/imgs/icons/vk-2.svg" alt=""/></a>
             </div>
             <p>Aenean et massa in eros suscipit mollis.
               Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
@@ -289,11 +295,11 @@
       </div>
       <div class="people__message">
         <div class="people__text">
-          <div class="people__avatar"><div><img src="public/imgs/user-3.jpg" alt=""/></div></div>
+          <div class="people__avatar"><div><img src="../public/imgs/user-3.jpg" alt=""/></div></div>
           <div class="people__message-block">
             <div class="people__user">
               <h2 class="subtitle">Igor Z</h2>
-              <a href="https://t.me/genrih11" class="people__link"><img src="public/imgs/icons/telegram-3.svg" alt=""/></a>
+              <a href="https://t.me/genrih11" class="people__link"><img src="../public/imgs/icons/telegram-3.svg" alt=""/></a>
             </div>
             <p>Sed aliquet, lorem sit amet eleifend euismod,
               eros nulla placerat, ut interdum est eros et dui.</p>
@@ -308,22 +314,22 @@
   <div class="center-block">
 
     <div class="works-head">
-      <h1 class="works__header title">Works</h1>
+      <h1 class="works__header title">Проекты</h1>
       <p>Aenean et massa in eros suscipit mollis.
             Etiam ac aliquet leo. Duis hendrerit ipsum at convallis eleifend.
             Sed aliquet, lorem sit amet eleifend euismod,
             eros nulla placerat nulla, ut interdum est eros et dui</p>
-      <a href="projects.html" class="btn"><img class="works__header-icon" src="public/imgs/icons/projects.svg" alt=""/>All works</a>
+      <a href="projects.html" class="btn"><img class="works__header-icon" src="../public/imgs/icons/projects.svg" alt=""/>Все проекты</a>
     </div>
 
     <div class="works__blocks">
       <div class="works-project">
         <div class="works-project__img">
-          <a href="one_project.html"><img src="someImage.jpg" alt="work"/></a>
+          <a href="../someImage.jpg"><img src="../someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
           <div class="works-project__header">
-            <h2 class="subtitle"><a href="one_project.html">Name of project</a></h2>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
             <p class="works-project__year subtext">(2022)</p>
           </div>
 
@@ -338,16 +344,16 @@
             <li class="tag-mini">Stylus</li>
             <li class="tag-mini">LESS</li>
           </ul>
-          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
+        <a href="#" target="_blank" class="works-project__link"><img src="../public/imgs/icons/github-3.svg" alt="work"/></a>
       </div>
       <div class="works-project">
         <div class="works-project__img">
-          <a href="one_project.html"><img src="someImage.jpg" alt="work"/></a>
+          <a href="../someImage.jpg"><img src="../someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
           <div class="works-project__header">
-            <h2 class="subtitle"><a href="one_project.html">Name of project</a></h2>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
             <p class="works-project__year subtext">(2023)</p>
           </div>
 
@@ -362,16 +368,16 @@
             <li class="tag-mini">Stylus</li>
             <li class="tag-mini">LESS</li>
           </ul>
-          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
+        <a href="#" target="_blank" class="works-project__link"><img src="../public/imgs/icons/github-3.svg" alt="work"/></a>
       </div>
       <div class="works-project">
         <div class="works-project__img">
-          <a href="one_project.html"><img src="someImage.jpg" alt="work"/></a>
+          <a href="../someImage.jpg"><img src="../someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
           <div class="works-project__header">
-            <h2 class="subtitle"><a href="one_project.html">Name of project</a></h2>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
             <p class="works-project__year subtext">(2023)</p>
           </div>
 
@@ -386,16 +392,16 @@
             <li class="tag-mini">Stylus</li>
             <li class="tag-mini">LESS</li>
           </ul>
-          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
+        <a href="#" target="_blank" class="works-project__link"><img src="../public/imgs/icons/github-3.svg" alt="work"/></a>
       </div>
       <div class="works-project">
         <div class="works-project__img">
-          <a href="one_project.html"><img src="someImage.jpg" alt="work"/></a>
+          <a href="../someImage.jpg"><img src="../someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
           <div class="works-project__header">
-            <h2 class="subtitle"><a href="one_project.html">Name of project</a></h2>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
             <p class="works-project__year subtext">(2023)</p>
           </div>
 
@@ -410,16 +416,16 @@
             <li class="tag-mini">Stylus</li>
             <li class="tag-mini">LESS</li>
           </ul>
-          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
+        <a href="#" target="_blank" class="works-project__link"><img src="../public/imgs/icons/github-3.svg" alt="work"/></a>
       </div>
       <div class="works-project">
         <div class="works-project__img">
-          <a href="one_project.html"><img src="someImage.jpg" alt="work"/></a>
+          <a href="../someImage.jpg"><img src="../someImage.jpg" alt="work"/></a>
         </div>
         <div class="works-project__text">
           <div class="works-project__header">
-            <h2 class="subtitle"><a href="one_project.html">Name of project</a></h2>
+            <h2 class="subtitle"><a href="#">Name of project</a></h2>
             <p class="works-project__year subtext">(2024)</p>
           </div>
 
@@ -434,8 +440,8 @@
             <li class="tag-mini">Stylus</li>
             <li class="tag-mini">LESS</li>
           </ul>
-          <a href="#" target="_blank" class="works-project__link"><img src="public/imgs/icons/github-3.svg" alt="work"/></a>
         </div>
+        <a href="#" target="_blank" class="works-project__link"><img src="../public/imgs/icons/github-3.svg" alt="work"/></a>
       </div>
     </div>
 
@@ -444,16 +450,16 @@
 
 <section class="contact">
   <div class="center-block">
-    <h1 class="contact__header title">Contacts</h1>
+    <h1 class="contact__header title">Контакты</h1>
     <div class="contact__block">
       <div class="contact__left">
         <div class="contact__qr">
-          <img src="public/imgs/qr-code.png" alt=""/>
+          <img src="../public/imgs/qr-code.png" alt=""/>
           <div class="social-links">
-            <a href="#"><img src="public/imgs/icons/github-2.svg" alt=""/></a>
-            <a href="#"><img src="public/imgs/icons/telegram-2.svg" alt=""/></a>
-            <a href="#"><img src="public/imgs/icons/vk.svg" alt=""/></a>
-            <a href="#"><img src="public/imgs/icons/whatsapp-1.svg" alt=""/></a>
+            <a href="https://github.com/swenlii?tab=repositories"><img src="../public/imgs/icons/github-2.svg" alt=""/></a>
+            <a href="https://t.me/swenlii"><img src="../public/imgs/icons/telegram-2.svg" alt=""/></a>
+            <a href="https://vk.com/swenlii"><img src="../public/imgs/icons/vk.svg" alt=""/></a>
+            <a href="https://wa.me/79042374704"><img src="../public/imgs/icons/whatsapp-1.svg" alt=""/></a>
           </div>
         </div>
         <div class="contact__text">
@@ -462,76 +468,78 @@
             Sed aliquet, lorem sit amet eleifend euismod</p>
           <p>Duis hendrerit ipsum at convallis eleifend.
             Sed aliquet, lorem sit amet eleifend euismod,
-            eros placerat nulla:</p>
+            eros placerat nulla</p>
           <div class="contact__actions">
-            <a href="#" class="btn"><img src="public/imgs/icons/send.svg" alt=""/>Send mail</a>
-            <a href="#" class="btn-secondary"><img src="public/imgs/icons/download-2.svg" alt=""/>Download CV</a>
+            <a href="mailto:ira.swenlii@gmail.com" class="btn"><img src="../public/imgs/icons/send.svg" alt=""/>Написать email</a>
+            <a href="../public/resume_ru.pdf" download="dyakova_cv.pdf" class="btn-secondary"><img src="../public/imgs/icons/download-2.svg" alt=""/>Скачать CV</a>
           </div>
         </div>
 
       </div>
       <div class="contact__right">
-        <div class="contact__abov-cam subtext">Duis hendrerit ipsum at convallis eleifend</div>
+        <div class="contact__abov-cam subtext">Всегда готова к созвонам!</div>
         <div class="contact__webcam">
+          <img src="../public/imgs/webcamPhoto.jpg" alt=""/>
           <div class="contact__webcam-micro">
-            <img src="public/imgs/icons/micro.svg" alt=""/>
+            <img src="../public/imgs/icons/micro.svg" alt=""/>
             Dyakova Irina
           </div>
         </div>
       </div>
     </div>
-
-
-
-
   </div>
 </section>
 
 <footer>
   <div class="footer-top">
-    <div>
-      <strong class="subtitle">Get in touch!</strong>
-      <p>Duis hendrerit ipsum at convallis eleifend</p>
-    </div>
-    <div class="footer__contact">
-      <div class="footer__contact-icon"><img src="public/imgs/icons/call.svg" alt=""/></div>
-      <div>
-        <div class="footer__contact-dt subtext">Call me on</div>
-        <div class="footer__contact-dd subtitle-h5">+7 (904) 123 45 67</div>
-      </div>
+    <div class="footer__title">
+      <strong class="subtitle">Напиши мне!</strong>
+      <p>Связаться легко - лишь выбери путь!</p>
     </div>
 
-    <div class="footer__contact">
-      <div class="footer__contact-icon"><img src="public/imgs/icons/mail.svg" alt=""/></div>
-      <div>
-        <div class="footer__contact-dt subtext">Letters are accepted at</div>
-        <div class="footer__contact-dd subtitle-h5">ira.swenlii@gmail.com</div>
+    <div class="footer__contacts">
+      <div class="footer__contact">
+        <div class="footer__contact-icon"><img src="../public/imgs/icons/call.svg" alt=""/></div>
+        <div>
+          <div class="footer__contact-dt subtext">Позвони мне</div>
+          <div class="footer__contact-dd subtitle-h5">+7 (904) 237 47 04</div>
+        </div>
       </div>
-    </div>
 
-    <div class="footer__contact">
-      <div class="footer__contact-icon"><img src="public/imgs/icons/pin.svg" alt=""/></div>
-      <div>
-        <div class="footer__contact-dt subtext">I live in</div>
-        <div class="footer__contact-dd subtitle-h5">Russia, Komi</div>
+      <div class="footer__contact">
+        <div class="footer__contact-icon"><img src="../public/imgs/icons/mail.svg" alt=""/></div>
+        <div>
+          <div class="footer__contact-dt subtext">Письма принимаются сюда</div>
+          <div class="footer__contact-dd subtitle-h5">ira.swenlii@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="footer__contact">
+        <div class="footer__contact-icon"><img src="../public/imgs/icons/pin.svg" alt=""/></div>
+        <div>
+          <div class="footer__contact-dt subtext">Я живу здесь</div>
+          <div class="footer__contact-dd subtitle-h5">Россия, Сыктывкар</div>
+        </div>
       </div>
     </div>
 
   </div>
+  <div class="footer__attention"><strong>Уведомление о конфиденциальности.</strong> <span class="subtext">Этот сайт не использует аналитику и не собирает данные. Он не добавляет файлы cookie на устройство, не собирает личную информацию и не отслеживает вас!</span></div>
   <div class="footer-bottom">
     <div>@2025 Dyakova Irina</div>
     <div class="social-links">
-      <a href="#"><img src="public/imgs/icons/github-2.svg" alt=""/></a>
-      <a href="#"><img src="public/imgs/icons/telegram-2.svg" alt=""/></a>
-      <a href="#"><img src="public/imgs/icons/vk.svg" alt=""/></a>
-      <a href="#"><img src="public/imgs/icons/whatsapp-1.svg" alt=""/></a>
+      <a href="https://github.com/swenlii?tab=repositories"><img src="../public/imgs/icons/github-2.svg" alt=""/></a>
+      <a href="https://t.me/swenlii"><img src="../public/imgs/icons/telegram-2.svg" alt=""/></a>
+      <a href="https://vk.com/swenlii"><img src="../public/imgs/icons/vk.svg" alt=""/></a>
+      <a href="https://wa.me/79042374704"><img src="../public/imgs/icons/whatsapp-1.svg" alt=""/></a>
     </div>
     <nav class="footer__sitemap">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
+      <a href="index.html">Главная</a>
+      <a href="about.html">Обо мне</a>
+      <a href="projects.html">Проекты</a>
     </nav>
   </div>
+
 
 </footer>
 </body>

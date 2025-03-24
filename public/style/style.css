@@ -384,6 +384,11 @@ footer {
   text-decoration: underline;
 }
 
+.footer__attention {
+  padding: 16px 64px;
+  border-top: 1px solid var(--border-color);
+}
+
 @media screen and (max-width: 1200px) {
 
   .footer__contacts {
@@ -415,6 +420,10 @@ footer {
   }
 
   .footer__title {
+    text-align: center;
+  }
+
+  .footer__attention {
     text-align: center;
   }
 }
@@ -502,6 +511,10 @@ footer {
 
   .footer__sitemap {
     gap: 4px;
+  }
+
+  .footer__attention {
+    padding: 16px;
   }
 }
 

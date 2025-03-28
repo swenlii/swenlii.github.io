@@ -85,7 +85,7 @@
 
 .who-am-i__img {
   width: 100vw;
-  height: 800px;
+  height: auto;
   overflow: hidden;
 }
 

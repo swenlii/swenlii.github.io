@@ -23,7 +23,7 @@
 }
 
 .about-me__img {
-  min-width: 60%;
+  min-width: max-content;
   height: 570px;
   border: 1px solid #e9eaf1;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;

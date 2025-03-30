@@ -1,5 +1,5 @@
 .who-am-i {
-
+background-color: #E9E8E6;
 }
 
 .who-am-i h1 {
@@ -10,7 +10,7 @@
 }
 
 .who-am-i h1 span {
-  color: var(--accent);
+  color: #998A75;
 }
 
 .who-am-i__texts {
@@ -31,6 +31,8 @@
 
 .who-am-i__text {
   padding: 24px;
+  background: var(--accent);
+  color: white;
   border: 1px solid #e9eaf1;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
   border-radius: 12px;
@@ -59,16 +61,27 @@
   font-weight: 800;
   font-size: 52px;
   line-height: 56px;
-  color: var(--heading);
+  color: #A6B097;
+  text-shadow: 3px 3px 0 var(--accent);
   padding-right: 16px;
   width: max-content;
 }
 
+.who-am-i__numbers-numb img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -15px;
+  top: 20px;
+  filter: drop-shadow( 3px 3px 0px var(--accent));
+}
+
 .who-am-i__numbers-numb:after, .who-am-i__numbers-numb:before {
-  content: "";
+
   width: 4px;
   height: 16px;
-  background: #12130f;
+  background: #A6B097;
+  box-shadow: 1px -1px 0 black;
   position: absolute;
   right: 0px;
   top: 20px;

@@ -5,7 +5,9 @@
 .works .center-block {
   display: flex;
   align-items: flex-start;
-  gap: 80px;
+  gap: 64px;
+  margin-top: 64px;
+  border-radius: 18px;
 }
 
 .works-head {
@@ -56,6 +58,11 @@
   display: flex;
   align-items: flex-end;
   gap: 8px;
+
+}
+
+.works-project__header h2 {
+
 }
 
 .works-project__header-num {
@@ -67,6 +74,7 @@
 
 .works-project__header h2 {
   margin: 0;
+  color: var(--heading);
 }
 
 .works-project__year {
@@ -102,7 +110,7 @@
   bottom: 4px;
   padding: 8px 8px;
   border-radius: 8px;
-  background-color:  rgba(143, 128, 115, 0.1);
+  background-color:  #2D423B;
   transition: background-color ease-in-out 0.3s;
 }
 

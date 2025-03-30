@@ -1,9 +1,9 @@
 .experience {
-
+ background-color: #E9E8E6;
 }
 
-.experience__header {
-
+.experience__header span{
+  color: #A6B097;
 }
 
 .experience__timeline {
@@ -35,6 +35,32 @@
   height: 20px;
   right: -13px;
   top: 0px;
+}
+
+.experience__date p {
+  background: #2D423B;
+  background-size: cover;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experience__timeline-point:nth-child(2n) .experience__date p {
+
+  background-size: cover;
+}
+
+.experience__date .subtitle-h5 {
+  color: white;
+}
+
+.experience__date .subtext {
+  color: rgba(255, 255, 255, 0.6)
 }
 
 .experience__timeline-point:last-child {
@@ -75,6 +101,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--heading);
 }
 
 .experience__company a {
@@ -120,6 +147,7 @@
   .experience__work {
     width: 100%;
     padding: 16px;
+    background-color: white;
     border: 1px solid #e9eaf1;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
   border-radius: 12px;

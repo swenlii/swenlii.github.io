@@ -1,9 +1,9 @@
 .people {
-
+  background: #2D423B;
 }
 
 .people__header {
-
+  color: white;
 }
 
 .people__message {
@@ -23,6 +23,7 @@
   display: flex;
   gap: 12px;
   align-items: center;
+  color: var(--heading);
 }
 
 .people__user h2 {
@@ -64,6 +65,7 @@
   max-width: 720px;
   margin-top: 64px;
   padding: 24px;
+  background: white;
   border: 1px solid #e9eaf1;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
   border-radius: 12px;

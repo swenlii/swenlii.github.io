@@ -25,10 +25,10 @@
 .about-me__img {
   min-width: max-content;
   height: 570px;
-  border: 1px solid #e9eaf1;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
-  border-radius: 12px;
+  position: relative;
   overflow: hidden;
+  border-radius: 12px;
+  box-shadow: var(--accent) 32px 32px 0px 0px;
 }
 
 .about-me__img img {
@@ -133,12 +133,12 @@
 @media screen and (max-width: 1024px) {
   .about-me__img {
     min-width: 50%;
-    height: 35vw;
+    height: max-content;
+    box-shadow: var(--accent) 16px 16px 0px 0px;
   }
 
-  .about-page__img {
-    min-width: 50%;
-    height: 35vw;
+  .about-me__img img {
+    margin-bottom: -10px;
   }
 
   .about-me__block {
@@ -154,6 +154,7 @@
   .about-me__img {
     min-width: 50%;
     height: inherit;
+    box-shadow: none;
   }
 
   .about-page__img {

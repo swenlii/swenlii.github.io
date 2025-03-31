@@ -1,5 +1,5 @@
 .experience {
- background-color: #E9E8E6;
+ background: linear-gradient(#DADADC, white);
 }
 
 .experience__header span{
@@ -136,10 +136,10 @@
   .experience__date {
     width: 100%;
     text-align: center;
-    padding: 4px 32px 16px 0;
+    padding: 0;
     margin: 0;
     margin-top: 0px;
-    border-right: 2px solid var(--border-color);
+    border: none;
     position: relative;
     top: 4px;
   }
@@ -150,8 +150,8 @@
     background-color: white;
     border: 1px solid #e9eaf1;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
-  border-radius: 12px;
-    margin-top: 32px;
+  border-radius: 0 0 12px 12px;
+    margin-top: 0;
     margin-bottom: 32px;
   }
 
@@ -169,10 +169,11 @@
     top: 0px;
   }
 
-  .experience__date {
+  .experience__date p {
     text-align: left;
-    padding: 0;
     border: none;
+    padding: 16px;
+    border-radius: 12px 12px 0 0;
   }
 
   .experience__timeline-point:last-child .experience__date::before {

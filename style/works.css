@@ -1,20 +1,18 @@
 .works {
-
+  background-color: #E9E8E6;
 }
 
 .works .center-block {
   display: flex;
   align-items: flex-start;
-  gap: 64px;
-  margin-top: 64px;
-  border-radius: 18px;
+  gap: 32px;
 }
 
 .works-head {
   position: sticky;
   top: 86px;
-  width: 30%;
-  min-width: 300px;
+  width: 25%;
+  min-width: 270px;
 }
 
 .works__header {
@@ -24,11 +22,11 @@
 .works__blocks {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 75%;
   gap: 24px;
 }
 
-.works-project {
+.works-page .works-project {
   display: flex;
   border-radius: 12px;
   background-color: white;
@@ -38,14 +36,54 @@
   position: relative;
 }
 
-.works-project__img, .works-project__img a {
+.works-page .works-project__img {
   min-width: 305px;
   max-width: 305px;
   overflow: hidden;
 }
 
-.works-project__img a {
+.works-page .works-project__img a {
   cursor: zoom-in;
+}
+
+.works-page .works-project__text {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.works .works-project {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  gap: 16px;
+}
+
+.works .works-project__img {
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  max-width: 305px;
+  overflow: hidden;
+  border: 5px solid white;
+  position: relative;
+}
+
+.works .works-project__img a {
+  cursor: zoom-in;
+  max-width: 305px;
+  overflow: hidden;
+}
+
+.works .works-project__text {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid #e9eaf1;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
 }
 
 .works-project__img img {
@@ -81,13 +119,6 @@
   margin-bottom: 6px;
 }
 
-.works-project__text {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 .works-project__text h2 {
 
 }
@@ -110,12 +141,14 @@
   bottom: 4px;
   padding: 8px 8px;
   border-radius: 8px;
-  background-color:  #2D423B;
+  background-color: #ffffff;
   transition: background-color ease-in-out 0.3s;
+  z-index: 3;
+  cursor: pointer !important;
 }
 
 .works-project__link:hover {
-  background-color:  rgba(143, 128, 115, 0.2);
+  background-color: #ececec;
 }
 
 .works-project__link:hover img {
@@ -166,6 +199,10 @@
   .works .center-block {
     gap: 32px;
   }
+
+  .works .works-project__img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -183,6 +220,7 @@
   }
 
   .works-project__img {
+    display: block;
     border-radius: 8px;
     width: 100%;
     min-width: inherit;

@@ -19,12 +19,20 @@
 }
 
 .contact__qr {
-  min-width: 150px;
+  min-width: 166px;
+  background: var(--accent);
+  padding: 8px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .contact__qr img {
   max-width: 150px;
   max-height: 150px;
+  border-radius: 12px;
 }
 
 .contact__text {
@@ -43,17 +51,17 @@
   justify-content: space-between;
   align-items: flex-end;
   width: max-content;
-  padding: 24px;
+  padding: 8px;
   background: var(--accent);
   border: 1px solid #e9eaf1;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
-  border-radius: 12px;
+  border-radius: 18px;
 }
 
 .contact__abov-cam {
   text-align: right;
   font-size: 0.9em;
-  max-width: 300px;
+  max-width: 280px;
   color: white;
 }
 
@@ -123,6 +131,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact__qr > div:last-child {
+    display: none;
   }
 
   .contact__text {

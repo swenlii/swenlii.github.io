@@ -6,6 +6,10 @@
   color: white;
 }
 
+.people__header--description {
+  color: white;
+}
+
 .people__message {
   display: flex;
   justify-content: left;
@@ -73,7 +77,7 @@
 }
 
 .people__message:first-child .people__text {
-  margin-top: 0;
+
 }
 
 @media screen and (max-width: 1024px) {

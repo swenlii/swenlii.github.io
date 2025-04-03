@@ -1,5 +1,7 @@
 .people {
-  background: #2D423B;
+  background-color: #2D423B;
+  background-image: url("../img/leaves-6.jpg");
+  background-size: cover;
 }
 
 .people__header {

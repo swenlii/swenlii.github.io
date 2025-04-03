@@ -38,7 +38,8 @@
 }
 
 .experience__date p {
-  background: #2D423B;
+  background-color: #2D423B;
+  background-image: url("../img/leaves-1.jpg");
   background-size: cover;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
@@ -51,16 +52,18 @@
 }
 
 .experience__timeline-point:nth-child(2n) .experience__date p {
-
+  background-image: url("../img/leaves-9.jpg");
   background-size: cover;
+  background-position: center;
 }
 
-.experience__date .subtitle-h5 {
+.experience__date .subtitle {
   color: white;
 }
 
-.experience__date .subtext {
-  color: rgba(255, 255, 255, 0.6)
+.experience__date .text {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
 }
 
 .experience__timeline-point:last-child {

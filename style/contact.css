@@ -2,8 +2,8 @@
 
 }
 
-.contact__header {
-
+.contact__header span {
+  color: #998A75;
 }
 
 .contact__block {
@@ -20,7 +20,7 @@
 
 .contact__qr {
   min-width: 166px;
-  background: var(--accent);
+  background: var(--accent-2);
   padding: 8px;
   border-radius: 18px;
   display: flex;

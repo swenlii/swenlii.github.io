@@ -1,7 +1,9 @@
 .people {
-  background-color: #2D423B;
+  background-image: linear-gradient(#E9E8E6, #DADADC);
+}
+
+.people .main-block_background {
   background-image: url("../img/leaves-6.jpg");
-  background-size: cover;
 }
 
 .people__header {
@@ -68,7 +70,7 @@
 }
 
 .people__text {
-  max-width: 720px;
+  max-width: 900px;
   margin-top: 64px;
   padding: 24px;
   background: white;
@@ -76,6 +78,7 @@
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
   border-radius: 12px;
   display: flex;
+  color: var(--text);
 }
 
 .people__message:first-child .people__text {

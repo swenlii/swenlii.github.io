@@ -20,61 +20,62 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="header__logo">
-    <div class="header__name">
-      <img src="public/favicon.ico" alt="icon" class="header__img"/>
-      <div class="header__name">Dyakova.Irina</div>
-    </div>
-    <div class="header__menu-icons">
-      <a href="https://github.com/swenlii?tab=repositories"><img src="img/icons/github-1.svg" alt="work"/></a>
-      <a href="https://t.me/swenlii"><img src="img/icons/telegram-1.svg" alt="work"/></a>
-    </div>
-  </div>
-
-  <div class="header__menu-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">My works</a>
-    </div>
-
-  <div class="header__menu">
-
-    <a href="ru/index.html" class="header__menu-lang">🇷🇺 RU</a>
-    <a href="public/resume_en.pdf" download="dyakova_cv.pdf" class="btn"><img src="img/icons/download.svg" alt=""/>Download CV</a>
-  </div>
-
-</header>
-
-<section class="who-am-i">
-  <div class="main-block">
-    <div class="who-am-i__creator subtext">Portfolio website by Dyakova Irina</div>
-    <h1 class="title">A developer who creates websites with passion and enthusiasm. <span>Clean and convenient code!</span></h1>
-    <div class="who-am-i__texts">
-      <div class="who-am-i__description">
-        <div class="who-am-i__text">👋🏽 My name is Irina Dyakova! I have been working in web development for 6 years. I specialize in Vue.js and Java Script. I have a series of successfully launched projects for foreign companies, in total I participated in 15 projects. I believe that it is necessary to work without haste and with great attention to detail. This is a portfolio site about my skills and experience.</div>
-        <div class="who-am-i__right">
-          <ul class="who-am-i__numbers">
-            <li>
-              <span class="who-am-i__numbers-numb">06 +</span>
-              <span class="who-am-i__numbers-title">years I have been working as a developer</span>
-            </li>
-            <li>
-              <span class="who-am-i__numbers-numb">14 +</span>
-              <span class="who-am-i__numbers-title">projects in git profile are open for viewing</span>
-            </li>
-            <li>
-              <span class="who-am-i__numbers-numb">10 +</span>
-              <span class="who-am-i__numbers-title">companies I developed websites for</span>
-            </li>
-          </ul>
+<div class="main-block">
+  <div class="main-block_background">
+    <header class="header">
+      <div class="header__logo">
+        <div class="header__name">
+          <img src="public/favicon.ico" alt="icon" class="header__img"/>
+          <div class="header__name">Dyakova.Irina</div>
+        </div>
+        <div class="header__menu-icons">
+          <a href="https://github.com/swenlii?tab=repositories"><img src="img/icons/github-1.svg" alt="work"/></a>
+          <a href="https://t.me/swenlii"><img src="img/icons/telegram-1.svg" alt="work"/></a>
         </div>
       </div>
+
+      <div class="header__menu-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">My works</a>
+        </div>
+
+      <div class="header__menu">
+
+        <a href="ru/index.html" class="header__menu-lang">🇷🇺 RU</a>
+        <a href="public/resume_en.pdf" download="dyakova_cv.pdf" class="btn"><img src="img/icons/download.svg" alt=""/>Download CV</a>
+      </div>
+
+    </header>
+
+    <div class="main-block_content">
+      <section class="who-am-i">
+        <div class="who-am-i__creator subtext">Portfolio website by Dyakova Irina</div>
+        <h1 class="title">A developer who creates websites with passion and enthusiasm. <span>Clean and convenient code!</span></h1>
+        <div class="who-am-i__texts">
+          <div class="who-am-i__description">
+            <div class="who-am-i__text">👋🏽 My name is Irina Dyakova! I have been working in web development for 6 years. I specialize in Vue.js and Java Script. I have a series of successfully launched projects for foreign companies, in total I participated in 15 projects. I believe that it is necessary to work without haste and with great attention to detail. This is a portfolio site about my skills and experience.</div>
+            <div class="who-am-i__right">
+              <ul class="who-am-i__numbers">
+                <li>
+                  <span class="who-am-i__numbers-numb">06 +</span>
+                  <span class="who-am-i__numbers-title">years I have been working as a developer</span>
+                </li>
+                <li>
+                  <span class="who-am-i__numbers-numb">14 +</span>
+                  <span class="who-am-i__numbers-title">projects in git profile are open for viewing</span>
+                </li>
+                <li>
+                  <span class="who-am-i__numbers-numb">10 +</span>
+                  <span class="who-am-i__numbers-title">companies I developed websites for</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-  <div class="who-am-i__img">
-    <img src="img/photo/big-photo.jpg" alt=""/>
-  </div>
-</section>
+</div>
 
 <section class="about-me">
   <div class="center-block">
@@ -170,10 +171,13 @@
   <div class="center-block">
 
     <div class="works-head">
-      <h1 class="works__header title">Projects</h1>
-      <p>Each of the projects presented is a compelling example of my capabilities.
-        Some of these projects took me months to develop.
-        Go to the «All Projects» page to see all my past projects</p>
+      <div class="works__header">
+        <h1 class="title">Projects</h1>
+        <p>Each of the projects presented is a compelling example of my capabilities.
+          Some of these projects took me months to develop.
+          Go to the «All Projects» page to see all my past projects</p>
+      </div>
+
       <a href="projects.html" class="btn-secondary"><img class="works__header-icon" src="img/icons/projects.svg" alt=""/>All projects</a>
     </div>
 
@@ -203,10 +207,7 @@
 
       </div>
       <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/conspectus.png"><img src="../img/projects/conspectus.png" alt="work"/></a>
-          <a href="https://github.com/swenlii/swenlii_conspectus" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
-        </div>
+
         <div class="works-project__text">
           <div class="works-project__header">
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_conspectus" target="_blank">CONSPECTUS</a></h2>
@@ -225,6 +226,10 @@
             <li class="tag-mini">SCSS</li>
             <li class="tag-mini">HTML</li>
           </ul>
+        </div>
+        <div class="works-project__img">
+          <a href="../img/projects/conspectus.png"><img src="../img/projects/conspectus.png" alt="work"/></a>
+          <a href="https://github.com/swenlii/swenlii_conspectus" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
       <div class="works-project">
@@ -252,10 +257,6 @@
         </div>
       </div>
       <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/portfolio.png"><img src="../img/projects/portfolio.png" alt="work"/></a>
-          <a href="https://github.com/swenlii/swenlii_portfolio" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
-        </div>
         <div class="works-project__text">
           <div class="works-project__header">
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_portfolio" target="_blank">swenlii_portfolio</a></h2>
@@ -274,6 +275,10 @@
             <li class="tag-mini">Express</li>
             <li class="tag-mini">JSON</li>
           </ul>
+        </div>
+        <div class="works-project__img">
+          <a href="../img/projects/portfolio.png"><img src="../img/projects/portfolio.png" alt="work"/></a>
+          <a href="https://github.com/swenlii/swenlii_portfolio" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
       <div class="works-project">
@@ -308,8 +313,8 @@
   </div>
 </section>
 
-<section class="people">
-  <div class="center-block">
+<section class="people main-block">
+  <div class="main-block_background center-block">
     <h1 class="people__header title">What people says?</h1>
     <p class="people__header--description">I asked some of my former colleagues to say a few words about me. <br> These are not letters of recommendation, but they will be happy to give them if you ask!</p>
     <div>
@@ -538,6 +543,14 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<section class="banner">
+  <div class="center-block">
+    <h1 class="title">Not enough? Need <span>REAL</span> examples?</h1>
+    <p>During the work, a huge number of projects were developed. The code of some of them (with permission) was posted on my Github.</p>
+    <a class="btn" href="https://github.com/swenlii?tab=repositories"><img src="../img/icons/github-2.svg" alt=""/> Go to Github</a>
   </div>
 </section>
 

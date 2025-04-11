@@ -1,5 +1,5 @@
 .who-am-i {
-background-color: #E9E8E6;
+
 }
 
 .who-am-i h1 {
@@ -7,10 +7,12 @@ background-color: #E9E8E6;
   width: 100%;
   padding: 32px 64px;
   border: none;
+  color: white;
 }
 
 .who-am-i h1 span {
-  color: #998A75;
+  color: var(--accent-2);
+  text-shadow: 2px 2px 0 white;
 }
 
 .who-am-i__texts {
@@ -32,8 +34,6 @@ background-color: #E9E8E6;
 .who-am-i__text {
   padding: 24px;
   background: var(--accent);
-  color: white;
-  border: 1px solid #e9eaf1;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
   border-radius: 12px;
   flex: 1;
@@ -61,8 +61,8 @@ background-color: #E9E8E6;
   font-weight: 800;
   font-size: 52px;
   line-height: 56px;
-  color: #A6B097;
-  text-shadow: 3px 3px 0 var(--accent);
+  color: var(--accent-2);
+  text-shadow: 2px 2px 0 white;
   padding-right: 16px;
   width: max-content;
 }
@@ -135,10 +135,28 @@ background-color: #E9E8E6;
   .who-am-i__description {
     flex-direction: column;
   }
+
+  .who-am-i__text {
+    padding: 16px 8px 16px 8px;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .who-am-i__numbers {
     gap: 4px;
+  }
+
+  .who-am-i__numbers li {
+    gap: 8px;
+  }
+
+  .who-am-i__numbers-numb {
+    font-size: 32px;
+    line-height: 36px;
+    padding-right: 0;
+  }
+
+  .who-am-i__numbers-title {
+    font-size: 12px;
   }
 }

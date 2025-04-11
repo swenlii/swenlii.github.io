@@ -76,9 +76,40 @@ p:first-child {
 }
 
 .main-block {
+  padding: 32px;
+}
+
+.main-block_background {
+  background-color: var(--accent);
+  background-image: url("../img/leaves-1.jpg");
+  background-size: cover;
+  color: white;
+  border-radius: 24px;
+}
+
+.main-block_content {
   width: 100%;
   max-width: 1500px;
   margin: 0px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 168px);
+}
+
+.banner .center-block {
+  background-color: var(--accent);
+  color: white;
+  border-radius: 18px;
+}
+
+.banner .title {
+  color: white;
+}
+
+.banner .title span {
+  color: var(--accent-2);
 }
 
 /*-----------------ELEMENT'S CLASSES-----------------*/
@@ -266,13 +297,9 @@ p:first-child {
 .header {
   display: flex;
   justify-content: space-between;
-  background: var(--header-bg);
   color: var(--header-color);
-  padding: 12px;
-  position: sticky;
-  top: -1px;
+  padding: 32px;
   z-index: 999;
-  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
 }
 
 .header .btn {
@@ -334,6 +361,7 @@ p:first-child {
   align-items: center;
   justify-content: center;
   padding: 0 8px;
+  gap: 4px;
 }
 
 .header__menu-icons a {
@@ -446,6 +474,10 @@ footer {
     padding: 48px 32px 32px;
   }
 
+  .header {
+    padding: 16px;
+  }
+
   .footer-top {
     flex-direction: column;
   }
@@ -464,6 +496,14 @@ footer {
     margin-bottom: 32px;
     font-size: 36px;
     line-height: 40px;
+  }
+
+  .main-block {
+    padding: 16px;
+  }
+
+  .main-block_background {
+    border-radius: 12px;
   }
 
   .center-block {

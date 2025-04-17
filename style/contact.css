@@ -1,9 +1,15 @@
 .contact {
+ margin-top: 20px;
+}
 
+.contact .center-block {
+  background: white;
+  padding: 64px;
+  border-radius: 18px;
 }
 
 .contact__header span {
-  color: #998A75;
+  color: #515354;
 }
 
 .contact__block {
@@ -20,7 +26,7 @@
 
 .contact__qr {
   min-width: 166px;
-  background: var(--accent-2);
+  background: var(--heading);
   padding: 8px;
   border-radius: 18px;
   display: flex;
@@ -43,6 +49,7 @@
 .contact__actions {
   display: flex;
   gap: 12px;
+  margin-top: 24px;
 }
 
 .contact__right {
@@ -52,9 +59,7 @@
   align-items: flex-end;
   width: max-content;
   padding: 8px;
-  background: var(--accent);
-  border: 1px solid #e9eaf1;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  background:  rgb(243, 243, 246);
   border-radius: 18px;
 }
 
@@ -62,7 +67,7 @@
   text-align: right;
   font-size: 0.9em;
   max-width: 280px;
-  color: white;
+  margin: 12px 4px;
 }
 
 .contact__webcam {
@@ -74,8 +79,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-
-  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
 }
@@ -109,9 +112,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .contact .center-block {
+    padding: 32px;
+  }
   .contact__block {
     flex-direction: column;
-    align-items: flex-end;
   }
 
   .contact__left {
@@ -159,12 +164,12 @@
 
 @media screen and (max-width: 600px) {
   .contact__qr img {
-    max-width: 100%;
+    max-width: 150px;
     max-height: inherit;
   }
 
   .contact__qr {
-
+    width: max-content;
   }
 
   .contact__qr .social-links {
@@ -176,12 +181,17 @@
 
   .contact__left {
     flex-direction: column;
+    align-items: center;
     gap: 8px;
   }
 
   .contact__actions {
     align-items: center;
     flex-direction: column;
+  }
+
+  .contact__actions a {
+    width: 100%;
   }
 }
 

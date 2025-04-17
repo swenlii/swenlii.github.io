@@ -21,7 +21,7 @@
 <body>
 
 <div class="main-block">
-  <div class="main-block_background">
+  <div class="">
     <header class="header">
       <div class="header__logo">
         <div class="header__name">
@@ -29,14 +29,15 @@
           <div class="header__name">Dyakova.Irina</div>
         </div>
         <div class="header__menu-icons">
-          <a href="https://github.com/swenlii?tab=repositories"><img src="img/icons/github-1.svg" alt="work"/></a>
-          <a href="https://t.me/swenlii"><img src="img/icons/telegram-1.svg" alt="work"/></a>
+
         </div>
       </div>
 
       <div class="header__menu-links">
           <a href="index.html">Home</a>
           <a href="projects.html">My works</a>
+          <a href="https://github.com/swenlii?tab=repositories">Github</a>
+          <a href="https://t.me/swenlii">Telegram</a>
         </div>
 
       <div class="header__menu">
@@ -54,28 +55,36 @@
         <div class="who-am-i__texts">
           <div class="who-am-i__description">
             <div class="who-am-i__text">👋🏽 My name is Irina Dyakova! I have been working in web development for 6 years. I specialize in Vue.js and Java Script. I have a series of successfully launched projects for foreign companies, in total I participated in 15 projects. I believe that it is necessary to work without haste and with great attention to detail. This is a portfolio site about my skills and experience.</div>
-            <div class="who-am-i__right">
-              <ul class="who-am-i__numbers">
-                <li>
-                  <span class="who-am-i__numbers-numb">06 +</span>
-                  <span class="who-am-i__numbers-title">years I have been working as a developer</span>
-                </li>
-                <li>
-                  <span class="who-am-i__numbers-numb">14 +</span>
-                  <span class="who-am-i__numbers-title">projects in git profile are open for viewing</span>
-                </li>
-                <li>
-                  <span class="who-am-i__numbers-numb">10 +</span>
-                  <span class="who-am-i__numbers-title">companies I developed websites for</span>
-                </li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </section>
     </div>
   </div>
 </div>
+
+<section class="numbers main-block">
+  <div class="numbers__head">
+    <h2 class="subtitle">My career in numbers</h2>
+    <p>My name is Irina Dyakova! I have been working in web development for 6 years. I specialize in Vue.js and Java Script.</p>
+  </div>
+  <div class="numbers__right">
+    <ul class="numbers__numbers">
+      <li>
+        <span class="numbers__numbers-numb">06 +</span>
+        <span class="numbers__numbers-title">Years I have been working as a developer</span>
+      </li>
+      <li>
+        <span class="numbers__numbers-numb">14</span>
+        <span class="numbers__numbers-title">Projects in git profile are open for viewing</span>
+      </li>
+      <li>
+        <span class="numbers__numbers-numb">20 +</span>
+        <span class="numbers__numbers-title">Companies I developed websites for</span>
+      </li>
+    </ul>
+  </div>
+</section>
 
 <section class="about-me">
   <div class="center-block">
@@ -84,7 +93,7 @@
     </div>
 
     <div class="about-me__block">
-      <div>
+      <div class="about-me__text">
         <div class="quote">
           <p>If you are looking for a developer - you need a comfortable and reliable person who primarily focuses on the user.
             I work with attention to detail and always try to create the most reliable solution for any task.
@@ -114,24 +123,24 @@
     <h1 class="skills__header title">My <span>skills and abilities</span>. Everything you need to know. </h1>
     <div class="skills__block">
       <div class="skills__text">
-        <h2 class="subtitle"><img src="img/icons/question.svg" alt=""/>Why am I?</h2>
-        <ul>
+        <h2 class="subtitle"><img src="img/icons/question.svg" alt=""/>5 reasons why</h2>
+        <ol class="skills__why-me">
           <li>
-          I take every detail seriously and guarantee that the quality of my work will exceed your expectations.
+            <span>I take <strong>every detail</strong> seriously and guarantee that the quality of my work will exceed your expectations.</span>
           </li>
           <li>
-          I am hard-working and I enjoy the work I do.
+            <span>I am hard-working and I <b>enjoy the work</b> I do.</span>
           </li>
           <li>
-          I value other developers' time. That's why I try to write clear and intuitive code and always document complex things.
+            <span>I value other developers' time. That's why I try to write <b>clear and intuitive code</b> and always document complex things.</span>
           </li>
           <li>
-          I accept collective responsibility and believe in teamwork. I will be an asset to your development team.
+            <span>I accept <b>collective responsibility</b> and believe in teamwork. I will be an asset to your development team.</span>
           </li>
           <li>
-          I understand what the client wants and see the page as the users see it.
+            <span>I understand <strong>what the client wants</strong> and see the page as the users see it.</span>
           </li>
-        </ul>
+        </ol>
       </div>
       <div class="skills__list">
         <h2 class="subtitle"><img src="img/icons/code.svg" alt=""/>My stack</h2>
@@ -161,7 +170,7 @@
           <li class="tag">Photoshop</li>
           <li class="tag">Jira</li>
         </ul>
-        <p>I am always looking for something new and always ready to discover a new tool. But the most powerful tool in my arsenal is the ability to search in Google. After all, it is impossible to know everything by heart. Therefore, I try to remember what and why, and the answer to the question "how" can be found in just a few good Google queries!</p>
+        <p class="skills__stack-text">I am always looking for something new and always ready to discover a new tool. But the most powerful tool in my arsenal is the ability to search in Google. After all, it is impossible to know everything by heart. Therefore, I try to remember what and why, and the answer to the question "how" can be found in just a few good Google queries!</p>
       </div>
     </div>
   </div>
@@ -178,7 +187,7 @@
           Go to the «All Projects» page to see all my past projects</p>
       </div>
 
-      <a href="projects.html" class="btn-secondary"><img class="works__header-icon" src="img/icons/projects.svg" alt=""/>All projects</a>
+      <a href="projects.html" class="btn"><img class="works__header-icon" src="img/icons/projects.svg" alt=""/>All projects</a>
     </div>
 
     <div class="works__blocks">
@@ -313,52 +322,48 @@
   </div>
 </section>
 
-<section class="people main-block">
-  <div class="main-block_background center-block">
+<section class="people">
+  <div class="center-block">
     <h1 class="people__header title">What people says?</h1>
     <p class="people__header--description">I asked some of my former colleagues to say a few words about me. <br> These are not letters of recommendation, but they will be happy to give them if you ask!</p>
-    <div>
+    <div class="people__reviews">
       <div class="people__message">
-        <div class="people__text">
-          <div class="people__avatar"><div><img src="img/photo/user-1.jpg" alt=""/></div></div>
-          <div class="people__message-block">
-            <div class="people__user">
-              <h2 class="subtitle">Michail Korotych</h2>
-            </div>
-            <p>Irina is a very capable developer, she can write really beautiful code and she could be trusted to develop
-              even the largest and most complex task. As a TeamLead, I reviewed her merge requests and they always amazed me.
-              These were very detailed reports with the right train of thought, providing several proofs of the correctness of the solution.
-              During the time working with her, I saw how she grew as a professional and developed a vision of the product architecture,
-              she overcame her modesty and developed the ability to work with a large number of people in the team.</p>
+        <div class="people__avatar"><img src="img/photo/user-1.jpg" alt=""/></div>
+        <div class="people__user">
+          <div class="people__user_icon"></div>
+          <div>
+            <h2 class="subtitle">Michail Korotych</h2>
+            <p class="people__profession">Team Lead in Wee.ae</p>
           </div>
         </div>
+        <p>«Irina is a very capable developer, she can write really beautiful code. During the time working with her, I saw how she grew as a professional and developed a vision of the product architecture,
+          she overcame her modesty and developed the ability to work with a large number of people in the team.
+          »</p>
       </div>
       <div class="people__message">
-        <div class="people__text">
-          <div class="people__avatar"><div><img src="img/photo/user-3.jpg" alt=""/></div></div>
-          <div class="people__message-block">
-            <div class="people__user">
-              <h2 class="subtitle">Igor Z</h2>
-            </div>
-            <p>She was almost the best developer after me. Responsible and productive. I trusted Irina to do some small projects
-              completely alone and I knew that she would do everything right. She came as a junior, almost not knowing frontend
-              development, but in 2 years with my help she grew into a confident middle and learned a bunch of technologies.</p>
+        <div class="people__avatar"><div><img src="img/photo/user-3.jpg" alt=""/></div></div>
+        <div class="people__user">
+          <div class="people__user_icon"></div>
+          <div>
+            <h2 class="subtitle">Igor Z</h2>
+            <p class="people__profession">Team Lead in Blackwood.cloud</p>
           </div>
         </div>
+        <p>«She was almost the best developer after me. Responsible and productive. I trusted Irina to do some small projects
+          completely alone and I knew that she would do everything right. »</p>
       </div>
       <div class="people__message">
-        <div class="people__text">
-          <div class="people__avatar"><div><img src="img/photo/user-2.jpg" alt=""/></div></div>
-          <div class="people__message-block">
-            <div class="people__user">
-              <h2 class="subtitle">Pavel Chernykh</h2>
-            </div>
-            <p>For example, Irina's hard work amazed me. We studied together at the university and I know what I'm talking about.
-              After university, she created one small personal project just to show it at the interview! She passed the interview
-              at the company we were applying for together without any problems. We were both juniors, but I saw how quickly
-              she learned and tried to become better, while sometimes I was just lazy.</p>
+        <div class="people__avatar"><div><img src="img/photo/user-2.jpg" alt=""/></div></div>
+        <div class="people__user">
+          <div class="people__user_icon"></div>
+          <div>
+            <h2 class="subtitle">Pavel Chernykh</h2>
+            <p class="people__profession">Senior Backend Developer</p>
           </div>
         </div>
+        <p>«For example, Irina's hard work amazed me. We studied together at the university and I know what I'm talking about.
+          I reviewed her merge requests and they always amazed me.
+          These were very detailed reports with the right train of thought, providing several proofs of the correctness of the solution.»</p>
       </div>
     </div>
   </div>
@@ -546,15 +551,9 @@
   </div>
 </section>
 
-<section class="banner">
-  <div class="center-block">
-    <h1 class="title">Not enough? Need <span>REAL</span> examples?</h1>
-    <p>During the work, a huge number of projects were developed. The code of some of them (with permission) was posted on my Github.</p>
-    <a class="btn" href="https://github.com/swenlii?tab=repositories"><img src="../img/icons/github-2.svg" alt=""/> Go to Github</a>
-  </div>
-</section>
 
-<section class="contact">
+
+<section class="contact main-block">
   <div class="center-block">
     <h1 class="contact__header title">Ready to talk? <span>Contact me!</span></h1>
     <div class="contact__block">
@@ -594,10 +593,15 @@
 </section>
 
 <footer>
-  <div class="footer__attention"><strong>Privacy Notice.</strong> <span class="subtext">This site doesn't use invasive analytics practices. It won't add cookies to your device, doesn't collect personal information, and won't track you!</span></div>
+
   <div class="footer-top">
-    <div class="footer__title">
-      <strong class="subtitle">Get in touch!</strong>
+    <div class="footer__attention"><strong class="subtitle">Privacy Notice.</strong> <span>This site doesn't use invasive analytics practices. It won't add cookies to your device, doesn't collect personal information, and won't track you!</span></div>
+
+  </div>
+  <div class="footer-bottom">
+    <div>
+      <div class="footer__title">
+      <h2 class="subtitle">Get in touch!</h2>
       <p>I would love to hear from you!</p>
     </div>
 
@@ -626,19 +630,20 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div>@2025 Dyakova Irina</div>
-    <div class="social-links">
-      <a href="https://github.com/swenlii?tab=repositories"><img src="img/icons/github-2.svg" alt=""/></a>
-      <a href="https://t.me/swenlii"><img src="img/icons/telegram-2.svg" alt=""/></a>
-      <a href="https://vk.com/swenlii"><img src="img/icons/vk.svg" alt=""/></a>
-      <a href="https://wa.me/79042374704"><img src="img/icons/whatsapp-1.svg" alt=""/></a>
     </div>
-    <nav class="footer__sitemap">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-    </nav>
+    <div class="footer__info">
+      <div>@2025 Dyakova Irina</div>
+      <div class="social-links">
+        <a href="https://github.com/swenlii?tab=repositories"><img src="img/icons/github-2.svg" alt=""/></a>
+        <a href="https://t.me/swenlii"><img src="img/icons/telegram-2.svg" alt=""/></a>
+        <a href="https://vk.com/swenlii"><img src="img/icons/vk.svg" alt=""/></a>
+        <a href="https://wa.me/79042374704"><img src="img/icons/whatsapp-1.svg" alt=""/></a>
+      </div>
+      <nav class="footer__sitemap">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

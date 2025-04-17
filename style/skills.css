@@ -1,26 +1,23 @@
 .skills {
   padding: 16px;
-  background: linear-gradient(white, #E9E8E6);
 }
 
 .skills .center-block {
-  background-color: var(--accent);
-  color: rgba(255, 255, 255, 0.7);
   border-radius: 18px;
 }
 
 .skills__header {
-  color: white;
+  color: var(--heading);
   border-left-color: #E6ECEA;
 }
 
 .skills__header span {
-  color: #998A75;
+  color: #58595b;
 }
 
 .skills__block {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -33,6 +30,9 @@
   display: flex;
   align-items: center;
   color: white;
+  background: var(--heading);
+  padding: 16px 32px;
+  border-radius: 18px;
 }
 
 .skills__block .subtitle img {
@@ -41,19 +41,55 @@
   margin-right: 8px;
 }
 
-.skills__text {
-  padding: 16px;
-  background-color: rgba(230, 236, 234, 0.1);
-
-  border-radius: 12px;
+.skills__why-me {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+  padding: 0;
+  counter-reset: list;
 }
 
-.skills__text ul {
-  padding-left: 40px;
-  margin: 0;
+.skills__why-me li {
+  min-width: 250px;
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  background: white;
+  color: var(--heading);
+  padding: 16px;
+  border-radius: 16px;
+  counter-increment: list;
+  position: relative;
+}
+
+.skills__why-me li span{
+  position: relative;
+}
+
+.skills__why-me li::before {
+  content: counter(list);
+  background: var(--heading);
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  padding: 6px 9px;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 17px);
+  left: 15px;
+  color: rgb(247, 247, 250);
+}
+
+.skills__why-me li span {
+  padding-left: 40px;
+}
+
+.skills__stack-text {
+  background: var(--heading);
+  color: white;
+  padding: 32px;
+  border-radius: 18px;
 }
 
 .skills__list2 {
@@ -68,8 +104,10 @@
   flex-wrap: wrap;
   gap: 8px;
   list-style: none;
-  padding: 0;
   margin: 16px 0;
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
 }
 
 @media screen and (max-width: 768px) {

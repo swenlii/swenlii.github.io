@@ -1,28 +1,29 @@
 .who-am-i {
-
+  padding: 0 32px;
 }
 
 .who-am-i h1 {
-  margin: 0;
   width: 100%;
-  padding: 32px 64px;
+  margin: 32px 0;
   border: none;
-  color: white;
+  line-height: 1.5;
 }
 
 .who-am-i h1 span {
-  color: var(--accent-2);
-  text-shadow: 2px 2px 0 white;
+  background: #dbd2fa;
+  color: var(--heading);
+  border-radius: 12px;
+  padding: 0 16px;
 }
 
 .who-am-i__texts {
-  padding: 32px 64px;
+  margin: 32px 0;
   display: flex;
+  max-width: 720px;
 }
 
 .who-am-i__creator {
-  padding: 24px 64px;
-  margin: 0;
+  margin: 24px 0;
 }
 
 .who-am-i__description {
@@ -33,41 +34,56 @@
 
 .who-am-i__text {
   padding: 24px;
-  background: var(--accent);
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  background: white;
   border-radius: 12px;
   flex: 1;
 }
 
-.who-am-i__right {
-  flex: 1;
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 64px;
 }
 
-.who-am-i__numbers {
+.numbers__head {
+  max-width: 400px;
+}
+
+.numbers__head .subtitle {
+  color: var(--heading)
+}
+
+.numbers__right {
+
+}
+
+.numbers__numbers {
   list-style: none;
   display: flex;
   gap: 24px;
   padding: 0;
 }
 
-.who-am-i__numbers li {
+.numbers__numbers li {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.who-am-i__numbers-numb {
+
+.numbers__numbers-numb {
   position: relative;
-  font-weight: 800;
-  font-size: 52px;
-  line-height: 56px;
-  color: var(--accent-2);
-  text-shadow: 2px 2px 0 white;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  color: var(--heading);
   padding-right: 16px;
   width: max-content;
 }
 
-.who-am-i__numbers-numb img {
+
+
+.numbers__numbers-numb img {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -76,7 +92,7 @@
   filter: drop-shadow( 3px 3px 0px var(--accent));
 }
 
-.who-am-i__numbers-numb:after, .who-am-i__numbers-numb:before {
+.numbers__numbers-numb:after, .numbers__numbers-numb:before {
 
   width: 4px;
   height: 16px;
@@ -87,24 +103,14 @@
   top: 20px;
 }
 
-.who-am-i__numbers-numb:before {
+.numbers__numbers-numb:before {
   transform: rotate(90deg);
 }
 
-.who-am-i__numbers-title {
+.numbers__numbers-title {
   font-size: 15px;
   line-height: 18px;
-}
-
-.who-am-i__img {
-  width: 100vw;
-  height: auto;
-  overflow: hidden;
-}
-
-.who-am-i__img img {
-  width: 100%;
-  object-fit: contain;
+  max-width: 200px;
 }
 
 

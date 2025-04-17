@@ -523,7 +523,6 @@ footer {
     grid-column: 2;
     grid-row: 1;
     justify-content: right;
-    width: max-content;
   }
 
   .header__menu-links {
@@ -543,6 +542,7 @@ footer {
   .header__menu {
     display: flex;
     align-items: center;
+    min-width: max-content;
     gap: 4px;
   }
 
@@ -587,7 +587,7 @@ footer {
   }
 
   .footer__attention {
-    padding: 16px;
+    padding: 0;
   }
 }
 

@@ -114,4 +114,7 @@
   .skills__block {
     flex-direction: column;
   }
+  .skills .center-block {
+    padding: 0;
+  }
 }

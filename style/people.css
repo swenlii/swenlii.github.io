@@ -18,6 +18,7 @@
   display: flex;
   gap: 32px;
   margin-top: 32px;
+  flex-wrap: wrap;
 }
 
 .people__message {
@@ -31,6 +32,7 @@
   padding: 24px;
   position: relative;
   flex: 1;
+  min-width: 300px;
 }
 
 
@@ -86,6 +88,22 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .people__reviews {
+
+  }
+  .people__avatar {
+    position: relative;
+    bottom: 0px;
+    right: 0;
+  }
+
+  .people__user_icon {
+    display: none;
+  }
+
+  .people__user {
+
+  }
 
 }
 
@@ -95,31 +113,18 @@
   }
 
   .people__avatar {
-    align-items: inherit;
-  }
-
-  .people__avatar > div {
-    overflow: hidden;
-    min-width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 4px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .people__avatar > div {
-    overflow: hidden;
-    min-width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    margin-top: 2px;
+  .people__avatar {
+
   }
 
   .people__message-block {
-  margin-left: 12px;
-}
+    margin-left: 12px;
+  }
 }

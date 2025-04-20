@@ -1,10 +1,7 @@
 .about-me {
   padding: 32px;
-}
-
-.about-me .center-block {
-  background: white;
-  border-radius: 18px;
+  position: relative;
+  z-index: 2;
 }
 
 .about-me__header {
@@ -29,7 +26,6 @@
 }
 
 .about-me__text {
-  max-width: 900px;
   color: var(--heading)
 }
 
@@ -51,7 +47,7 @@
   font-family: 'Eskal', cursive;
   font-size: 40px;
   line-height: 44px;
-  color: #092970;
+  color: #4a369d;
   opacity: 0.9;
   text-align: right;
   display: block;
@@ -142,15 +138,21 @@
   object-fit: cover;
 }
 
+@media screen and (min-width: 1600px) {
+  .about-me__img {
+    height: 660px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .about-me__img {
     min-width: 50%;
     height: max-content;
-    box-shadow: var(--accent) 16px 16px 0px 0px;
+    display: flex;
   }
 
   .about-me__img img {
-    margin-bottom: -10px;
+    flex-shrink: 0;
   }
 
   .about-me__block {
@@ -184,39 +186,5 @@
     min-height: 100%;
     width: inherit;
     margin-bottom: -10px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .about-me__header .btn-secondary {
-    display: inline-flex;
-    width: max-content;
-    justify-content: center;
-    align-items: center;
-    outline: 0;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
-    height: inherit;
-    padding: 0;
-    border-radius: 0;
-    transition: all .2s ease-out;
-    gap: 4px;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  .about-me__header .btn-secondary img {
-    width: 15px;
-    height: 15px;
-  }
-
-  .about-me__header .desktop {
-    display: none;
-  }
-
-  .about-me__header .mobile {
-    display: inline;
   }
 }

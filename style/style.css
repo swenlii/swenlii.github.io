@@ -1,15 +1,20 @@
 :root {
   --accent: #12130f;
   --accent-2: #A6B097;
-  --bg:  #e6e6e9;
+  --bg: #efeff1;
   --heading: #12130f;
-  --text: rgba(18, 19, 15, 0.7);
+  --text: rgba(18, 19, 15, 0.9);
   --border-color: var(--heading);
 }
 
 @font-face {
     font-family: 'Eskal';
     src: url('../public/signature.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TaylorSans';
+    src: url('../public/TaylorSans.ttf') format('truetype');
 }
 
 /*-----------------MAIN STYLES-----------------*/
@@ -23,13 +28,14 @@ html,
 body {
   background: var(--bg);
   color: var(--text);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 24px;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
 }
 
 a {
@@ -39,6 +45,7 @@ a {
 
 h1, h2, h3, h4 {
   margin: 0;
+
 }
 
 p {
@@ -47,6 +54,15 @@ p {
 
 p:first-child {
   margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+strong, b {
+  font-weight: 800;
 }
 
 /*-----------------MAIN CLASSES-----------------*/
@@ -60,6 +76,7 @@ p:first-child {
 
 .main-block {
   padding: 0 32px;
+  position: relative;
 }
 
 .main-block_background {
@@ -72,13 +89,11 @@ p:first-child {
 
 .main-block_content {
   width: 100%;
-  max-width: 1500px;
   margin: 0px auto 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 168px);
+  justify-content: left;
+  min-height: calc(100vh - 104px);
 }
 
 .banner .center-block {
@@ -91,8 +106,17 @@ p:first-child {
   color: white;
 }
 
-.banner .title span {
-  color: var(--accent-2);
+.individ {
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+
+}
+
+.individ-big {
+  background: white;
+  border-radius: 18px;
+  padding: 64px;
 }
 
 /*-----------------ELEMENT'S CLASSES-----------------*/
@@ -180,8 +204,14 @@ p:first-child {
   font-weight: 400;
   height: 32px;
   color: black;
-  background: rgb(239, 239, 243);
+  background: white;
   cursor: default;
+}
+
+.tag img {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
 }
 
 .tag-mini {
@@ -204,28 +234,39 @@ p:first-child {
   margin-bottom: 32px;
   font-size: 52px;
   line-height: 56px;
-  font-family: 'Nunito Sans', sans-serif;
   font-weight: 900;
   letter-spacing: 0.02em;
   color: var(--heading);
 }
 
-.title-2 {
-  margin: 24px 0;
-  font-size: 32px;
-  line-height: 40px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.02em;
+.title .span {
+  background: #dbd2fa;
   color: var(--heading);
-  border-left: 5px solid var(--accent-2);
-  padding-left: 16px;
+  border-radius: 12px;
+
+}
+
+.title span {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%,
+      rgb(106, 64, 248) 65%);
+    box-shadow: inset 0 -0.5em 0 rgb(188, 170, 250);
+  color: var(--heading);
+  border-radius: 12px;
+
 }
 
 .subtitle {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 900;
+  color: var(--heading);
+}
+
+.subtitle-h3 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 900;
+  color: var(--heading);
 }
 
 .subtitle-h5 {
@@ -237,24 +278,23 @@ p:first-child {
 
 .subtext {
   font-weight: 700;
-  letter-spacing: 0.02em;
   font-size: 12px;
   line-height: 14px;
-  font-style: italic;
 }
 
 .social-links {
   display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
   gap: 8px;
   max-width: max-content;
 }
 
 .social-links a {
   background: #fff;
-  border-radius: 4px;
-  padding: 4px;
+  border-radius: 50%;
+  padding: 11px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,13 +309,32 @@ p:first-child {
   height: 18px;
 }
 
+.goto-up {
+  position: fixed;
+  bottom: 4px;
+  right: 4px;
+  height: auto;
+  padding: 16px;
+  border-radius: 50%;
+  border: none;
+  background: #8570de;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.goto-up img {
+  width: 30px;
+  height: 30px;
+}
+
 /*-----------------MAIN BLOCKS-----------------*/
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 32px;
+  padding: 32px 64px;
   z-index: 999;
+  position: relative;
 }
 
 .header .btn {
@@ -358,8 +417,8 @@ footer {
   justify-content: center;
   padding: 32px 64px;
   gap: 32px;
-  background: var(--accent);
-  color: #E9E8E6;
+  background: white;
+  color: black;
   border-radius: 18px;
   flex: 1;
   max-width: 350px;
@@ -389,7 +448,7 @@ footer {
 }
 
 .footer__contact-icon {
-  background: rgb(243, 243, 246);
+  background: #8570de;
   border-radius: 50%;
   padding: 8px;
   display: flex;
@@ -407,16 +466,13 @@ footer {
 }
 
 .footer__contact-dd {
-  color: var(--heading);
+  color: #4a369d;
 }
 
 .footer-bottom {
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 64px;
-  background: white;
-  border-radius: 18px;
 }
 
 .footer__sitemap {
@@ -429,8 +485,31 @@ footer {
 }
 
 .footer__attention {
-  color: white;
   border-radius: 18px 18px 0 0;
+}
+
+.footer__attention .subtitle-h3 {
+  color: #4a369d;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__attention .subtitle-h3 span {
+  background: #8570de;
+  border-radius: 50%;
+  min-width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.footer__attention .subtitle-h3 img {
+   width: 20px;
+
+
 }
 
 .footer__info {
@@ -456,9 +535,14 @@ footer {
   }
 
   .subtitle {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+
+  .subtitle-h3 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 8px;
   }
 
   .center-block {
@@ -494,8 +578,13 @@ footer {
     line-height: 40px;
   }
 
+  .subtitle {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
   .main-block {
-    padding: 16px;
+    padding: 8px;
   }
 
   .main-block_background {
@@ -589,6 +678,10 @@ footer {
   .footer__attention {
     padding: 0;
   }
+
+  .footer__attention .subtitle-h3 {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -612,6 +705,11 @@ footer {
     margin-bottom: 24px;
     font-size: 30px;
     line-height: 36px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    line-height: 28px;
   }
 
   .center-block {

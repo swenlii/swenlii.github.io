@@ -1,84 +1,19 @@
-.experience {
-
-}
-
-.experience__header span{
-  color: #484849;
-}
-
-.experience__timeline {
-
-}
-
-.experience__timeline-point {
-  display: flex;
-  gap: 32px;
-}
-
 .experience__date {
-  width: calc(30% - 32px);
   text-align: right;
-  padding: 4px 32px 16px 0;
-  margin: 0;
-  border-right: 2px solid var(--border-color);
-  position: relative;
-  top: 4px;
+  margin-bottom: 16px
 }
 
-.experience__date::after {
-  content:url("data:image/svg+xml,<svg width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><circle cx='10' cy='10' r='8' fill='rgb(27,27,27)'/></svg>");
-  position: absolute;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 2px solid var(--border-color);
-  width: 20px;
-  height: 20px;
-  right: -13px;
-  top: 0px;
+.experience__responsibility {
+  padding-left: 20px;
+  margin: 16px 0;
 }
 
-.experience__date p {
-  background-size: cover;
-  border-radius: 12px;
-  width: 100%;
-  height: 100%;
+.experience__responsibility a {
+  color: #8570de;
 }
 
-.experience__date .subtitle {
-  color: var(--heading);
-}
-
-.experience__date .text {
-  font-style: italic;
-}
-
-.experience__timeline-point:last-child {
-  margin-bottom: 64px;
-}
-
-.experience__timeline-point:last-child .experience__work {
-  margin-bottom: 0px;
-}
-
-.experience__timeline-point:last-child .experience__stack {
-  margin-bottom: 0;
-}
-
-.experience__timeline-point:last-child .experience__date::before {
-  content: "";
-  width: 1px;
-  height: 48px;
-  border-right: 2px dashed var(--border-color);
-  position: absolute;
-  right: -2px;
-  bottom: -48px;
-}
-
-.experience__work {
-  width: calc(70% - 32px);
-  padding-top: 8px;
-  margin-bottom: 48px;
-
+.experience__responsibility a:hover {
+  text-decoration: underline;
 }
 
 .experience__position-icon {
@@ -93,10 +28,21 @@
   color: var(--heading);
 }
 
+.experience__company {
+  display: block;
+  margin-bottom: 16px;
+
+}
+
 .experience__company a {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  color: #8570de;
+}
+
+.experience__company a:hover {
+  text-decoration: underline;
 }
 
 .experience__company img {
@@ -113,65 +59,200 @@
   flex-wrap: wrap;
 }
 
-.experience__stack li {
-
-}
-
 @media screen and (max-width: 1024px) {
 
 }
 
 @media screen and (max-width: 768px) {
-  .experience__date {
-    width: 100%;
-    text-align: center;
+
+  .experience-list_work {
+    padding: 16px;
+  }
+
+  .timeline {
+    padding: 0 !important;
+    margin-bottom: 16px;
+  }
+
+  .experience-list_work {
     padding: 0;
-    margin: 0;
-    margin-top: 0px;
-    border: none;
-    position: relative;
-    top: 4px;
   }
 
   .experience__work {
-    width: 100%;
     padding: 16px;
-    background-color: white;
-    border: 1px solid #e9eaf1;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
-  border-radius: 12px;
-    margin-top: 0;
-    margin-bottom: 32px;
   }
 
-  .experience__timeline-point {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    border-left: 2px solid var(--border-color);
-    padding-left: 16px;
-  }
-
-  .experience__date::after {
-    right: inherit;
-    left: -29px;
-    top: 0px;
-  }
-
-  .experience__date p {
-    text-align: left;
-    border: none;
-    padding: 16px;
-    border-radius: 12px 12px 0 0;
-  }
-
-  .experience__timeline-point:last-child .experience__date::before {
-    content: none;
-
-  }
 }
 
 @media screen and (max-width: 320px) {
 
 }
 
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.timeline_events {
+  width: 100%;
+  position: relative;
+}
+
+.timeline_events-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  list-style: none;
+  padding: 0 0 37px 0;
+  margin: 0;
+}
+
+.timeline_events-list::before {
+  content: "";
+  width: calc(100% - 40px);
+  height: 7px;
+  background: #d6d7dc;
+  position: absolute;
+  z-index: 0;
+  bottom: 14px;
+  margin: 0 24px;
+
+}
+
+.filling-line {
+  display: block;
+  width: calc(25% - 10px);
+  height: 7px;
+  background: linear-gradient(to right, #dbd2fa 75%, #8570de);
+  position: absolute;
+  z-index: 0;
+  bottom: 14px;
+  margin: 0 24px;
+  transition: 0.4s width ease;
+}
+
+.timeline_events-list li{
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+}
+
+.timeline_events-list li .marker {
+  content: "✓";
+  font-size: 14px;
+  width: 28px;
+  height: 28px;
+  background-color: #dbd2fa;
+  border-radius: 18px;
+  position: absolute;
+  top: 34px;
+  left: calc(50% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: 0.4s all ease;
+}
+
+.timeline_events-list li .marker img {
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  transition: 0.4s all ease;
+}
+
+.timeline_events-list li.selected ~ li .marker {
+  content: "";
+  background-color: #d6d7dc;
+}
+
+.timeline_events-list li.selected ~ li .marker img {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.timeline_events-list li.selected {
+  cursor: inherit;
+}
+
+.timeline_events-list li.selected .marker {
+  content: "•";
+  background-color: #8570de;
+}
+
+.timeline_events-list li.selected .marker img {
+  filter: grayscale(100%) brightness(0.1) invert(100%);
+}
+
+.timeline_content {
+
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.experience-list .experience-list_work {
+  transform: translateX(-100%);
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+
+.experience-list .experience-list_work.selected {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.experience-list .experience-list_work.enter-right,
+.experience-list .experience-list_work.leave-right {
+  animation-name: tl-enter-right;
+}
+.experience-list .experience-list_work.enter-left,
+.experience-list .experience-list_work.leave-left {
+  animation-name: tl-enter-left;
+}
+.experience-list .experience-list_work.leave-right,
+.experience-list .experience-list_work.leave-left {
+  animation-direction: reverse;
+}
+
+@keyframes tl-enter-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes tl-enter-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

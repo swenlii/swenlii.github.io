@@ -1,120 +1,168 @@
 .skills {
-  padding: 16px;
-}
-
-.skills .center-block {
-  border-radius: 18px;
-}
-
-.skills__header {
-  color: var(--heading);
-  border-left-color: #E6ECEA;
-}
-
-.skills__header span {
-  color: #58595b;
-}
-
-.skills__block {
-  display: flex;
-  gap: 16px;
-  align-items: stretch;
-}
-
-.skills__block > * {
-  flex: 1;
-  margin: 0;
-}
-
-.skills__block .subtitle {
-  display: flex;
-  align-items: center;
-  color: white;
-  background: var(--heading);
-  padding: 16px 32px;
-  border-radius: 18px;
-}
-
-.skills__block .subtitle img {
-  width: 26px;
-  height: 26px;
-  margin-right: 8px;
-}
-
-.skills__why-me {
-  display: flex;
-  gap: 16px;
-  margin: 16px 0;
-  flex-wrap: wrap;
-  padding: 0;
-  counter-reset: list;
-}
-
-.skills__why-me li {
-  min-width: 250px;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  background: white;
-  color: var(--heading);
-  padding: 16px;
-  border-radius: 16px;
-  counter-increment: list;
   position: relative;
+  z-index: 1;
 }
 
-.skills__why-me li span{
-  position: relative;
-}
-
-.skills__why-me li::before {
-  content: counter(list);
-  background: var(--heading);
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 700;
-  padding: 6px 9px;
-  border-radius: 50%;
+.skills:before {
+  content: "";
+  background: linear-gradient(132deg, #00abff 0.00%, #7eecdb 100.00%);
+  width: 34%;
+  padding-top: 34%;
+  left: 29%;
+  top: 94%;
+  transform: translateX(-50%) translateY(-50%);
   position: absolute;
-  top: calc(50% - 17px);
-  left: 15px;
-  color: rgb(247, 247, 250);
+  border-radius: 100%;
+  height: 0;
+  filter: blur(240vw);
+  opacity: 0.4;
+  z-index: -1;
 }
 
-.skills__why-me li span {
-  padding-left: 40px;
-}
-
-.skills__stack-text {
-  background: var(--heading);
-  color: white;
-  padding: 32px;
-  border-radius: 18px;
-}
-
-.skills__list2 {
-  padding: 24px;
-  border: 1px solid #e9eaf1;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
-  border-radius: 12px;
-}
-
-.skills__list ul {
+.skills__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
   list-style: none;
-  margin: 16px 0;
-  background: white;
-  padding: 32px;
-  border-radius: 18px;
 }
+
+.why-me {
+  position: relative;
+  z-index: 2;
+}
+
+.why-me:before {
+  content: "";
+  background: linear-gradient(132deg, #f03a3a 0.00%, #c74ad3 100.00%);
+  width: 34%;
+  padding-top: 34%;
+  right: 0;
+  top: 95%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  border-radius: 100%;
+  height: 0;
+  filter: blur(240vw);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.why-me__block {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.why-me__block > div:first-child {
+  max-width: 1000px;
+}
+
+.why-me__img {
+  height: 660px;
+  flex-shrink: 0;
+  background: #e6e6e9;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.why-me__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why-me__text {
+  margin-bottom: 32px;
+}
+
+.why-me__list {
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.why-me__list li {
+  display: flex;
+
+  flex-direction: column;
+  color: var(--heading);
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.why-me__list li span {
+  display: block;
+}
+
+.why-me__reason-title {
+  font-weight: 800;
+  color: #4a369d;
+}
+
+.why-me__reason {
+  max-width: 720px;
+
+}
+
+.why-me__list li::before {
+  content: "✓";
+  background: #8570de;
+  color: white;
+  font-size: 14px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.why-me__list li span {
+  padding-left: 45px;
+}
+
+@media screen and (max-width: 1599px) {
+  .why-me__img {
+    height: 570px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .why-me__img {
+    height: auto;
+    width: 300px;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .skills__block {
     flex-direction: column;
   }
-  .skills .center-block {
-    padding: 0;
+
+  .why-me__block {
+    flex-direction: column;
+  }
+
+  .why-me__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .why-me::before {
+    width: 78%;
+    padding-top: 78%;
+  }
+
+  .skills::before {
+    width: 78%;
+    padding-top: 78%;
   }
 }

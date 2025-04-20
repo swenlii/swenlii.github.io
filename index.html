@@ -7,6 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="public/favicon.ico">
   <link rel="manifest" href="public/favicons/site.webmanifest">
   <link rel="stylesheet" href="style/style.css">
@@ -49,16 +53,28 @@
     </header>
 
     <div class="main-block_content">
+      <div class="background-round"></div>
+      <div class="background-round"></div>
+      <div class="background-round"></div>
       <section class="who-am-i">
         <div class="who-am-i__creator subtext">Portfolio website by Dyakova Irina</div>
-        <h1 class="title">A developer who creates websites with passion and enthusiasm. <span>Clean and convenient code!</span></h1>
+        <h1 class="title">A developer who creates websites with <span>passion and enthusiasm.</span></h1>
         <div class="who-am-i__texts">
           <div class="who-am-i__description">
-            <div class="who-am-i__text">👋🏽 My name is Irina Dyakova! I have been working in web development for 6 years. I specialize in Vue.js and Java Script. I have a series of successfully launched projects for foreign companies, in total I participated in 15 projects. I believe that it is necessary to work without haste and with great attention to detail. This is a portfolio site about my skills and experience.</div>
-
+            <div class="who-am-i__text">Developer with 6 years of experience in web development. Proficient in the Vue framework,
+              possesses a deep understanding of both backend and frontend development, enabling the creation of exceptional websites.
+              Proven track record of successfully delivering projects in team and individual settings, including international ventures.
+              Driven to work diligently and continuously expand knowledge of emerging technologies.</div>
+            <div class="who-am-i__actions">
+              <a href="mailto:ira.swenlii@gmail.com" class="btn-tertiary"><img src="img/icons/send.svg" alt=""/>Send mail</a>
+              <a href="https://t.me/swenlii" class="btn">Chat in Telegram</a>
+            </div>
           </div>
         </div>
       </section>
+      <div class="who-am-i__img">
+        <img src="img/photo/code.png" alt="example of my code"/>
+      </div>
     </div>
   </div>
 </div>
@@ -66,34 +82,32 @@
 <section class="numbers main-block">
   <div class="numbers__head">
     <h2 class="subtitle">My career in numbers</h2>
-    <p>My name is Irina Dyakova! I have been working in web development for 6 years. I specialize in Vue.js and Java Script.</p>
+    <p>In our profession, numbers play an important role. Here are some of my main numbers.</p>
   </div>
   <div class="numbers__right">
     <ul class="numbers__numbers">
       <li>
         <span class="numbers__numbers-numb">06 +</span>
-        <span class="numbers__numbers-title">Years I have been working as a developer</span>
+        <span class="numbers__numbers-title subtext">Years I have been working as a developer</span>
       </li>
       <li>
         <span class="numbers__numbers-numb">14</span>
-        <span class="numbers__numbers-title">Projects in git profile are open for viewing</span>
+        <span class="numbers__numbers-title subtext">Projects in git profile are open for viewing</span>
       </li>
       <li>
         <span class="numbers__numbers-numb">20 +</span>
-        <span class="numbers__numbers-title">Companies I developed websites for</span>
+        <span class="numbers__numbers-title subtext">Companies I developed websites for</span>
       </li>
     </ul>
   </div>
 </section>
 
 <section class="about-me">
-  <div class="center-block">
-    <div class="about-me__header">
-      <h1 class="title">About me</h1>
-    </div>
-
+  <div class="center-block individ-big">
     <div class="about-me__block">
+      <div class="about-me__img"><img src="img/photo/portrait.png" alt="it's me"/></div>
       <div class="about-me__text">
+        <h1 class="title">About me</h1>
         <div class="quote">
           <p>If you are looking for a developer - you need a comfortable and reliable person who primarily focuses on the user.
             I work with attention to detail and always try to create the most reliable solution for any task.
@@ -113,70 +127,92 @@
           I love that we work together to create great websites for people while remaining in the shadows of the company. 👥</p>
         <address class="about-me__signature" rel="author"><em>Дьякова И. В.</em></address>
       </div>
-      <div class="about-me__img"><img src="img/photo/portrait.png" alt="it's me"/></div>
+
     </div>
   </div>
 </section>
 
-<section class="skills">
+<section class="skills main-block">
   <div class="center-block">
-    <h1 class="skills__header title">My <span>skills and abilities</span>. Everything you need to know. </h1>
-    <div class="skills__block">
-      <div class="skills__text">
-        <h2 class="subtitle"><img src="img/icons/question.svg" alt=""/>5 reasons why</h2>
-        <ol class="skills__why-me">
-          <li>
-            <span>I take <strong>every detail</strong> seriously and guarantee that the quality of my work will exceed your expectations.</span>
-          </li>
-          <li>
-            <span>I am hard-working and I <b>enjoy the work</b> I do.</span>
-          </li>
-          <li>
-            <span>I value other developers' time. That's why I try to write <b>clear and intuitive code</b> and always document complex things.</span>
-          </li>
-          <li>
-            <span>I accept <b>collective responsibility</b> and believe in teamwork. I will be an asset to your development team.</span>
-          </li>
-          <li>
-            <span>I understand <strong>what the client wants</strong> and see the page as the users see it.</span>
-          </li>
-        </ol>
-      </div>
-      <div class="skills__list">
-        <h2 class="subtitle"><img src="img/icons/code.svg" alt=""/>My stack</h2>
-        <ul>
-          <li class="tag">Nuxt.js</li>
-          <li class="tag">Vue.js</li>
-          <li class="tag">HTML</li>
-          <li class="tag">CSS</li>
-          <li class="tag">JS</li>
-          <li class="tag">vuex</li>
-          <li class="tag">vue-router</li>
-          <li class="tag">Vue CLI</li>
-          <li class="tag">Unit Testing</li>
-          <li class="tag">Jest</li>
-          <li class="tag">Vitest</li>
-          <li class="tag">SCSS/SASS</li>
-          <li class="tag">Stylus</li>
-          <li class="tag">BEM</li>
-          <li class="tag">Git</li>
-          <li class="tag">npm</li>
-          <li class="tag">Node.js</li>
-          <li class="tag">Express.js</li>
-          <li class="tag">MySQL</li>
-          <li class="tag">ejs</li>
-          <li class="tag">Webpack</li>
-          <li class="tag">Figma</li>
-          <li class="tag">Photoshop</li>
-          <li class="tag">Jira</li>
-        </ul>
-        <p class="skills__stack-text">I am always looking for something new and always ready to discover a new tool. But the most powerful tool in my arsenal is the ability to search in Google. After all, it is impossible to know everything by heart. Therefore, I try to remember what and why, and the answer to the question "how" can be found in just a few good Google queries!</p>
-      </div>
-    </div>
+    <h1 class="title">My stack</h1>
+    <ul class="skills__list">
+      <li class="tag"><img src="img/icons/nuxt.svg" alt=""/>Nuxt.js</li>
+      <li class="tag"><img src="img/icons/vue.svg" alt=""/>Vue.js</li>
+      <li class="tag"><img src="img/icons/html5.svg" alt=""/>HTML</li>
+      <li class="tag"><img src="img/icons/css.svg" alt=""/>CSS</li>
+      <li class="tag"><img src="img/icons/javascript.svg" alt=""/>JS</li>
+      <li class="tag">ES6</li>
+      <li class="tag">vuex</li>
+      <li class="tag">Pinia</li>
+      <li class="tag">vue-router</li>
+      <li class="tag">Vue CLI</li>
+      <li class="tag">SOLID</li>
+      <li class="tag">Unit Testing</li>
+      <li class="tag"><img src="img/icons/jest.svg" alt=""/>Jest</li>
+      <li class="tag"><img src="img/icons/vitest.svg" alt=""/>Vitest</li>
+      <li class="tag"><img src="img/icons/sass.svg" alt=""/>SCSS/SASS</li>
+      <li class="tag">Stylus</li>
+      <li class="tag"><img src="img/icons/bem.svg" alt=""/>BEM</li>
+      <li class="tag">SEO</li>
+      <li class="tag">SSR</li>
+      <li class="tag">SPA</li>
+      <li class="tag"><img src="img/icons/axios.svg" alt=""/>Axios</li>
+      <li class="tag"><img src="img/icons/git.svg" alt=""/>Git</li>
+      <li class="tag"><img src="img/icons/npm.svg" alt=""/>npm</li>
+      <li class="tag"><img src="img/icons/nodedotjs.svg" alt=""/>Node.js</li>
+      <li class="tag">Express.js</li>
+      <li class="tag"><img src="img/icons/swagger.svg" alt=""/>REST API</li>
+      <li class="tag"><img src="img/icons/mysql.svg" alt=""/>MySQL</li>
+      <li class="tag">ejs</li>
+      <li class="tag"><img src="img/icons/webpack.svg" alt=""/>Webpack</li>
+      <li class="tag"><img src="img/icons/vite.svg" alt=""/>Vite</li>
+      <li class="tag"><img src="img/icons/figma.svg" alt=""/>Figma</li>
+      <li class="tag">Photoshop</li>
+      <li class="tag"><img src="img/icons/jira.svg" alt=""/>Jira</li>
+      <li class="tag"><img src="img/icons/webstorm.svg" alt=""/>Webstorm</li>
+    </ul>
   </div>
 </section>
 
-<section class="works">
+<section class="why-me main-block">
+  <div class="center-block">
+    <h1 class=" title">5 reasons why</h1>
+    <div class="why-me__block">
+      <div>
+        <p class="why-me__text">In web development, soft skills are more important than the technology stack.
+          Of course, everyone is familiar with the standard qualities, such as punctuality and communication skills.
+          But I firmly believe that my personal qualities have an exceptionally positive effect on my work.
+          Here are a few reasons why I am ideally suited for the role of a web developer.</p>
+        <ul class="why-me__list">
+          <li>
+            <span class="why-me__reason-title">Accuracy</span>
+            <span class="why-me__reason">I take <strong>every detail</strong> seriously and guarantee that the quality of my work will exceed your expectations.</span>
+          </li>
+          <li>
+            <span class="why-me__reason-title">Hard work</span>
+            <span class="why-me__reason">I am hard-working and I <b>enjoy the work</b> I do.</span>
+          </li>
+          <li>
+            <span class="why-me__reason-title">Altruism</span>
+            <span class="why-me__reason">I value other developers' time. That's why I try to write <b>clear and intuitive code</b> and always document complex things.</span>
+          </li>
+          <li>
+            <span class="why-me__reason-title">Team player</span>
+            <span class="why-me__reason">I accept <b>collective responsibility</b> and believe in teamwork. I will be an asset to your development team.</span>
+          </li>
+          <li>
+            <span class="why-me__reason-title">Thoughtfulness</span>
+            <span class="why-me__reason">I understand <strong>what the client wants</strong> and see the page as the users see it.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="why-me__img"><img src="img/photo/why-me-1.jpg" alt="illustration"/></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="works main-block">
   <div class="center-block">
 
     <div class="works-head">
@@ -194,16 +230,19 @@
       <div class="works-project">
         <div class="works-project__img">
           <a href="../img/projects/marketplace.png"><img src="../img/projects/marketplace.png" alt="work"/></a>
+          <span class="works-project__name subtext">Marketplace</span>
           <a href="https://github.com/swenlii/swenlii_marketplace" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
         </div>
-        <div class="works-project__text">
+        <div class="works-project__text individ">
+          <div>
           <div class="works-project__header">
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_marketplace" target="_blank">Marketplace</a></h2>
-            <p class="works-project__year subtext">(2025)</p>
           </div>
+            <p class="works-project__year"><strong>Year of developing:</strong> 2025</p>
           <p>A modern functional website created on the basis of a public API that provides data for the marketplace.
             On the site, you can view products sorted by categories, add a product you like to the cart, share it or add
             it to favorites. The site is implemented on Nuxt.js v3 using the Stylus preprocessor.</p>
+          </div>
           <ul class="works-project__stack">
             <li class="tag-mini">Nuxt.js</li>
             <li class="tag-mini">Vue.js</li>
@@ -217,15 +256,16 @@
       </div>
       <div class="works-project">
 
-        <div class="works-project__text">
+        <div class="works-project__text individ">
+          <div>
           <div class="works-project__header">
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_conspectus" target="_blank">CONSPECTUS</a></h2>
-            <p class="works-project__year subtext">(2022)</p>
           </div>
-
+          <p class="works-project__year"><strong>Year of developing:</strong> 2022</p>
           <p>A blog site built with Nuxt.js v2, JavaScript, and SCSS. The backend is built with axios. I used a
             PostgreeSQL database to store data. The site includes not only static pages with various information,
             but also the ability to add an article via the admin panel.</p>
+            </div>
           <ul class="works-project__stack">
             <li class="tag-mini">Nuxt.js</li>
             <li class="tag-mini">Vue.js</li>
@@ -238,21 +278,25 @@
         </div>
         <div class="works-project__img">
           <a href="../img/projects/conspectus.png"><img src="../img/projects/conspectus.png" alt="work"/></a>
+          <span class="works-project__name  subtext">CONSPECTUS</span>
           <a href="https://github.com/swenlii/swenlii_conspectus" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
       <div class="works-project">
         <div class="works-project__img">
           <a href="../img/projects/med-revolution.png"><img src="../img/projects/med-revolution.png" alt="work"/></a>
+          <span class="works-project__name  subtext">MED Revolution</span>
           <a href="https://github.com/swenlii/swenlii_med_consultation" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
         </div>
-        <div class="works-project__text">
+        <div class="works-project__text individ">
+          <div>
           <div class="works-project__header">
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_med_consultation" target="_blank">MED Revolution</a></h2>
-            <p class="works-project__year subtext">(2021)</p>
           </div>
+            <p class="works-project__year"><strong>Year of developing:</strong> 2021</p>
           <p>A small application, the idea of which is to have an online consultation with a specialist (doctor or physician).
             The pages are implemented using Vue.js and pure CSS, the backend is on node.js and express, and payment can be made through coinbase.</p>
+            </div>
           <ul class="works-project__stack">
             <li class="tag-mini">Vue.js</li>
             <li class="tag-mini">ejs</li>
@@ -266,15 +310,17 @@
         </div>
       </div>
       <div class="works-project">
-        <div class="works-project__text">
+        <div class="works-project__text individ">
+          <div>
           <div class="works-project__header">
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_portfolio" target="_blank">swenlii_portfolio</a></h2>
-            <p class="works-project__year subtext">(2023)</p>
           </div>
+            <p class="works-project__year"><strong>Year of developing:</strong> 2023</p>
           <p>A small personal portfolio site that also functions as a resume. Full and detailed information about me,
             including descriptions of my projects, a detailed description of my work experience and skills.
             The site is written in html using ejs. The server is on node.js & express. Data for the site is stored in
             JSON and is pulled onto the page using ejs.</p>
+            </div>
           <ul class="works-project__stack">
             <li class="tag-mini">HTML</li>
             <li class="tag-mini">CSS</li>
@@ -287,23 +333,27 @@
         </div>
         <div class="works-project__img">
           <a href="../img/projects/portfolio.png"><img src="../img/projects/portfolio.png" alt="work"/></a>
+          <span class="works-project__name  subtext">swenlii_portfolio</span>
           <a href="https://github.com/swenlii/swenlii_portfolio" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
         </div>
       </div>
       <div class="works-project">
         <div class="works-project__img">
           <a href="../img/projects/delivery.png"><img src="../img/projects/delivery.png" alt="work"/></a>
+          <span class="works-project__name  subtext">Swenlii's delivery</span>
           <a href="https://github.com/swenlii/swenlii-delivery" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
         </div>
-        <div class="works-project__text">
+        <div class="works-project__text individ">
+          <div>
           <div class="works-project__header">
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii-delivery" target="_blank">Swenlii's delivery</a></h2>
-            <p class="works-project__year subtext">(2020)</p>
           </div>
+            <p class="works-project__year"><strong>Year of developing:</strong> 2020</p>
           <p>A lightweight and simple app that allows you to become a courier in 2 minutes and earn quick income or
             become a client and order home delivery of anything (from a parcel from the post office to
             groceries and cosmetics). Created with pure Vue.js on an express/node.js server, the style uses
             bootstrap and pure css.</p>
+            </div>
           <ul class="works-project__stack">
             <li class="tag-mini">Vue.js</li>
             <li class="tag-mini">ejs</li>
@@ -322,43 +372,43 @@
   </div>
 </section>
 
-<section class="people">
+<section class="people main-block">
   <div class="center-block">
     <h1 class="people__header title">What people says?</h1>
     <p class="people__header--description">I asked some of my former colleagues to say a few words about me. <br> These are not letters of recommendation, but they will be happy to give them if you ask!</p>
     <div class="people__reviews">
-      <div class="people__message">
+      <div class="people__message individ">
         <div class="people__user">
           <div class="people__avatar"><img src="img/photo/user-1.jpg" alt=""/></div>
-          <div class="people__user_icon"></div>
+          <div class="people__user_icon"><img src="img/icons/engineer.svg" alt=""/></div>
           <div>
             <h2 class="subtitle">Michail Korotych</h2>
-            <p class="people__profession">Team Lead in Wee.ae</p>
+            <p class="people__profession subtext">Team Lead in Wee.ae</p>
           </div>
         </div>
         <p>«Irina is a very capable developer, she can write really beautiful code. During the time working with her, I saw how she grew as a professional and developed a vision of the product architecture,
           she overcame her modesty and developed the ability to work with a large number of people in the team.
           »</p>
       </div>
-      <div class="people__message">
+      <div class="people__message individ">
         <div class="people__user">
           <div class="people__avatar"><img src="img/photo/user-3.jpg" alt=""/></div>
-          <div class="people__user_icon"></div>
+          <div class="people__user_icon"><img src="img/icons/engineer.svg" alt=""/></div>
           <div>
             <h2 class="subtitle">Igor Z</h2>
-            <p class="people__profession">Team Lead in Blackwood.cloud</p>
+            <p class="people__profession subtext">Team Lead in Blackwood.cloud</p>
           </div>
         </div>
         <p>«She was almost the best developer after me. Responsible and productive. I trusted Irina to do some small projects
           completely alone and I knew that she would do everything right. »</p>
       </div>
-      <div class="people__message">
+      <div class="people__message individ">
         <div class="people__user">
           <div class="people__avatar"><img src="img/photo/user-2.jpg" alt=""/></div>
-          <div class="people__user_icon"></div>
+          <div class="people__user_icon"><img src="img/icons/person.svg" alt=""/></div>
           <div>
             <h2 class="subtitle">Pavel Chernykh</h2>
-            <p class="people__profession">Senior Backend Developer</p>
+            <p class="people__profession subtext">Senior Backend Developer</p>
           </div>
         </div>
         <p>«For example, Irina's hard work amazed me. We studied together at the university and I know what I'm talking about.
@@ -369,16 +419,32 @@
   </div>
 </section>
 
-<section class="experience">
+<section class="experience main-block">
   <div class="center-block">
-    <h1 class="experience__header title">Work experience and responsibilities in <span>previous jobs</span></h1>
-    <div class="experience__timeline">
-      <div class="experience__timeline-point">
-        <div class="experience__date"><p><span class="subtitle">2014 - 2018</span> <span class="text">(4 years)</span></p></div>
-        <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../img/icons/school.svg" alt=""/>Applied Mathematics and Computer Science</h2>
+  <h1 class="experience__header title">Work experience on <span>previous jobs</span></h1>
+
+	<div class="timeline">
+	  <div class="timeline_events">
+	  	<ol class="timeline_events-list">
+	  		<li data-date="2014/2018">Sep<br>2014<span class="marker"><img class="experience__position-icon" src="../img/icons/school.svg" alt=""/></span></li>
+	  		<li data-date="2018/2019" class="selected">Aug<br>2018<span class="marker"><img class="experience__position-icon" src="../img/icons/work.svg" alt=""/></span></li>
+	  		<li data-date="2019/2019">Jul<br>2019<span class="marker"><img class="experience__position-icon" src="../img/icons/wallet.svg" alt=""/></span></li>
+	  		<li data-date="2019/2021">Nov<br>2019<span class="marker"><img class="experience__position-icon" src="../img/icons/home_work.svg" alt=""/></span></li>
+	  		<li data-date="2022/2024">Sep<br>2022<span class="marker"><img class="experience__position-icon" src="../img/icons/store.svg" alt=""/></span></li>
+	  	</ol>
+
+	  	<div class="filling-line" aria-hidden="true"></div>
+	  </div>
+	</div>
+
+	<div class="experience_content">
+		<ol class="experience-list">
+			<li class="experience-list_work" data-date="2014/2018">
+        <div class="experience__date subtext">2014 - 2018 (4 years)</div>
+        <div class="experience__work individ">
+          <h2 class="experience__position subtitle">Applied Mathematics and Computer Science</h2>
           <p class="experience__company subtext"><a href="https://www.syktsu.ru/" target="_blank">Syktyvkar State University named after. Pitirim Sorokin<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
-          <ul style="display: none">
+          <ul class="experience__responsibility">
             <li>I learned the basics of web development, studied JS, PHP, SQL, CSS and HTML (of course there were other technologies, like C++ and Java),</li>
             <li>I participated in the development of the student newspaper website,</li>
             <li>I wrote a graphics editor in JavaScript as a coursework, a game in C++ in practice, and also participated in Olympiads</li>
@@ -388,15 +454,27 @@
             applications in Android Studio, develop a backend in PHP and MySql, develop a frontend in JavaScript,
             HTML and CSS. Mathematics was more applied than basic, it included: integration of differential equations,
             higher mathematics, numerical methods, string theory.</p>
+          <ul class="experience__stack">
+            <li class="tag-mini">PHP</li>
+            <li class="tag-mini">MySQL</li>
+            <li class="tag-mini">Laravel</li>
+            <li class="tag-mini">Nginx</li>
+            <li class="tag-mini">Redis</li>
+            <li class="tag-mini">Docker</li>
+            <li class="tag-mini">XML</li>
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">GIT</li>
+          </ul>
         </div>
-      </div>
+			</li>
 
-      <div class="experience__timeline-point">
-        <div class="experience__date"><p><span class="subtitle">Aug 2018 - Jun 2019</span> <span class="text">(11 month)</span></p></div>
-        <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../img/icons/work.svg" alt=""/>Junior Backend Developer</h2>
+			<li class="experience-list_work selected" data-date="2018/2019">
+				<div class="experience__date subtext">Aug 2018 - Jun 2019 (11 month)</div>
+        <div class="experience__work individ">
+          <h2 class="experience__position subtitle">Junior Backend Developer</h2>
           <p class="experience__company subtext">SykGameLab</p>
-          <ul style="display: none">
+          <ul class="experience__responsibility">
             <li>development of REST API for the game, </li>
             <li>creating and filling a database (MySQL) using SQL queries, </li>
             <li>coordination of game chat between players, </li>
@@ -419,14 +497,14 @@
             <li class="tag-mini">GIT</li>
           </ul>
         </div>
-      </div>
+			</li>
 
-      <div class="experience__timeline-point">
-        <div class="experience__date"><p><span class="subtitle">Jul 2019 - Nov 2019</span> <span class="text">(5 month)</span></p></div>
-        <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../img/icons/wallet.svg" alt=""/>Junior Frontend Developer</h2>
+			<li class="experience-list_work" data-date="2019/2019">
+				<div class="experience__date subtext">Jul 2019 - Nov 2019 (5 month)</div>
+        <div class="experience__work individ">
+          <h2 class="experience__position subtitle">Junior Frontend Developer</h2>
           <p class="experience__company subtext"><a href="https://platonfinance.com" target="_blank">Platon Finance<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
-          <ul style="display: none">
+          <ul class="experience__responsibility">
             <li>creating page layout using PSD layouts,</li>
             <li>Developing adaptive and cross-browser layouts using Pixel Perfect,</li>
             <li>customization of client functionality (sliders, forms, galleries),</li>
@@ -450,14 +528,14 @@
             <li class="tag-mini">CSS</li>
           </ul>
         </div>
-      </div>
+			</li>
 
-      <div class="experience__timeline-point">
-        <div class="experience__date"><p><span class="subtitle">Nov 2019 - Dec 2021</span> <span class="text">(2 years & 2 month)</span></p></div>
-        <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../img/icons/home_work.svg" alt=""/>Middle Fullstack Developer</h2>
+			<li class="experience-list_work" data-date="2019/2021">
+				<div class="experience__date subtext">Nov 2019 - Dec 2021 (2 years & 2 month)</div>
+        <div class="experience__work individ">
+          <h2 class="experience__position subtitle">Middle Fullstack Developer</h2>
           <p class="experience__company subtext"><a href="https://blackwood.cloud" target="_blank">Blackwood.cloud<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
-          <ul style="display: none">
+          <ul class="experience__responsibility">
             <li>website development on time to order,</li>
             <li>support of high-load sites and development of new services,</li>
             <li>integration of payment systems, localization into different languages, development of telegram bots,</li>
@@ -474,7 +552,7 @@
             learned how to write unit-tests. Also, from the unusual, I developed a layout for a Wordpress website,
             edited a database for a Laravel website, rewrote a small website from JQuery + Bootstrap to Vue 2.</p>
           <p>Some of the projects:</p>
-          <ul>
+          <ul class="experience__responsibility">
             <li><a href="https://blackwood.cloud/">Blackwood Software</a></li>
             <li><a href="https://www.cztransfer.com/">CZTransfer</a></li>
             <li><a href="https://www.zlatoproradost.cz/">Zlato pro radost</a></li>
@@ -497,14 +575,14 @@
             <li class="tag-mini">Websockets</li>
           </ul>
         </div>
-      </div>
+			</li>
 
-      <div class="experience__timeline-point">
-        <div class="experience__date"><p><span class="subtitle">Sep 2022 - Dec 2024</span> <span class="text">(2 years & 4 mounth.)</span></p></div>
-        <div class="experience__work">
-          <h2 class="experience__position subtitle"><img class="experience__position-icon" src="../img/icons/store.svg" alt=""/>Senior Frontend Developer</h2>
+			<li class="experience-list_work" data-date="2022/2024">
+				<div class="experience__date subtext">Sep 2022 - Dec 2024 (2 years & 4 mounth)</div>
+        <div class="experience__work individ">
+          <h2 class="experience__position subtitle">Senior Frontend Developer</h2>
           <p class="experience__company subtext"><a href="https://wee.ae" target="_blank">Wee.ae<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
-          <ul style="display: none">
+          <ul class="experience__responsibility">
             <li>development of the frontend part of the marketplace web application on the nuxt3 framework, </li>
             <li>development and editing of Vue components using the Composition API,</li>
             <li>layout of landing pages, banners and promo pages using html and ejs by design layouts in Figma,</li>
@@ -545,16 +623,14 @@
             <li class="tag-mini">Jira</li>
           </ul>
         </div>
-      </div>
-
-    </div>
+			</li>
+		</ol>
+	</div> <!-- .events-content -->
   </div>
 </section>
 
-
-
 <section class="contact main-block">
-  <div class="center-block">
+  <div class="center-block individ-big">
     <h1 class="contact__header title">Ready to talk? <span>Contact me!</span></h1>
     <div class="contact__block">
       <div class="contact__left">
@@ -563,7 +639,6 @@
           <div class="social-links">
             <a href="https://github.com/swenlii?tab=repositories"><img src="img/icons/github-2.svg" alt=""/></a>
             <a href="https://t.me/swenlii"><img src="img/icons/telegram-2.svg" alt=""/></a>
-            <a href="https://vk.com/swenlii"><img src="img/icons/vk.svg" alt=""/></a>
             <a href="https://wa.me/79042374704"><img src="img/icons/whatsapp-1.svg" alt=""/></a>
           </div>
           <div></div>
@@ -579,7 +654,7 @@
 
       </div>
       <div class="contact__right">
-        <div class="contact__abov-cam subtext">You can also contact me by scheduling a video call to talk!</div>
+        <div class="contact__abov-cam">You can also contact me by scheduling a video call to talk!</div>
         <div class="contact__webcam">
           <img src="img/photo/webcamPhoto.jpg" alt=""/>
           <div class="contact__webcam-micro">
@@ -595,10 +670,12 @@
 <footer>
 
   <div class="footer-top">
-    <div class="footer__attention"><strong class="subtitle">Privacy Notice.</strong> <span>This site doesn't use invasive analytics practices. It won't add cookies to your device, doesn't collect personal information, and won't track you!</span></div>
+    <div class="footer__attention">
+      <h2 class="subtitle-h3"><span><img src="img/icons/privacy.svg" alt=""/></span>Privacy Notice</h2>
+      <span>This site doesn't use invasive analytics practices. It won't add cookies to your device, doesn't collect personal information, and won't track you!</span></div>
 
   </div>
-  <div class="footer-bottom">
+  <div class="footer-bottom individ-big">
     <div>
       <div class="footer__title">
       <h2 class="subtitle">Get in touch!</h2>
@@ -646,5 +723,82 @@
     </div>
   </div>
 </footer>
+
+<button class="goto-up"><img class="experience__position-icon" src="img/icons/arrow_up.svg" alt=""/></button>
+
+<script>
+  function clickDate (event) {
+    event.preventDefault();
+    const timelineContent = document.querySelectorAll('.experience-list')[0];
+    let eventDate = event.target.getAttribute("data-date");
+    let marker = false;
+
+    if (!eventDate) {
+      eventDate = event.target.parentElement.getAttribute("data-date");
+      marker = true;
+    }
+
+    const timelinePoint = document.querySelectorAll('.timeline_events-list .selected')[0];
+
+
+    const visibleContent = document.querySelectorAll('.experience-list .selected')[0];
+    const selectedContent = document.querySelectorAll('.experience-list .experience-list_work[data-date="' + eventDate + '"]')[0];
+
+    let height = selectedContent.offsetHeight
+
+    const visibleIdx = [...Array.from(timelineContent.children)].indexOf(visibleContent);
+    const selectedIdx = [...Array.from(timelineContent.children)].indexOf(selectedContent);
+
+    if (visibleIdx === selectedIdx) return;
+
+    timelinePoint.classList.remove("selected");
+    marker ?  event.target.parentElement.classList.add("selected") : event.target.classList.add("selected")
+    const fillingLine = document.querySelectorAll('.filling-line')[0];
+
+    fillingLine.style.width = `calc(${25 * selectedIdx}% - ${10 * selectedIdx}px)`;
+
+    let classEnetering, classLeaving;
+    if (selectedIdx > visibleIdx) {
+			classEnetering = ['selected', 'enter-right'];
+			classLeaving = 'leave-left';
+		} else {
+			classEnetering = ['selected', 'enter-left'];
+			classLeaving = 'leave-right';
+		}
+
+    selectedContent.classList.add(...classEnetering);
+    visibleContent.classList.remove("selected");
+    setTimeout(() => {
+      visibleContent.classList.remove("selected", "leave-right", "leave-left");
+      selectedContent.classList.remove("enter-left", "enter-right");
+    }, 400)
+    visibleContent.classList.add(classLeaving);
+
+    timelineContent.style.height = height;
+  }
+  const timelineEvents = document.querySelectorAll('.timeline_events-list li');
+
+  timelineEvents.forEach(el => {
+    el.addEventListener("click", clickDate)
+  })
+
+  const timelineEventsS = document.querySelectorAll('.timeline_events-list li .marker');
+
+  timelineEventsS.forEach(el => {
+    el.addEventListener("click", clickDate)
+  })
+
+  const goToUp = document.querySelectorAll('.goto-up')[0];
+
+  goToUp.addEventListener("click", () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  })
+
+</script>
+
 </body>
 </html>

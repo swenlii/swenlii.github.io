@@ -1,5 +1,13 @@
+.main-block_content {
+  border-radius: 18px;
+  position: relative;
+  z-index: 1;
+}
+
 .who-am-i {
-  padding: 0 32px;
+  padding: 0 64px;
+  max-width: calc(100% - 400px);
+  z-index: -1;
 }
 
 .who-am-i h1 {
@@ -7,13 +15,6 @@
   margin: 32px 0;
   border: none;
   line-height: 1.5;
-}
-
-.who-am-i h1 span {
-  background: #dbd2fa;
-  color: var(--heading);
-  border-radius: 12px;
-  padding: 0 16px;
 }
 
 .who-am-i__texts {
@@ -28,21 +29,73 @@
 
 .who-am-i__description {
   flex: 1;
-  display: flex;
-  gap: 32px;
+
 }
 
-.who-am-i__text {
-  padding: 24px;
-  background: white;
-  border-radius: 12px;
-  flex: 1;
+.who-am-i__actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.who-am-i__img {
+  position: absolute;
+  height: 700px;
+  top: calc(50% - 350px);
+  right: -300px;
+  z-index: -1;
+}
+
+.who-am-i__img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.background-round {
+    position: absolute;
+    border-radius: 100%;
+    height: 0;
+    filter: blur(240vw);
+    opacity: 0.4;
+  z-index: -1;
+}
+
+.background-round:nth-child(1) {
+    background: linear-gradient(132deg, #00abff 0.00%, #7eecdb 100.00%);
+    width: 39%;
+    padding-top: 39%;
+    left: 20%;
+    top: 23%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.background-round:nth-child(2) {
+    background: linear-gradient(132deg, #8570de 0.00%, #ff75a0 100.00%);
+    width: 34%;
+    padding-top: 34%;
+    left: 49%;
+    top: 94%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.background-round:nth-child(3) {
+    background: linear-gradient(132deg, #f03a3a 0.00%, #c74ad3 100.00%);
+    width: 34%;
+    padding-top: 34%;
+    left: 95%;
+    top: 14%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .numbers {
   display: flex;
+  gap: 24px;
   justify-content: space-between;
-  padding: 16px 64px;
+  align-items: center;
+  padding: 16px 96px;
+  position: relative;
+  z-index: 2;
 }
 
 .numbers__head {
@@ -62,20 +115,25 @@
   display: flex;
   gap: 24px;
   padding: 0;
+
+
 }
 
 .numbers__numbers li {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 4px;
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
 }
 
 
 .numbers__numbers-numb {
   position: relative;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 44px;
-  line-height: 52px;
+  line-height: 48px;
   color: var(--heading);
   padding-right: 16px;
   width: max-content;
@@ -108,9 +166,31 @@
 }
 
 .numbers__numbers-title {
-  font-size: 15px;
-  line-height: 18px;
   max-width: 200px;
+}
+
+@media screen and (min-width: 1600px) {
+
+  .who-am-i__img {
+    height: 800px;
+    right: -200px;
+    top: calc(50% - 400px);
+  }
+
+  .who-am-i {
+    max-width: calc(100vw - 610px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .who-am-i__img {
+    right: -400px;
+  }
+
+  .who-am-i {
+    padding: 0 32px;
+    max-width: calc(100% - 300px);
+  }
 }
 
 
@@ -137,6 +217,20 @@
   }
 }
 
+@media screen and (max-width: 950px) {
+
+  .who-am-i__img {
+    height: 500px;
+    right: -300px;
+    top: calc(50% - 250px);
+  }
+
+  .who-am-i {
+    padding: 0 32px;
+    max-width: calc(100vw - 240px);
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   .who-am-i {
@@ -160,6 +254,36 @@
   }
   .numbers__numbers-title {
     max-width: 180px;
+  }
+
+  .who-am-i__actions {
+    flex-direction: column;
+  }
+
+  .who-am-i__actions a {
+    width: 100%;
+  }
+
+  .main-block_content .background-round {
+    width: 78%;
+    padding-top: 78%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-block_content {
+    flex-direction: column;
+  }
+
+  .who-am-i__img {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+
+  .who-am-i {
+    padding: 0;
+    max-width: 100vw;
   }
 }
 

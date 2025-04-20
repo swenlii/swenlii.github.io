@@ -36,6 +36,7 @@ body {
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -599,7 +600,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 40px;
-    padding: 0;
+    padding: 8px;
     gap: 8px;
 
   }

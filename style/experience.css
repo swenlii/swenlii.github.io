@@ -125,7 +125,7 @@
 
 .filling-line {
   display: block;
-  width: calc(25% - 10px);
+  width: 0;
   height: 7px;
   background: linear-gradient(to right, #dbd2fa 75%, #8570de);
   position: absolute;

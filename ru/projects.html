@@ -42,10 +42,10 @@
 <section class="works-page center-block">
     <div class="works-page--head">
       <h1 class="works__header title">Проекты</h1>
-      <p>Вот список проектов, на разработку которых я потратила месяцы.
-        Я с нетерпением жду возможности их продемонстрировать.
-        Я не могу перечислить все мои проекты из-за конфиденциальности,
-        но каждый из представленных проектов представляет собой убедительный пример моих возможностей.</p>
+      <p>На этой странице вы можете увидеть все мои проекты, в которых я принимала участие.
+        Сначала перечислены все мои личные проекты, код которых вы можете увидеть на моём Github.
+        В конце списка перечислены проекты кампаний, в которых я работала.
+        Конечно я не стала перечислять проекты, которые уже не существуют в сети.</p>
     </div>
 
     <div class="works-page__blocks">
@@ -153,7 +153,7 @@
         <div class="works-project__text individ">
           <div>
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_portfolio" target="_blank">swenlii_portfolio</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2023</p>
+            <p class="works-project__year"><strong>Год разработки:</strong> 2022</p>
             <p>Небольшой личный сайт-портфолио, так же выполняющий функцию резюме. Полная и подробная информация обо мне,
             в том числе описания моих проектов, подробное описание опыта работы и навыков. Сайт написан на html с использованием ejs.
             Сервер на node.js & express. Данные для сайта хранятся в JSON и подтягиваются на страницу при помощи ejs..</p>
@@ -172,12 +172,68 @@
       </div>
       <div class="works-project">
         <div class="works-project__img">
+          <a href="../img/projects/localcrypto.png"><img src="../img/projects/localcrypto.png" alt="work"/></a>
+        </div>
+        <div class="works-project__text individ">
+          <div>
+            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_localcrypto" target="_blank">Localcrypto</a></h2>
+            <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
+            <p>Сайт, созданный с целью обмениваться любой поддерживаемой криптовалютой или получить быстрый доход от продажи.
+              Возможность подключать свои кошельки к аккаунту, совершать сделки и общаться в чате перед совершением сделки.
+              Сайт не был доделан до конца. Единственный момент, когда я попросила помощи - api совершения сделок.</p>
+            <a href="https://github.com/swenlii/swenlii_localcrypto" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
+          </div>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Vue.js</li>
+            <li class="tag-mini">ejs</li>
+            <li class="tag-mini">JavaScript</li>
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">JQuery</li>
+            <li class="tag-mini">Socket.io</li>
+            <li class="tag-mini">Node.js</li>
+            <li class="tag-mini">Express</li>
+            <li class="tag-mini">Coinbase commerce</li>
+          </ul>
+        </div>
+      </div>
+      <div class="works-project">
+        <div class="works-project__img">
+          <a href="../img/projects/scammercoin.png"><img src="../img/projects/scammercoin.png" alt="work"/></a>
+        </div>
+        <div class="works-project__text individ">
+          <div>
+            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_scammercoin" target="_blank">Scammercoin</a></h2>
+            <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
+            <p>Сайт создан исключительно ради опыта и шутки. Многие сайты, посвященные криптовалюте, обещают, что именно
+              с ними вы точно разбогатеете. Но каким сайтам верить, а каким нет? Этот сайт говорит исключительно правду!
+              Ведь наша криптовалюта растёт только вниз - 100% гарантия скама! Ниже объясняется, что сайт создан, чтобы
+              поделиться историями, когда вас обманули на криптовалюте. Для этого на сайте можно рассказать свою историю.
+            </p>
+            <a href="https://github.com/swenlii/swenlii_scammercoin" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
+          </div>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Vue.js</li>
+            <li class="tag-mini">ejs</li>
+            <li class="tag-mini">JavaScript</li>
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">JQuery</li>
+            <li class="tag-mini">Bootsrap</li>
+            <li class="tag-mini">Axios</li>
+            <li class="tag-mini">Node.js</li>
+            <li class="tag-mini">Express</li>
+          </ul>
+        </div>
+      </div>
+      <div class="works-project">
+        <div class="works-project__img">
           <a href="../img/projects/curr-project.png"><img src="../img/projects/curr-project.png" alt="work"/></a>
         </div>
         <div class="works-project__text individ">
           <div>
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii-curr-pr" target="_blank">Currency check project</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2021</p>
+            <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
             <p>Этот проект отслеживает валютные пары, сохраняет их цены, отслеживает движения валюты через binance и
             сообщает о нужных изменениях в телеграм и в терминал. Реализован на Node.js</p>
             <a href="https://github.com/swenlii/swenlii-curr-pr" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
@@ -199,7 +255,7 @@
         <div class="works-project__text individ">
           <div>
             <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_visitka" target="_blank">Tajam</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
+            <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
             <p>Реализация дизайна из бесплатного psd макета. В дизайне использовался CSS Flexbox.
             Проект представляет собой адаптивную веб-страницу без функциолнальности с использованием HTML, CSS и JavaScript.
             Проект остаётся верным изначальному дизайну и оптимизированным под любое устройство.
@@ -238,6 +294,24 @@
       </div>
       <div class="works-project">
         <div class="works-project__img">
+          <a href="../img/projects/cztransfer.png"><img src="../img/projects/cztransfer.png" alt="work"/></a>
+        </div>
+        <div class="works-project__text individ">
+          <div>
+            <h2 class="subtitle"><a href="https://www.cztransfer.com/" target="_blank">CZTransfer</a></h2>
+            <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
+            <p>Один из клиентов аутсорс кампании Blackwood. Обратились к нам для обновления и добавления некоторой информации на сайте,
+            а так же подключения и настройки плагинов Wordpress. Проект небольшой, поэтому работой занималась я самостоятельно. </p>
+            <a href="https://www.cztransfer.com/r" target="_blank" class="btn">Перейти на сайт<img class="works__header-icon" src="../img/icons/link-2.svg" alt=""/></a>
+          </div>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Wordpress</li>
+            <li class="tag-mini">PHP</li>
+          </ul>
+        </div>
+      </div>
+      <div class="works-project">
+        <div class="works-project__img">
           <a href="../img/projects/mitilena.png"><img src="../img/projects/mitilena.png" alt="work"/></a>
         </div>
         <div class="works-project__text individ">
@@ -258,6 +332,35 @@
             <li class="tag-mini">Node.js</li>
             <li class="tag-mini">SCSS</li>
             <li class="tag-mini">HTML</li>
+          </ul>
+        </div>
+      </div>
+      <div class="works-project">
+        <div class="works-project__img">
+          <a href="../img/projects/platonfinance.png"><img src="../img/projects/platonfinance.png" alt="work"/></a>
+        </div>
+        <div class="works-project__text individ">
+          <div>
+            <h2 class="subtitle"><a href="https://platonfinance.com/" target="_blank">Platon Finance</a></h2>
+            <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
+            <p>Проект кампании, занимающейся продажей собственной криптовалюты PLTC.
+              Проект включал три сайта: главный сайт кампании, криптокошелёк и бизнес.
+              Моей задачей на проекте было создание вёрстки и простой логики на внутреннем сайте кампании Platon Wallet.
+              Я самостоятельно разработала страницу со списком транзакций, чат онлайн-поддержки и страницу подтверждения платежа.
+              Я так же приняла участие в разработке вёрстки главной страницы сайта, который можно посмотреть по ссылке ниже.
+            </p>
+            <a href="https://platonfinance.com/" target="_blank" class="btn">Перейти на сайт<img class="works__header-icon" src="../img/icons/link-2.svg" alt=""/></a>
+          </div>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Vue.js</li>
+            <li class="tag-mini">JQuery</li>
+            <li class="tag-mini">Bootstrap</li>
+            <li class="tag-mini">JavaScript</li>
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">Axios</li>
+            <li class="tag-mini">Node.js</li>
+            <li class="tag-mini">Express</li>
           </ul>
         </div>
       </div>
@@ -325,8 +428,8 @@
   <div class="footer-bottom individ-big">
     <div>
       <div class="footer__title">
-      <h2 class="subtitle">Напиши мне!</h2>
-      <p>Я бы с удовольствием вас послушала!</p>
+      <h2 class="subtitle">Как со мной связаться?</h2>
+      <p>Можно использовать соцсети, позвонить или написать!</p>
     </div>
 
     <div class="footer__contacts">

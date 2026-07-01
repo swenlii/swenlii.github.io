@@ -632,7 +632,7 @@
     <div class="timeline" role="list">
       <div class="timeline_events">
         <ol class="timeline_events-list" aria-label="Work experience timeline">
-          <li data-date="2014/2018" class="selected" title="Education" aria-current="step">
+          <li data-date="2014/2018" title="Education" aria-current="step">
             Sep<br>2014
             <span class="marker">
               <img class="experience__position-icon" src="img/icons/school.svg" alt="Education icon">
@@ -667,7 +667,7 @@
             </span>
           </li>
 
-          <li data-date="2025/2026" title="Lead Frontend Developer">
+          <li data-date="2025/2026" class="selected" title="Lead Frontend Developer">
             Feb<br>2025
             <span class="marker">
               <img class="experience__position-icon" src="img/icons/wallet.svg" alt="Finance project icon">
@@ -681,7 +681,7 @@
 
     <div class="experience_content">
       <ol class="experience-list" aria-label="Work experience details">
-        <li class="experience-list_work selected" data-date="2014/2018" aria-current="true">
+        <li class="experience-list_work" data-date="2014/2018" aria-current="true">
           <div class="experience__date subtext">2014 – 2018 (4 years)</div>
           <div class="experience__work individ" role="region" aria-label="Experience: Applied Mathematics and Computer Science">
             <h2 class="experience__position subtitle">Applied Mathematics and Computer Science</h2>
@@ -899,7 +899,7 @@
           </div>
         </li>
 
-        <li class="experience-list_work" data-date="2025/2026">
+        <li class="experience-list_work selected" data-date="2025/2026">
           <div class="experience__date subtext">February 2025 – June 2026 (1 year and 5 months)</div>
           <div class="experience__work individ" role="region" aria-label="Experience: Lead Frontend Developer">
             <h2 class="experience__position subtitle">Lead Frontend Developer</h2>
@@ -1051,7 +1051,7 @@
     </div>
 
     <div class="footer__info">
-      <div>@2025 Dyakova Irina</div>
+      <div>@2026 Dyakova Irina</div>
 
       <div class="social-links">
         <a href="https://github.com/swenlii?tab=repositories"
@@ -1154,6 +1154,9 @@
   })
 
   const goToUp = document.querySelectorAll(".goto-up")[0];
+
+  const fillingLine = document.querySelectorAll(".filling-line")[0];
+  fillingLine.style.width = `calc(100% - 50px)`;
 
   goToUp.addEventListener("click", () => {
     window.scroll({

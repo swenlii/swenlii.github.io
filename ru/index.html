@@ -2,16 +2,35 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Dyakova Irina</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Дьякова Ирина — Frontend Разработчик | Vue.js, Nuxt.js, TypeScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta
+    name="description"
+    content="Frontend Developer. Портфолио Ирины Дьяковой: Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, SCSS. Коммерческий опыт более 7 лет.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Irina Dyakova">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Дьякова Ирина — Frontend Developer">
+  <meta
+    property="og:description"
+    content="Frontend Developer. Vue.js, Nuxt.js, TypeScript. Более 5 лет коммерческого опыта.">
+  <meta property="og:image" content="https://swenlii.github.io/img/photo/portrait.png">
+  <meta property="og:url" content="https://swenlii.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Дьякова Ирина — Frontend Developer">
+  <meta
+    name="twitter:description"
+    content="Frontend Developer. Vue.js, Nuxt.js, TypeScript.">
+  <meta
+    name="twitter:image"
+    content="https://swenlii.github.io/img/photo/portrait.png">
+  <meta name="theme-color" content="#efeff1">
+  <link rel="canonical" href="https://swenlii.github.io/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
+  <link rel="apple-touch-icon" href="/public/favicons/apple-touch-icon.png">
   <link rel="manifest" href="../public/favicons/site.webmanifest">
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/about_me.css">
@@ -21,659 +40,1298 @@
   <link rel="stylesheet" href="../style/people.css">
   <link rel="stylesheet" href="../style/experience.css">
   <link rel="stylesheet" href="../style/contact.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Irina Dyakova",
+      "jobTitle": "Frontend Developer",
+      "url": "https://swenlii.github.io/",
+      "sameAs": [
+        "https://github.com/swenlii",
+        "https://www.linkedin.com/in/swenlii/",
+        "https://vk.com/swenlii/"
+      ]
+    }
+  </script>
 </head>
 <body>
 
-<div class="main-block">
-  <div class="">
-    <header class="header">
-      <div class="header__logo">
+<div class="main-block" aria-label="Основной блок сайта">
+  <div>
+    <header class="header" aria-label="Шапка сайта">
+      <div class="header__logo" aria-label="Логотип и имя автора">
         <div class="header__name">
-          <img src="../public/favicon.ico" alt="icon" class="header__img"/>
+          <img src="../public/favicon.ico" alt="Логотип сайта" class="header__img"/>
           <div class="header__name">Dyakova.Irina</div>
         </div>
-        <div class="header__menu-icons">
-
-        </div>
+        <div class="header__menu-icons" aria-hidden="true"></div>
       </div>
 
-      <div class="header__menu-links">
-          <a href="index.html">Главная</a>
-          <a href="projects.html">Проекты</a>
-          <a href="https://github.com/swenlii?tab=repositories">Github</a>
-          <a href="https://t.me/swenlii">Телеграм</a>
-        </div>
+      <nav class="header__menu-links" aria-label="Основная навигация">
+        <a href="index.html" rel="noopener">Главная</a>
+        <a href="projects.html" rel="noopener">Проекты</a>
+        <a href="https://github.com/swenlii?tab=repositories" rel="noopener noreferrer">Github</a>
+        <a href="https://t.me/swenlii" rel="noopener noreferrer">Телеграм</a>
+      </nav>
 
-      <div class="header__menu">
-
-        <a href="../index.html" class="header__menu-lang">🇬🇧 EN</a>
-        <a href="../public/resume_ru.pdf" download="dyakova_cv.pdf" class="btn"><img src="../img/icons/download.svg" alt=""/>Скачать CV</a>
+      <div class="header__menu" aria-label="Дополнительные действия">
+        <a href="../index.html" class="header__menu-lang" rel="noopener">🇬🇧 EN</a>
+        <a href="../public/resume_ru.pdf" download="dyakova_cv.pdf" class="btn" rel="noopener">
+          <img src="../img/icons/download.svg" alt="Иконка загрузки"/>
+          Скачать CV
+        </a>
       </div>
-
     </header>
 
-    <div class="main-block_content">
-      <div class="background-round"></div>
-      <div class="background-round"></div>
-      <div class="background-round"></div>
-      <section class="who-am-i">
+    <div class="main-block_content" aria-label="Основной контент">
+      <div class="background-round" aria-hidden="true"></div>
+      <div class="background-round" aria-hidden="true"></div>
+      <div class="background-round" aria-hidden="true"></div>
+
+      <section class="who-am-i" aria-label="Информация обо мне">
         <div class="who-am-i__creator subtext">Вебсайт-портфолио на Github Pages</div>
         <h1 class="title">Привет! Меня зовут <span>Ирина!</span></h1>
+
         <div class="who-am-i__texts">
           <div class="who-am-i__description">
-            <div class="who-am-i__text">Я frontend разработчик из города Сыктывкар.
-              Моя обязанность - создавать сайты, удобные в первую очередь для людей.
-              Я специализируюсь на экосистеме Vue.js и языке JavaScript.
-              У меня есть опыт работы в IT компаниях, а так же в торговой и банковской сфере.
+            <div class="who-am-i__text">
+              Я frontend‑разработчик. Уже более 7 лет разрабатываю веб‑приложения на Vue.js и TypeScript, уделяя особое внимание производительности,
+              удобству пользователей и качеству кода.
             </div>
+
             <div class="who-am-i__actions">
-              <a href="mailto:ira.swenlii@gmail.com" class="btn-tertiary"><img src="../img/icons/send.svg" alt=""/>Отправить письмо</a>
-              <a href="https://t.me/swenlii" class="btn">Написать в Телеграм</a>
+              <a href="mailto:ira.swenlii@gmail.com" class="btn-tertiary" rel="noopener">
+                <img src="../img/icons/send.svg" alt="Иконка отправки письма"/>
+                Отправить письмо
+              </a>
+              <a href="https://t.me/swenlii" class="btn" rel="noopener noreferrer">Написать в Телеграм</a>
             </div>
           </div>
         </div>
       </section>
+
       <div class="who-am-i__img">
-        <img src="../img/photo/code.png" alt="example of my code"/>
+        <img src="../img/photo/code.png" alt="Пример моего кода"/>
       </div>
     </div>
   </div>
 </div>
 
-<section class="numbers main-block">
+<section class="numbers main-block" aria-label="Статистика моей карьеры">
   <div class="numbers__head">
     <h2 class="subtitle">Моя карьера в цифрах</h2>
-    <p>В нашей профессии цифры имеют не последнюю роль. Вот несколько моих главных цифр.</p>
+    <p>Самое важное — в нескольких цифрах.</p>
   </div>
+
   <div class="numbers__right">
     <ul class="numbers__numbers">
       <li>
-        <span class="numbers__numbers-numb">05 +</span>
-        <span class="numbers__numbers-title subtext">Лет я работаю разработчиком</span>
+        <span class="numbers__numbers-numb">7+</span>
+        <span class="numbers__numbers-title subtext">лет коммерческой разработки в командах</span>
       </li>
+
       <li>
-        <span class="numbers__numbers-numb">16</span>
-        <span class="numbers__numbers-title subtext">Проектов в гит-профиле открыты для просмотра</span>
+        <span class="numbers__numbers-numb">12+</span>
+        <span class="numbers__numbers-title subtext">коммерческих веб‑проектов, доведённых до конца</span>
       </li>
+
       <li>
-        <span class="numbers__numbers-numb">20 +</span>
-        <span class="numbers__numbers-title subtext">Компаний, для которых я разработала веб-сайты</span>
+        <span class="numbers__numbers-numb">100%</span>
+        <span class="numbers__numbers-title subtext">самостоятельная frontend‑разработка на последнем проекте</span>
       </li>
     </ul>
   </div>
 </section>
 
-<section class="about-me">
+<section class="about-me" aria-label="Раздел обо мне">
   <div class="center-block individ-big">
     <div class="about-me__block">
-      <div class="about-me__img"><img src="../img/photo/portrait.png" alt="it's me"/></div>
-      <div class="about-me__text">
-        <h1 class="title">Обо мне</h1>
-        <div class="quote">
-          <p>Хороший разработчик не тот, кто больше языков знает.
-            И даже не тот, кто работает для души.
-            А тот, кто был достаточно упорным на пути к своей цели.
-            Разработчиком не рождаются, и я это выяснила на своей шкуре.
-          </p>
-        </div>
-        <p>👋🏽 Как вы уже могли прочитать, я - <strong>Дьякова Ирина</strong> и я frontend разработчик, имеющий уже 5 лет опыта в веб-разработке.
-          Специализируюсь на Vue.js и Java Script. Обожаю разрабатывать сложную логику, рисовать схемы и тщательно продумывать будущие шаги 👣.</p>
-        <p>Впервые я <strong>познакомилась с программированием</strong> в университете.
-          Я выиграла конкурс от Сбербанка и попала на эту специальность совершенно случайно 🤪.
-          Не зная даже, что такое двоичная система, я изучила множество языков программирования и полюбила сложные задачки.
-          И вот, после получения степени 🎓бакалавра в 2018 году, я начала свой карьерный путь.
-        </p>
-        <p>Я попробовала быть Backend-разработчиком, Unity-разработчиком и Android-разработчиком.
-          Сделав такой короткий, но такой трудный путь, я <strong>полюбила всем сердцем именно frontend разработку</strong>.
-          Свою первую работу я искала 8 месяцев.
-          Работая с разными людьми, я полюбила помогать им и быть ответственной за других. И тут я поняла, что моя цель - стать Team Lead😎.</p>
-        <p>Я горжусь тем, что приложила руку в разработке таких сайтов как
-          <strong><a href="https://platonfinance.com/">💳Platon Finance</a> и <a href="https://wee.ae/">💋Wee.ae</a></strong>.
-          Эти проекты были действительно тяжёлыми, и я получила незабываемый опыт. Большое спасибо моим бывшим коллегам, я вас люблю🩷!
-          Сегодня я могу помочь тем, кто на самом начале пути.</p>
-        <p>Я люблю в веб-разработке её мгновенную отдачу и быстрый результат.
-          Мне нравится быть связующим звеном между backend разработчиками, дизайнерами, менеджерами и тестировщиками 👥.
-        </p>
-        <address class="about-me__signature" rel="author"><em>Дьякова И. В.</em></address>
+      <div class="about-me__img">
+        <img src="../img/photo/portrait.png" alt="Портрет Ирины Дьяковой"/>
       </div>
 
+      <div class="about-me__text">
+        <h1 class="title">Обо мне</h1>
+
+        <div class="quote" aria-label="Цитата">
+          <p>
+            Хороший разработчик — это не тот, кто знает больше технологий, а тот, кто умеет доводить сложные задачи до результата.
+            И да, чаще всего этому не учат — этому учишься по дороге, через ошибки, проекты и опыт.
+          </p>
+        </div>
+
+        <p>👋🏽 Привет! Меня зовут <strong>Дьякова Ирина</strong></p>
+
+        <p>
+          Я frontend‑разработчик с <strong>7+ годами коммерческого опыта</strong>. Основной стек — <strong>Vue.js, Nuxt и TypeScript</strong>,
+          но за карьеру успела поработать и backend-, и fullstack‑разработчиком. Несколько лет была единственным
+          frontend‑разработчиком в проектах и отвечала за всё, что видел пользователь: интерфейсы, архитектуру,
+          производительность, SEO и качество кода.
+        </p>
+
+        <p>
+          🚀 Карьеру я начинала в геймдеве: участвовала в разработке мобильной игры на Unity, написала backend на
+          Node.js и MySQL, а затем несколько Android‑приложений. Именно тогда поняла, что настоящее удовольствие
+          получаю от веб‑разработки, и с тех пор полностью сосредоточилась на frontend.
+        </p>
+
+        <p>
+          💚 Особенно горжусь двумя проектами. В маркетплейсе <strong>Wee.ae</strong> участвовала в полном переходе на Nuxt 3,
+          внедрении тестов и улучшении процессов разработки. В туристическом сервисе <strong>"Остров Сокровищ"</strong> была единственным
+          frontend‑разработчиком: перевела проект с Laravel Livewire на Vue 3, улучшила производительность и SEO,
+          подняла показатели PageSpeed примерно с <strong>50 до 92</strong> и устранила серьёзную утечку памяти в продакшене,
+          заменив проблемную стороннюю библиотеку собственным решением.
+        </p>
+
+        <p>
+          🤝 Мне нравится работать на стыке разработки, дизайна и продукта. Я привыкла не просто выполнять задачи, а искать решения,
+          предлагать улучшения и брать ответственность за результат.
+        </p>
+
+        <address class="about-me__signature" rel="author">
+          <em>Дьякова И. В.</em>
+        </address>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="skills main-block">
+<section class="skills main-block" aria-label="Мой стек технологий">
   <div class="center-block">
     <h1 class="title">Мой стек</h1>
-    <ul class="skills__list">
-      <li class="tag"><img src="../img/icons/nuxt.svg" alt=""/>Nuxt.js</li>
-      <li class="tag"><img src="../img/icons/vue.svg" alt=""/>Vue.js</li>
-      <li class="tag"><img src="../img/icons/html5.svg" alt=""/>HTML</li>
-      <li class="tag"><img src="../img/icons/css.svg" alt=""/>CSS</li>
-      <li class="tag"><img src="../img/icons/javascript.svg" alt=""/>JS</li>
-      <li class="tag">ES6</li>
-      <li class="tag">vuex</li>
-      <li class="tag">Pinia</li>
-      <li class="tag">vue-router</li>
-      <li class="tag">Vue CLI</li>
-      <li class="tag">SOLID</li>
-      <li class="tag">Unit Testing</li>
-      <li class="tag"><img src="../img/icons/jest.svg" alt=""/>Jest</li>
-      <li class="tag"><img src="../img/icons/vitest.svg" alt=""/>Vitest</li>
-      <li class="tag"><img src="../img/icons/sass.svg" alt=""/>SCSS/SASS</li>
-      <li class="tag">Stylus</li>
-      <li class="tag"><img src="../img/icons/bem.svg" alt=""/>BEM</li>
-      <li class="tag">SEO</li>
-      <li class="tag">SSR</li>
-      <li class="tag">SPA</li>
-      <li class="tag"><img src="../img/icons/axios.svg" alt=""/>Axios</li>
-      <li class="tag"><img src="../img/icons/git.svg" alt=""/>Git</li>
-      <li class="tag"><img src="../img/icons/npm.svg" alt=""/>npm</li>
-      <li class="tag"><img src="../img/icons/nodedotjs.svg" alt=""/>Node.js</li>
-      <li class="tag">Express.js</li>
-      <li class="tag"><img src="../img/icons/swagger.svg" alt=""/>REST API</li>
-      <li class="tag"><img src="../img/icons/mysql.svg" alt=""/>MySQL</li>
-      <li class="tag">ejs</li>
-      <li class="tag"><img src="../img/icons/webpack.svg" alt=""/>Webpack</li>
-      <li class="tag"><img src="../img/icons/vite.svg" alt=""/>Vite</li>
-      <li class="tag"><img src="../img/icons/figma.svg" alt=""/>Figma</li>
-      <li class="tag">Photoshop</li>
-      <li class="tag"><img src="../img/icons/jira.svg" alt=""/>Jira</li>
-      <li class="tag"><img src="../img/icons/webstorm.svg" alt=""/>Webstorm</li>
+
+    <ul class="skills__list" aria-label="Список навыков">
+
+      <li class="tag"><img src="../img/icons/vue.svg" alt="Логотип Vue"/>Vue 3</li>
+      <li class="tag"><img src="../img/icons/nuxt.svg" alt="Логотип Nuxt"/>Nuxt 3</li>
+      <li class="tag"><img src="../img/icons/typescript.svg" alt="Логотип TypeScript"/>TypeScript</li>
+      <li class="tag"><img src="../img/icons/javascript.svg" alt="Логотип JavaScript"/>JavaScript (ES6+)</li>
+      <li class="tag">Composition API</li>
+      <li class="tag"><img src="../img/icons/pinia.svg" alt="Логотип Pinia"/>Pinia</li>
+
+      <li class="tag">SSR / SPA</li>
+      <li class="tag">Component Architecture</li>
+      <li class="tag"><img src="../img/icons/rest-api.svg" alt="Иконка REST API"/>REST API</li>
+      <li class="tag"><img src="../img/icons/nodedotjs.svg" alt="Логотип Node.js"/>Node.js</li>
+      <li class="tag"><img src="../img/icons/express.svg" alt="Логотип Express.js"/>Express.js</li>
+      <li class="tag"><img src="../img/icons/mysql.svg" alt="Логотип MySQL"/>MySQL</li>
+
+      <li class="tag"><img src="../img/icons/jest.svg" alt="Логотип Jest"/>Jest</li>
+      <li class="tag"><img src="../img/icons/vitest.svg" alt="Логотип Vitest"/>Vitest</li>
+      <li class="tag"><img src="../img/icons/cypress.svg" alt="Логотип Cypress"/>Cypress</li>
+      <li class="tag"><img src="../img/icons/ESLint.svg" alt="Логотип ESLint"/>ESLint</li>
+      <li class="tag"><img src="../img/icons/stylelint.svg" alt="Логотип Stylelint"/>Stylelint</li>
+
+      <li class="tag"><img src="../img/icons/find.svg" alt="Иконка SEO"/>SEO</li>
+      <li class="tag"><img src="../img/icons/pagespeed.svg" alt="Иконка PageSpeed"/>Web Performance (PageSpeed)</li>
+
+      <li class="tag"><img src="../img/icons/git.svg" alt="Логотип Git"/>Git</li>
+      <li class="tag"><img src="../img/icons/npm.svg" alt="Логотип npm"/>npm</li>
+      <li class="tag"><img src="../img/icons/vite.svg" alt="Логотип Vite"/>Vite</li>
+      <li class="tag"><img src="../img/icons/webpack.svg" alt="Логотип Webpack"/>Webpack</li>
+
+      <li class="tag"><img src="../img/icons/html5.svg" alt="Логотип HTML5"/>HTML5</li>
+      <li class="tag"><img src="../img/icons/css.svg" alt="Логотип CSS3"/>CSS3</li>
+      <li class="tag"><img src="../img/icons/sass.svg" alt="Логотип SCSS"/>SCSS</li>
+      <li class="tag"><img src="../img/icons/bem.svg" alt="Логотип BEM"/>BEM</li>
+
+      <li class="tag"><img src="../img/icons/figma.svg" alt="Логотип Figma"/>Figma</li>
+      <li class="tag"><img src="../img/icons/jira.svg" alt="Логотип Jira"/>Agile / Jira</li>
+
     </ul>
   </div>
 </section>
 
-<section class="why-me main-block">
+<section class="why-me main-block" aria-label="Как я работаю">
   <div class="center-block">
-    <h1 class=" title">5 причин <span>почему</span></h1>
+
+    <h1 class="title">Как я работаю</h1>
+
     <div class="why-me__block">
+
       <div>
-        <p class="why-me__text">В веб-разработке не менее важными, чем стек технологий, являются софт-скилы.
-          Кому приелись качества "пунктуальность" и "коммуникабельность"? Всем.
-          Но я выбирала свою профессию не по душе, а по характеру.
-          И поэтому решила добавить несколько причин, почему я идеально подхожу на роль веб-разработчика.</p>
-        <ul class="why-me__list">
+
+        <p class="why-me__text">
+          В разработке для меня важнее не набор технологий, а подход к решению задач.
+          За годы работы я выработала несколько принципов, которые помогают мне делать стабильные и понятные интерфейсы.
+        </p>
+
+        <ul class="why-me__list" aria-label="Принципы моей работы">
+
           <li>
-            <span class="why-me__reason-title">Аккуратность</span>
-            <span class="why-me__reason">Я серьезно отношусь <strong>к каждой детали</strong> и гарантирую качество своего кода.</span>
+            <span class="why-me__reason-title">Думаю перед тем, как писать код</span>
+            <span class="why-me__reason">
+              Сначала разбираю задачу, рисую логику и только потом перехожу к реализации.
+            </span>
           </li>
+
           <li>
-            <span class="why-me__reason-title">Трудолюбие</span>
-            <span class="why-me__reason">Я по природе очень трудолюбивая и <strong>мне нравится та работа</strong>, которую я делаю.</span>
+            <span class="why-me__reason-title">Забочусь о поддержке</span>
+            <span class="why-me__reason">
+              Пишу код так, чтобы его было легко понять через месяц или другим разработчикам.
+            </span>
           </li>
+
           <li>
-            <span class="why-me__reason-title">Альтруизм</span>
-            <span class="why-me__reason">Я <strong>ценю время</strong> других разработчиков. Поэтому стараюсь писать понятный и интуитивный код и не забываю документировать сложные вещи.</span>
+            <span class="why-me__reason-title">Не боюсь переписывать</span>
+            <span class="why-me__reason">
+              Если вижу, что решение ухудшает продукт — предлагаю альтернативу или переделываю.
+            </span>
           </li>
+
           <li>
-            <span class="why-me__reason-title">Командный игрок</span>
-            <span class="why-me__reason">Я <strong>люблю командную работу</strong> и верю, что по одиночке мы никто. Я буду полезна команде.</span>
+            <span class="why-me__reason-title">Думаю о продукте</span>
+            <span class="why-me__reason">
+              Смотрю не только на задачу, но и на влияние на пользователей, скорость и стабильность.
+            </span>
           </li>
+
           <li>
-            <span class="why-me__reason-title">Вдумчивость</span>
-            <span class="why-me__reason">Я понимаю, <strong>чего хочет заказчик</strong> и вижу страницу так, как видят её пользователи.</span>
+            <span class="why-me__reason-title">Работаю в команде</span>
+            <span class="why-me__reason">
+              Комфортно беру на себя коммуникацию с дизайном, backend и менеджерами, если нужно закрыть задачу.
+            </span>
           </li>
+
         </ul>
+
       </div>
-      <div class="why-me__img"><img src="../img/photo/why-me-1.jpg" alt="illustration"/></div>
+
+      <div class="why-me__img">
+        <img src="../img/photo/why-me-1.jpg" alt="Иллюстрация о моём подходе к работе"/>
+      </div>
+
     </div>
 
   </div>
 </section>
 
-<section class="works main-block">
+<section class="works main-block" aria-label="Мои проекты">
   <div class="center-block">
 
     <div class="works-head">
       <div class="works__header">
         <h1 class="title">Проекты</h1>
-        <p>Вот некоторые из моих личных проектов, код которых можно посмотреть на Github. Жми на кнопку «Все проекты», чтоб увидеть все мои проекты.</p>
+        <p>
+          Вот некоторые из моих проектов, над которыми я работала. Нажми на кнопку «Все проекты», чтобы увидеть полный список.
+        </p>
       </div>
 
-      <a href="projects.html" class="btn"><img class="works__header-icon" src="../img/icons/projects.svg" alt=""/>Все проекты</a>
+      <a href="projects.html" class="btn" rel="noopener">
+        <img class="works__header-icon" src="../img/icons/projects.svg" alt="Иконка проектов"/>
+        Все проекты
+      </a>
     </div>
 
     <div class="works__blocks">
+
+      <!-- Tisland -->
       <div class="works-project">
         <div class="works-project__img">
-          <a href="../img/projects/marketplace.png"><img src="../img/projects/marketplace.png" alt="work"/></a>
-          <span class="works-project__name subtext">Marketplace</span>
-          <a href="https://github.com/swenlii/swenlii_marketplace" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
+          <a href="../img/projects/tisland.png" rel="noopener">
+            <img src="../img/projects/tisland.png" alt="Скриншот проекта Остров Сокровищ"/>
+          </a>
         </div>
+
         <div class="works-project__text individ">
           <div>
-          <div class="works-project__header">
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_marketplace" target="_blank">Marketplace</a></h2>
-          </div>
+            <div class="works-project__header">
+              <h2 class="subtitle">
+                <a href="https://www.tisland.travel/" target="_blank" rel="noopener noreferrer">
+                  Остров Сокровищ
+                </a>
+              </h2>
+            </div>
+
             <p class="works-project__year"><strong>Год разработки:</strong> 2025</p>
-          <p>Современный функциональный вебсайт, созданный на основе публичного API, отдающего данные для маркетплейса.
-            На сайте можно просмотреть продукты, отсортированные по категориям, добавить понравившийся продукт в корзину,
-            поделиться им или добавить его в избранное. Сайт реализован на Nuxt.js v3 с использованием препроцессора Stylus.</p>
+
+            <p>
+              Туристический сервис для онлайн‑бронирования экскурсий за рубежом (Таиланд, Вьетнам): AI‑помощник,
+              подборки туров, прайс‑листы, отзывы и блог. Я — единственный frontend‑разработчик: перевела сайт
+              с Laravel Livewire на Vue 3, реализовала корзину, чекаут, избранное, каталог, блог, личный кабинет,
+              AI‑тест подбора экскурсии, а также ключевые разделы админ‑панели. Нашла и устранила утечку памяти,
+              подняла PageSpeed с 50 до 92 и внедрила процесс AI‑ревью кода.
+            </p>
           </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">Nuxt.js</li>
-            <li class="tag-mini">Vue.js</li>
-            <li class="tag-mini">Vuex</li>
-            <li class="tag-mini">JS</li>
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">Stylus</li>
-          </ul>
+
+          <div>
+            <a href="https://www.tisland.travel/" target="_blank" class="btn" rel="noopener noreferrer">
+              Перейти на сайт
+              <img class="works__header-icon" src="../img/icons/link-2.svg" alt="Иконка ссылки"/>
+            </a>
+
+            <ul class="works-project__stack">
+              <li class="tag-mini">Laravel</li>
+              <li class="tag-mini">Vue.js</li>
+              <li class="tag-mini">Pinia</li>
+              <li class="tag-mini">TypeScript</li>
+              <li class="tag-mini">SCSS</li>
+              <li class="tag-mini">Vite</li>
+              <li class="tag-mini">ESLint</li>
+              <li class="tag-mini">Stylelint</li>
+            </ul>
+          </div>
         </div>
-
       </div>
-      <div class="works-project">
 
+      <!-- Wee.ae -->
+      <div class="works-project">
         <div class="works-project__text individ">
           <div>
-          <div class="works-project__header">
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_conspectus" target="_blank">CONSPECTUS</a></h2>
-          </div>
-          <p class="works-project__year"><strong>Год разработки:</strong> 2022</p>
-          <p>Сайт для блога, реализованный при помощи Nuxt.js v2, JavaScript и SCSS. Backend реализован при помощи axios.
-            Для хранения данных я использовала базу данных PostgreeSQL. Сайт включает в себя не только статические страницы
-            с различной информацией, но и возможность добавить статью через административную панель.</p>
+            <div class="works-project__header">
+              <h2 class="subtitle">
+                <a href="https://wee.ae/" target="_blank" rel="noopener noreferrer">Wee.ae</a>
+              </h2>
             </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">Nuxt.js</li>
-            <li class="tag-mini">Vue.js</li>
-            <li class="tag-mini">vue-router</li>
-            <li class="tag-mini">Java Script</li>
-            <li class="tag-mini">axios</li>
-            <li class="tag-mini">SCSS</li>
-            <li class="tag-mini">HTML</li>
-          </ul>
+
+            <p class="works-project__year"><strong>Год разработки:</strong> 2024</p>
+
+            <p>
+              Многофункциональный маркетплейс с быстрой доставкой: множество продавцов, скидки, избранное,
+              AI‑помощники. Я участвовала во всех этапах разработки: реализовала корзину, страницу товара,
+              избранное, чекаут, страницу подтверждения платежа. Летом переписала проект на Nuxt 3 + Vue 3 +
+              TypeScript, покрыла компоненты тестами, внедрила автопроверки ESLint/Stylelint и предложила новый
+              формат отчётов для код‑ревью, который приняла вся команда.
+            </p>
+          </div>
+
+          <div>
+            <a href="https://wee.ae/" target="_blank" class="btn" rel="noopener noreferrer">
+              Перейти на сайт
+              <img class="works__header-icon" src="../img/icons/link-2.svg" alt="Иконка ссылки"/>
+            </a>
+
+            <ul class="works-project__stack">
+              <li class="tag-mini">Nuxt.js</li>
+              <li class="tag-mini">Vue.js</li>
+              <li class="tag-mini">Vuex</li>
+              <li class="tag-mini">TypeScript</li>
+              <li class="tag-mini">HTML</li>
+              <li class="tag-mini">Stylus</li>
+              <li class="tag-mini">i18n</li>
+            </ul>
+          </div>
         </div>
+
         <div class="works-project__img">
-          <a href="../img/projects/conspectus.png"><img src="../img/projects/conspectus.png" alt="work"/></a>
-          <span class="works-project__name subtext">CONSPECTUS</span>
-          <a href="https://github.com/swenlii/swenlii_conspectus" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
+          <a href="../img/projects/wee.png" rel="noopener">
+            <img src="../img/projects/wee.png" alt="Скриншот проекта Wee.ae"/>
+          </a>
         </div>
       </div>
+
+      <!-- Mitilena -->
       <div class="works-project">
         <div class="works-project__img">
-          <a href="../img/projects/med-revolution.png"><img src="../img/projects/med-revolution.png" alt="work"/></a>
-          <span class="works-project__name subtext">MED Revolution</span>
-          <a href="https://github.com/swenlii/swenlii_med_consultation" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
+          <a href="../img/projects/mitilena.png" rel="noopener">
+            <img src="../img/projects/mitilena.png" alt="Скриншот проекта Mitilena"/>
+          </a>
         </div>
+
         <div class="works-project__text individ">
           <div>
-          <div class="works-project__header">
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_med_consultation" target="_blank">MED Revolution</a></h2>
-          </div>
+            <div class="works-project__header">
+              <h2 class="subtitle">
+                <a href="https://mitilena.com/" target="_blank" rel="noopener noreferrer">Mitilena</a>
+              </h2>
+            </div>
+
             <p class="works-project__year"><strong>Год разработки:</strong> 2021</p>
-          <p>Небольшое приложение, идея которого заключается в онлайн-констультации у специалиста (доктора или врача).
-            Страницы реализованы при помощи Vue.js и чистого CSS, backend на node.js и express, а оплату можно провести через coinbase.</p>
-            </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">Vue.js</li>
-            <li class="tag-mini">ejs</li>
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">CSS</li>
-            <li class="tag-mini">coinbase</li>
-            <li class="tag-mini">axios</li>
-            <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">Express</li>
-          </ul>
+
+            <p>
+              Онлайн‑кошелёк для криптопереводов: поддержка множества валют, офлайн‑подпись транзакций,
+              шифрование NFC‑картами. Я сверстала почти все страницы и реализовала логику транзакций —
+              онлайн через Socket.io и офлайн. Сайт получил стабильный real‑time обмен данными и возможность
+              переводов без постоянного соединения.
+            </p>
+          </div>
+
+          <div>
+            <a href="https://mitilena.com/" target="_blank" class="btn" rel="noopener noreferrer">
+              Перейти на сайт
+              <img class="works__header-icon" src="../img/icons/link-2.svg" alt="Иконка ссылки"/>
+            </a>
+
+            <ul class="works-project__stack">
+              <li class="tag-mini">JQuery</li>
+              <li class="tag-mini">Vue.js</li>
+              <li class="tag-mini">Webpack</li>
+              <li class="tag-mini">Socket.io</li>
+              <li class="tag-mini">Node.js</li>
+              <li class="tag-mini">SCSS</li>
+              <li class="tag-mini">HTML</li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      <!-- CZTransfer -->
       <div class="works-project">
         <div class="works-project__text individ">
           <div>
-          <div class="works-project__header">
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_portfolio" target="_blank">swenlii_portfolio</a></h2>
-          </div>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2023</p>
-          <p>Небольшой личный сайт-портфолио, так же выполняющий функцию резюме. Полная и подробная информация обо мне,
-            в том числе описания моих проектов, подробное описание опыта работы и навыков. Сайт написан на html с использованием ejs.
-            Сервер на node.js & express. Данные для сайта хранятся в JSON и подтягиваются на страницу при помощи ejs.</p>
+            <div class="works-project__header">
+              <h2 class="subtitle">
+                <a href="https://www.cztransfer.com/" target="_blank" rel="noopener noreferrer">CZTransfer</a>
+              </h2>
             </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">CSS</li>
-            <li class="tag-mini">JS</li>
-            <li class="tag-mini">ejs</li>
-            <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">Express</li>
-            <li class="tag-mini">JSON</li>
-          </ul>
-        </div>
-        <div class="works-project__img">
-          <a href="../img/projects/portfolio.png"><img src="../img/projects/portfolio.png" alt="work"/></a>
-          <span class="works-project__name subtext">swenlii_portfolio</span>
-          <a href="https://github.com/swenlii/swenlii_portfolio" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
-        </div>
-      </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/delivery.png"><img src="../img/projects/delivery.png" alt="work"/></a>
-          <span class="works-project__name subtext">Swenlii's delivery</span>
-          <a href="https://github.com/swenlii/swenlii-delivery" target="_blank" class="works-project__link"><img src="../img/icons/github-3.svg" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-          <div class="works-project__header">
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii-delivery" target="_blank">Swenlii's delivery</a></h2>
-          </div>
+
             <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
-          <p>Лёгкое и простое приложение, позволяющее стать курьером за 2 минуты и получать быстрый доход или стать
-            клиентом и заказывать доставку на дом чего угодно (от посылки с почты до продуктов и косметики).
-            Создано при помощи чистого Vue.js на сервере express/node.js, в стиле используется bootstrap и чистый css.</p>
-            </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">Vue.js</li>
-            <li class="tag-mini">ejs</li>
-            <li class="tag-mini">google map api</li>
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">CSS</li>
-            <li class="tag-mini">Bootstrap</li>
-            <li class="tag-mini">socket.io</li>
-            <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">Express</li>
-          </ul>
+
+            <p>
+              Туристическая компания с экскурсиями в Праге и соседних странах. Я переписала легаси‑код на WordPress,
+              обновила плагин авторизации, очистила БД от лишних таблиц и устранила критический баг: из‑за сломанных
+              куки каждая сессия создавалась заново, переполняя БД. После исправления приём заказов восстановился.
+            </p>
+          </div>
+
+          <div>
+            <a href="https://www.cztransfer.com/" target="_blank" class="btn" rel="noopener noreferrer">
+              Перейти на сайт
+              <img class="works__header-icon" src="../img/icons/link-2.svg" alt="Иконка ссылки"/>
+            </a>
+
+            <ul class="works-project__stack">
+              <li class="tag-mini">WordPress</li>
+              <li class="tag-mini">PHP</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="works-project__img">
+          <a href="../img/projects/cztransfer.png" rel="noopener">
+            <img src="../img/projects/cztransfer.png" alt="Скриншот проекта CZTransfer"/>
+          </a>
         </div>
       </div>
+
     </div>
 
   </div>
 </section>
 
-<section class="people main-block">
+<section class="people main-block" aria-label="Отзывы коллег">
   <div class="center-block">
+
     <h1 class="people__header title">Что говорят люди?</h1>
-    <p class="people__header--description">Я попросила некоторых из своих бывших коллег сказать пару слов обо мне.</p>
+    <p class="people__header--description">
+      Я попросила некоторых из своих бывших коллег поделиться впечатлениями о работе со мной.
+    </p>
+
     <div class="people__reviews">
-      <div class="people__message individ">
+
+      <!-- Igor Mozhzhakov -->
+      <div class="people__message individ" aria-label="Отзыв Игоря Мозжакова">
         <div class="people__user">
-          <div class="people__avatar"><img src="../img/photo/user-1.jpg" alt=""/></div>
-          <div class="people__user_icon"><img src="../img/icons/engineer.svg" alt=""/></div>
+          <div class="people__avatar">
+            <img src="../img/photo/user-4.jpg" alt="Фото Игоря Мозжакова"/>
+          </div>
+          <div class="people__user_icon">
+            <img src="../img/icons/engineer.svg" alt="Иконка инженера"/>
+          </div>
+          <div>
+            <h2 class="subtitle">Игорь Мозжаков</h2>
+            <p class="people__profession subtext">Team Lead в ООО «Остров Сокровищ»</p>
+          </div>
+        </div>
+
+        <p>
+          «Ирина была для проекта настоящей находкой. С самого начала она была единственным frontend‑разработчиком,
+          и фактически держала на себе весь фронтенд проекта.
+
+          Особенно ценно было то, что она не просто выполняла задачи, а предлагала улучшения:
+          по архитектуре, по интерфейсам и по производительности. Многие из этих решений мы приняли в прод.
+
+          До сих пор помню момент, когда она буквально одним коммитом подняла PageSpeed с ~50 до 90+ —
+          это стало неожиданностью даже для команды. Она хорошо чувствует, где проблема, и быстро находит практичное решение.»
+        </p>
+      </div>
+
+      <!-- Mikhail -->
+      <div class="people__message individ" aria-label="Отзыв Михаила Коротыча">
+        <div class="people__user">
+          <div class="people__avatar">
+            <img src="../img/photo/user-1.jpg" alt="Фото Михаила Коротыча"/>
+          </div>
+          <div class="people__user_icon">
+            <img src="../img/icons/engineer.svg" alt="Иконка инженера"/>
+          </div>
           <div>
             <h2 class="subtitle">Михаил Коротыч</h2>
-            <p class="people__profession subtext">Team Lead в Wee.ae</p>
+            <p class="people__profession subtext">Team Lead в ООО «Сейчас»</p>
           </div>
         </div>
-        <p>«Ирина очень способный разработчик, она умеет писать по-настоящему красивый код.
-              За время работы с ней я видел, как она росла как профессионал и развила в себе видение архитектуры продукта,
-              она преодолела свою скромность и развила в себе способность работать с большим количеством людей в команде»</p>
+
+        <p>
+          «Ирина — разработчик, который умеет не просто писать код, а объяснять свои решения.
+          За время работы я видел, как она выросла в сторону более системного мышления и начала уверенно
+          работать с архитектурой продукта. Её pull request’ы всегда было приятно читать —
+          с логикой, комментариями и пониманием, почему выбран именно такой подход.
+
+          Иногда ей мешала излишняя скромность — она могла не до конца “продавить” хорошее решение,
+          хотя технически оно было правильным.»
+        </p>
       </div>
-      <div class="people__message individ">
+
+      <!-- Igor Z -->
+      <div class="people__message individ" aria-label="Отзыв Igor Z">
         <div class="people__user">
-          <div class="people__avatar"><img src="../img/photo/user-3.jpg" alt=""/></div>
-          <div class="people__user_icon"><img src="../img/icons/engineer.svg" alt=""/></div>
+          <div class="people__avatar">
+            <img src="../img/photo/user-3.jpg" alt="Фото Igor Z"/>
+          </div>
+          <div class="people__user_icon">
+            <img src="../img/icons/engineer.svg" alt="Иконка инженера"/>
+          </div>
           <div>
             <h2 class="subtitle">Igor Z</h2>
-            <p class="people__profession subtext">Team Lead in Blackwood.cloud</p>
+            <p class="people__profession subtext">Team Lead в Blackwood.cloud</p>
           </div>
         </div>
-        <p>«Она была почти самым лучшим разработчиком после меня. Ответственная и продуктивная.
-              Я доверял Ирине делать некоторые небольшие проекты полностью в одиночку и я знал что она сделает всё как надо»</p>
+
+        <p>
+          «На Ирину можно было положиться. Она спокойно брала на себя задачи,
+          которые обычно требуют более опытного разработчика, и доводила их до результата без лишнего контроля.
+          Я часто доверял ей небольшие проекты полностью — и всегда был уверен, что всё будет сделано как надо.»
+        </p>
       </div>
-      <div class="people__message individ">
+
+      <!-- Pavel -->
+      <div class="people__message individ" aria-label="Отзыв Павла Черных">
         <div class="people__user">
-          <div class="people__avatar"><img src="../img/photo/user-2.jpg" alt=""/></div>
-          <div class="people__user_icon"><img src="../img/icons/person.svg" alt=""/></div>
+          <div class="people__avatar">
+            <img src="../img/photo/user-2.jpg" alt="Фото Павла Черных"/>
+          </div>
+          <div class="people__user_icon">
+            <img src="../img/icons/person.svg" alt="Иконка пользователя"/>
+          </div>
           <div>
-            <h2 class="subtitle">Pavel Chernykh</h2>
-            <p class="people__profession subtext">Senior Backend Developer</p>
+            <h2 class="subtitle">Павел Черных</h2>
+            <p class="people__profession subtext">Team Lead в СыкГеймЛаб</p>
           </div>
         </div>
-        <p>«Меня например поражало в Ирине её трудолюбие. Мы учились вместе в университете, и я знаю о чём, говорю.
-              Я просматривал её мерж реквесты и они всегда меня поражали.
-              Это были очень детальные отчёты с правильным ходом мыслей, приводившим несколько доказательств правильности решения»</p>
+
+        <p>
+          «Больше всего в Ирине впечатляет её способность быстро учиться и не бояться сложных задач.
+          Ещё в университете было видно, что она не ограничивается базой — она постоянно углубляется в технологии.
+          На первой работе это проявилось особенно сильно: она быстро освоилась в проекте и взяла на себя задачи,
+          которые обычно не дают джунам, и справилась с ними уверенно.»
+        </p>
       </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="experience main-block" aria-labelledby="experience-header">
+  <div class="center-block">
+    <h1 id="experience-header" class="experience__header title">
+      Опыт <span>работы</span>
+    </h1>
+
+    <div class="timeline" role="list">
+      <div class="timeline_events">
+        <ol class="timeline_events-list" aria-label="Список этапов опыта работы">
+          <li data-date="2014/2018" class="selected" title="Обучение" aria-current="step">
+            Сен<br>2014
+            <span class="marker">
+              <img class="experience__position-icon" src="../img/icons/school.svg" alt="Иконка обучения">
+            </span>
+          </li>
+
+          <li data-date="2018/2019" title="Junior Unity / Backend Developer">
+            Авг<br>2018
+            <span class="marker">
+              <img class="experience__position-icon" src="../img/icons/work.svg" alt="Иконка работы">
+            </span>
+          </li>
+
+          <li data-date="2019/2019" title="Junior Frontend Developer">
+            Янв<br>2019
+            <span class="marker">
+              <img class="experience__position-icon" src="../img/icons/wallet.svg" alt="Иконка финансового проекта">
+            </span>
+          </li>
+
+          <li data-date="2019/2021" title="Middle Fullstack Developer">
+            Ноя<br>2019
+            <span class="marker">
+              <img class="experience__position-icon" src="../img/icons/home_work.svg" alt="Иконка удалённой работы">
+            </span>
+          </li>
+
+          <li data-date="2022/2024" title="Senior Frontend Developer">
+            Сен<br>2022
+            <span class="marker">
+              <img class="experience__position-icon" src="../img/icons/store.svg" alt="Иконка коммерческого проекта">
+            </span>
+          </li>
+
+          <li data-date="2025/2026" title="Lead Frontend Developer">
+            Фев<br>2025
+            <span class="marker">
+              <img class="experience__position-icon" src="../img/icons/wallet.svg" alt="Иконка финансового проекта">
+            </span>
+          </li>
+        </ol>
+
+        <div class="filling-line" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="experience_content">
+      <ol class="experience-list" aria-label="Подробности опыта работы">
+        <li class="experience-list_work selected" data-date="2014/2018" aria-current="true">
+          <div class="experience__date subtext">2014 - 2018 (4 года)</div>
+          <div class="experience__work individ" role="region" aria-label="Опыт: Прикладная математика и информатика">
+            <h2 class="experience__position subtitle">Прикладная математика и информатика</h2>
+
+            <p class="experience__company subtext">
+              <a
+                href="https://www.syktsu.ru/" target="_blank" rel="noopener noreferrer"
+                aria-label="Перейти на сайт Сыктывкарского Государственного Университета им. Питирима Сорокина">
+                Сыктывкарский Государственный Университет им. Питирима Сорокина
+                <img class="experience__position-icon" src="../img/icons/link.svg" alt="Иконка внешней ссылки"/>
+              </a>
+            </p>
+
+            <p>
+              Обучение делилось на две части — общая математика и разработка. В рамках практики мы изучали разные языки
+              и технологии: программы на C++, приложения на Android в Android Studio, backend на PHP и MySQL, frontend
+              на JavaScript, HTML и CSS. Математика была скорее прикладной частью — интегрирование дифференциальных
+              уравнений, высшая математика, численные методы, теория струн.
+            </p>
+
+            <ul class="experience__responsibility" aria-label="Основные достижения и задачи">
+              <li>освоила основы веб‑разработки: JS, PHP, SQL, CSS и HTML, а также C++ и Java;</li>
+              <li>участвовала в разработке веб‑сайта студенческой газеты;</li>
+              <li>написала графический редактор на JavaScript и игру на C++; участвовала в ежегодных олимпиадах по программированию;</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="experience-list_work" data-date="2018/2019">
+          <div class="experience__date subtext">Август 2018 - Апрель 2019 (9 месяцев)</div>
+          <div class="experience__work individ" role="region" aria-label="Опыт: Junior Unity / Backend Developer">
+            <h2 class="experience__position subtitle">Junior Unity / Backend Developer</h2>
+
+            <p class="experience__company subtext">СыкГеймЛаб</p>
+
+            <p>
+              Устроилась в небольшую команду знакомого по университету, который решил запустить студию мобильных игр.
+              Мы разрабатывали карточную игру на Unity и C# для iOS и Android, а я отвечала за серверную часть: написала
+              backend на Node.js, спроектировала и создала базу данных в MySQL через HeidiSQL, реализовала систему
+              достижений на Google Play. Параллельно мы выпустили несколько Android‑приложений на Java — трекер привычек
+              и приложение‑календарь. Карточную игру не успели выпустить — студия закрылась.
+            </p>
+
+            <ul class="experience__responsibility" aria-label="Основные задачи и достижения">
+              <li>разработка мобильной карточной игры на Unity для iOS и Android;</li>
+              <li>проектирование и создание базы данных в MySQL, написание backend‑сервера на Node.js;</li>
+              <li>реализация системы достижений и сохранения прогресса игроков через Google Play;</li>
+              <li>разработка Android‑приложений на Java (трекер привычек, календарь) для дополнительного дохода команды;</li>
+            </ul>
+
+            <ul class="experience__stack" aria-label="Используемый стек технологий">
+              <li class="tag-mini">Unity</li>
+              <li class="tag-mini">C#</li>
+              <li class="tag-mini">Node.js</li>
+              <li class="tag-mini">MySQL</li>
+              <li class="tag-mini">HeidiSQL</li>
+              <li class="tag-mini">Android Studio</li>
+              <li class="tag-mini">Java</li>
+              <li class="tag-mini">Git</li>
+              <li class="tag-mini">Google Play</li>
+              <li class="tag-mini">Trello</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="experience-list_work" data-date="2019/2019">
+          <div class="experience__date subtext">Май 2019 - Октябрь 2019 (6 месяцев)</div>
+          <div class="experience__work individ" role="region" aria-label="Опыт: Junior Frontend Developer">
+            <h2 class="experience__position subtitle">Junior Frontend Developer</h2>
+
+            <p class="experience__company subtext">
+              <a
+                href="https://platonfinance.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Перейти на сайт Platon Finance">
+                Platon Finance
+                <img class="experience__position-icon" src="../img/icons/link.svg" alt="Иконка внешней ссылки"/>
+              </a>
+            </p>
+
+            <p>
+              Platon Finance — цифровая экосистема блокчейна с собственным кошельком, валютой и платёжным шлюзом.
+              Я пришла на стажировку в команду криптовалютного кошелька Platon Wallet под наставничеством старшего
+              разработчика, который обучил меня Vue 2 с нуля. За 4 месяца прошла путь от полного незнания вёрстки
+              до уверенного джуна: исправляла баги интерфейса, верстала новые элементы, а ближе к концу стажировки
+              самостоятельно написала логику встроенного чата поддержки. Также изучила Lighthouse, SEO и Schema.org.
+            </p>
+
+            <ul class="experience__responsibility" aria-label="Основные задачи и достижения">
+              <li>разработала логику чата поддержки на основе socket.io;</li>
+              <li>сверстала страницу истории транзакций и анимации платежей;</li>
+              <li>исправила баги вёрстки: анимация на странице выхода, скрывающийся TabBar на мобильных устройствах;</li>
+              <li>добавила новые элементы интерфейса: подключение нового криптокошелька, переключение языка сайта;</li>
+              <li>изучила основы SEO, Lighthouse‑метрики и разметку Schema.org;</li>
+            </ul>
+
+            <ul class="experience__stack" aria-label="Используемый стек технологий">
+              <li class="tag-mini">Vue.js 2</li>
+              <li class="tag-mini">vue-router</li>
+              <li class="tag-mini">JQuery</li>
+              <li class="tag-mini">Bootstrap 4</li>
+              <li class="tag-mini">GIT</li>
+              <li class="tag-mini">socket.io</li>
+              <li class="tag-mini">SCSS</li>
+              <li class="tag-mini">JavaScript</li>
+              <li class="tag-mini">HTML</li>
+              <li class="tag-mini">CSS</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="experience-list_work" data-date="2019/2021">
+          <div class="experience__date subtext">Ноябрь 2019 - Август 2022 (2 года и 10 месяцев)</div>
+          <div class="experience__work individ" role="region" aria-label="Опыт: Middle Fullstack Developer">
+            <h2 class="experience__position subtitle">Middle Fullstack Developer</h2>
+
+            <p class="experience__company subtext">
+              <a
+                href="https://blackwood.cloud" target="_blank" rel="noopener noreferrer"
+                aria-label="Перейти на сайт Blackwood.cloud">
+                Blackwood.cloud
+                <img class="experience__position-icon" src="../img/icons/link.svg" alt="Иконка внешней ссылки"/>
+              </a>
+            </p>
+
+            <p>
+              Blackwood Software — аутсорсинговая компания, которая вела множество разноплановых проектов.
+              Начинала как часть пары с тимлидом, но со временем стала вести проекты самостоятельно — от мини-магазинов
+              и сайтов-визиток до криптовалютных и инвестиционных платформ. Часто не было тестировщиков и продуктовых
+              менеджеров, поэтому многие архитектурные решения принимала сама. Пик самостоятельности — сайт доставки
+              продуктов на дом, который разработала полностью одна, от backend до frontend. Всего реализовала около
+              12 проектов, включая работу с легаси-кодом и WordPress.
+            </p>
+
+            <ul class="experience__responsibility" aria-label="Основные задачи и достижения">
+              <li>самостоятельно разработала сайт доставки продуктов «под ключ» (Node.js backend, Vue frontend);</li>
+              <li>реализовала интерфейсы на Vue.js в проектах Mitilena, Scammercoin, Med-Revolution, LocalCrypto;</li>
+              <li>интегрировала внешние API (RESTful, axios) на нескольких проектах;</li>
+              <li>обеспечила кроссбраузерность и адаптивность на сайтах CZTransfer, K&LRock, Blackwood Software;</li>
+              <li>провела рефакторинг легаси-кода на CZTransfer и Zlato pro radost;</li>
+              <li>выросла из frontend в fullstack: писала backend на Node.js, перешла с Vue 2 на Vue 3;</li>
+            </ul>
+
+            <ul class="experience__stack" aria-label="Используемый стек технологий">
+              <li class="tag-mini">Vue.js 2/3</li>
+              <li class="tag-mini">Vuex</li>
+              <li class="tag-mini">Vue-router</li>
+              <li class="tag-mini">Vue CLI</li>
+              <li class="tag-mini">Nuxt.js 2</li>
+              <li class="tag-mini">WebPack</li>
+              <li class="tag-mini">npm</li>
+              <li class="tag-mini">Node.js</li>
+              <li class="tag-mini">ejs</li>
+              <li class="tag-mini">MySQL</li>
+              <li class="tag-mini">SASS</li>
+              <li class="tag-mini">WordPress</li>
+              <li class="tag-mini">REST API</li>
+              <li class="tag-mini">Websockets</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="experience-list_work" data-date="2022/2024">
+          <div class="experience__date subtext">Сентябрь 2022 - Ноябрь 2024 (2 года и 3 месяца)</div>
+          <div class="experience__work individ" role="region" aria-label="Опыт: Senior Frontend Developer">
+            <h2 class="experience__position subtitle">Senior Frontend Developer</h2>
+
+            <p class="experience__company subtext">
+              <a
+                href="https://wee.ae" target="_blank" rel="noopener noreferrer"
+                aria-label="Перейти на сайт Wee.ae">
+                Wee.ae
+                <img class="experience__position-icon" src="../img/icons/link.svg" alt="Иконка внешней ссылки"/>
+              </a>
+            </p>
+
+            <p>
+              Wee — маркетплейс быстрой доставки товаров в ОАЭ за 1 час, с полноценной командой: дейли-встречи,
+              продуктовый менеджер, тестировщик, UX-дизайнеры, девопсы. Пришла на проект на старте, когда сайт был
+              на PHP и Vue CLI с Webpack, и всё лето вела переписывание проекта на Nuxt 3 с переходом на Vue 3,
+              Composition API и TypeScript. Предложила улучшения процесса ревью и релизов, которые переняла вся команда.
+              Полностью выстроила процесс тестирования: освоила Jest и Vitest, написала unit-тесты на каждый компонент
+              и e2e-тесты ключевых сценариев. Вместе с тимлидом внедрила автоматические проверки ESLint и Stylelint
+              в GitLab pipeline. Из-за болезни тимлида временно брала часть его обязанностей. Ушла из-за задержки зарплаты.
+            </p>
+
+            <ul class="experience__responsibility" aria-label="Основные задачи и достижения">
+              <li>руководила переписыванием проекта на Nuxt 3, Vue 3 и Composition API;</li>
+              <li>внедрила TypeScript и обучила часть команды;</li>
+              <li>предложила и внедрила новый процесс код-ревью и релизов;</li>
+              <li>выстроила процесс тестирования: Jest/Vitest unit-тесты, e2e-тесты;</li>
+              <li>настроила автоматические проверки ESLint и Stylelint в GitLab;</li>
+              <li>писала разметку Schema.org для SEO;</li>
+              <li>временно выполняла обязанности тимлида;</li>
+            </ul>
+
+            <ul class="experience__stack" aria-label="Используемый стек технологий">
+              <li class="tag-mini">Vue 3</li>
+              <li class="tag-mini">Nuxt 3</li>
+              <li class="tag-mini">TypeScript</li>
+              <li class="tag-mini">Composition API</li>
+              <li class="tag-mini">JavaScript</li>
+              <li class="tag-mini">ejs</li>
+              <li class="tag-mini">Stylus</li>
+              <li class="tag-mini">БЭМ</li>
+              <li class="tag-mini">Vitest</li>
+              <li class="tag-mini">Jest</li>
+              <li class="tag-mini">ESLint</li>
+              <li class="tag-mini">Stylelint</li>
+              <li class="tag-mini">Git</li>
+              <li class="tag-mini">Figma</li>
+              <li class="tag-mini">Jira</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="experience-list_work" data-date="2025/2026">
+          <div class="experience__date subtext">Февраль 2025 - Июнь 2026 (1 год и 5 месяцев)</div>
+          <div class="experience__work individ" role="region" aria-label="Опыт: Lead Frontend Developer">
+            <h2 class="experience__position subtitle">Lead Frontend Developer</h2>
+
+            <p class="experience__company subtext">ООО «Трасис» (ранее ООО «Остров Сокровищ»)</p>
+
+            <p>
+              Проект — сервис туристических экскурсий по Таиланду и Вьетнаму с отдельной админпанелью. Была единственным
+              frontend-разработчиком с самого начала. Основной сайт был на Laravel и Livewire — предложила переход на Vue 3,
+              переписала 4 страницы и добавила 7 новых, превратив проект в частично SPA с микрофронтом на Pinia. Самостоятельно
+              ставила задачи, проводила ревью с тимлидом, принимала архитектурные решения. Устранила критическую утечку памяти,
+              заменив сторонний пакет собственным компонентом — PageSpeed вырос с 50 до 92. В админке реализовала страницы
+              экскурсий, доступности мест, тегов, категорий, подборок и достопримечательностей, включая санитайз HTML.
+            </p>
+
+            <ul class="experience__responsibility" aria-label="Основные задачи и достижения">
+              <li>полный переход с Laravel Livewire на Vue 3 (4 переписанные и 7 новых страниц);</li>
+              <li>архитектура Vue 3 + Pinia без vue-router;</li>
+              <li>вела весь frontend самостоятельно;</li>
+              <li>устранила утечку памяти, заменив сторонний пакет;</li>
+              <li>повысила PageSpeed с 50 до 92;</li>
+              <li>спроектировала перенос админки на Nuxt 3;</li>
+              <li>внедрила процесс автоматического AI-ревью кода;</li>
+              <li>регулярно использовала ESLint, Stylelint и TypeScript;</li>
+            </ul>
+
+            <ul class="experience__stack" aria-label="Используемый стек технологий">
+              <li class="tag-mini">Vue 3</li>
+              <li class="tag-mini">Pinia</li>
+              <li class="tag-mini">TypeScript</li>
+              <li class="tag-mini">Laravel</li>
+              <li class="tag-mini">Livewire</li>
+              <li class="tag-mini">Blade</li>
+              <li class="tag-mini">Vite</li>
+              <li class="tag-mini">SCSS</li>
+              <li class="tag-mini">ESLint</li>
+              <li class="tag-mini">Stylelint</li>
+              <li class="tag-mini">Git</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
 
 <section class="experience main-block">
   <div class="center-block">
-  <h1 class="experience__header title">Опыт <span>работы</span></h1>
+    <h1 class="experience__header title">Опыт <span>работы</span></h1>
 
-	<div class="timeline">
-	  <div class="timeline_events">
-	  	<ol class="timeline_events-list">
-	  		<li data-date="2014/2018" class="selected">Сен<br>2014<span class="marker"><img class="experience__position-icon" src="../img/icons/school.svg" alt=""/></span></li>
-	  		<li data-date="2018/2019">Авг<br>2018<span class="marker"><img class="experience__position-icon" src="../img/icons/work.svg" alt=""/></span></li>
-	  		<li data-date="2019/2019">Янв<br>2019<span class="marker"><img class="experience__position-icon" src="../img/icons/wallet.svg" alt=""/></span></li>
-	  		<li data-date="2019/2021">Ноя<br>2019<span class="marker"><img class="experience__position-icon" src="../img/icons/home_work.svg" alt=""/></span></li>
-	  		<li data-date="2022/2024">Сен<br>2022<span class="marker"><img class="experience__position-icon" src="../img/icons/store.svg" alt=""/></span></li>
-	  	</ol>
+    <div class="timeline">
+      <div class="timeline_events">
+        <ol class="timeline_events-list">
+          <li data-date="2014/2018" class="selected" title="Обучение">Сен<br>2014<span class="marker"><img
+            class="experience__position-icon" src="../img/icons/school.svg" alt=""/></span></li>
+          <li data-date="2018/2019" title="Junior Unity / Backend Developer">Авг<br>2018<span class="marker"><img
+            class="experience__position-icon" src="../img/icons/work.svg" alt=""/></span></li>
+          <li data-date="2019/2019" title="Junior Frontend Developer">Янв<br>2019<span class="marker"><img
+            class="experience__position-icon" src="../img/icons/wallet.svg" alt=""/></span></li>
+          <li data-date="2019/2021" title="Middle Fullstack Developer">Ноя<br>2019<span class="marker"><img
+            class="experience__position-icon" src="../img/icons/home_work.svg" alt=""/></span></li>
+          <li data-date="2022/2024" title="Senior Frontend Developer">Сен<br>2022<span class="marker"><img
+            class="experience__position-icon" src="../img/icons/store.svg" alt=""/></span></li>
+          <li data-date="2025/2026" title="Lead Frontend Developer">Фев<br>2025<span class="marker"><img
+            class="experience__position-icon" src="../img/icons/wallet.svg" alt=""/></span></li>
+        </ol>
 
-	  	<div class="filling-line" aria-hidden="true"></div>
-	  </div>
-	</div>
+        <div class="filling-line" aria-hidden="true"></div>
+      </div>
+    </div>
 
-	<div class="experience_content">
-		<ol class="experience-list">
-			<li class="experience-list_work selected" data-date="2014/2018">
-        <div class="experience__date subtext">2014 - 2018 (4 года)</div>
-        <div class="experience__work individ">
-          <h2 class="experience__position subtitle">Прикладная математика и информатика</h2>
-          <p class="experience__company subtext"><a href="https://www.syktsu.ru/" target="_blank">Сыктывкарский Государственный Университет им. Питирима Сорокина<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
-          <p>Обучение делилось на две части - общая математика и разработка. В качестве обучения разработке мы изучали
-            различные языки и технологии, научились разрабатывать программы на C++, приложения на Android в Android Studio,
-            разрабатывать backend на PHP и MySql, разрабатывать frontend на JavaScript, HTML и CSS. Математика была скорее
-            приложением, чем основой учёбы. В неё входили: интегрирование дифф. уравнений, высшая математика, численные методы,
-            теория струн.</p>
-          <ul class="experience__responsibility">
-            <li>научилась основам веб-разработки, изучила JS, PHP, SQL, CSS и HTML (конечно были и другие технологии, как C++ и Java);</li>
-            <li>участвовала в разработке веб-сайта студенческой газеты;</li>
-            <li>написала графический редактор на JavaScript в качестве курсовой, игру на C++ на практике, так же участвовала в ежегодных олимпиадах;</li>
-          </ul>
-        </div>
-			</li>
+    <div class="experience_content">
+      <ol class="experience-list">
+        <li class="experience-list_work selected" data-date="2014/2018">
+          <div class="experience__date subtext">2014 - 2018 (4 года)</div>
+          <div class="experience__work individ">
+            <h2 class="experience__position subtitle">Прикладная математика и информатика</h2>
+            <p class="experience__company subtext"><a href="https://www.syktsu.ru/" target="_blank">Сыктывкарский Государственный Университет им.
+              Питирима Сорокина<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
+            <p>Обучение делилось на две части — общая математика и разработка. В рамках практики мы изучали разные языки
+              и технологии: программы на C++, приложения на Android в Android Studio, backend на PHP и MySQL, frontend
+              на JavaScript, HTML и CSS. Математика была скорее прикладной частью, чем основой учёбы — интегрирование
+              дифф. уравнений, высшая математика, численные методы, теория струн.</p>
+            <ul class="experience__responsibility">
+              <li>освоила основы веб-разработки: JS, PHP, SQL, CSS и HTML, а также C++ и Java;</li>
+              <li>участвовала в разработке веб-сайта студенческой газеты;</li>
+              <li>написала графический редактор на JavaScript в качестве курсовой и игру на C++ на практике, участвовала в ежегодных олимпиадах по
+                программированию;
+              </li>
+            </ul>
+          </div>
+        </li>
 
-			<li class="experience-list_work" data-date="2018/2019">
-				<div class="experience__date subtext">Август 2018 - Апрель 2019 (9 месяцев)</div>
-        <div class="experience__work individ">
-          <h2 class="experience__position subtitle">Junior Unity Developer</h2>
-          <p class="experience__company subtext">СыкГеймЛаб</p>
-          <p>Это была единственная игра, которую я разработала за свою жизнь, так как в процессе работы поняла, что это не моё. Тем не менее я плотно участвовала в разработке мобильной игры. Самолично разработала несколько достижений и успешно подключила их к Play Играм. Так же я разработала сохранение данных игрока в БД на PHP сервере. </p>
-          <ul class="experience__responsibility">
-            <li>Разработка мобильной карточной игры на движке Unity;</li>
-            <li>Разработка достижений и таблицы лидеров на Google Play;</li>
-            <li>Сохранение данных игроков в общей БД на MySQL на PHP-сервере через клиент, написанный на C#;</li>
-          </ul>
-          <ul class="experience__stack">
-            <li class="tag-mini">Unity</li>
-            <li class="tag-mini">C#</li>
-            <li class="tag-mini">Git</li>
-            <li class="tag-mini">Google Play</li>
-            <li class="tag-mini">Trello</li>
-          </ul>
-        </div>
-			</li>
+        <li class="experience-list_work" data-date="2018/2019">
+          <div class="experience__date subtext">Август 2018 - Апрель 2019 (9 месяцев)</div>
+          <div class="experience__work individ">
+            <h2 class="experience__position subtitle">Junior Unity / Backend Developer</h2>
+            <p class="experience__company subtext">СыкГеймЛаб</p>
+            <p>Устроилась в небольшую команду к знакомому по университету, который решил запустить студию мобильных игр.
+              Мы разрабатывали карточную игру на Unity и C# для iOS и Android, и я отвечала за серверную часть: написала
+              backend на Node.js, спроектировала и создала базу данных в MySQL через HeidiSQL, реализовала систему
+              достижений на Google Play. Параллельно, чтобы у команды был хоть какой-то доход, мы выпустили несколько
+              небольших Android-приложений на Java — в том числе трекер привычек и приложение-календарь. Карточную игру
+              так и не успели выпустить — спустя несколько месяцев студия закрылась.</p>
+            <ul class="experience__responsibility">
+              <li>разработка мобильной карточной игры на движке Unity для iOS и Android;</li>
+              <li>проектирование и создание базы данных в MySQL, написание backend-сервера на Node.js;</li>
+              <li>реализация системы достижений и сохранения прогресса игроков через Google Play;</li>
+              <li>разработка нескольких небольших Android-приложений на Java (включая трекер привычек и календарь) для дополнительного дохода
+                команды;
+              </li>
+            </ul>
+            <ul class="experience__stack">
+              <li class="tag-mini">Unity</li>
+              <li class="tag-mini">C#</li>
+              <li class="tag-mini">Node.js</li>
+              <li class="tag-mini">MySQL</li>
+              <li class="tag-mini">HeidiSQL</li>
+              <li class="tag-mini">Android Studio</li>
+              <li class="tag-mini">Java</li>
+              <li class="tag-mini">Git</li>
+              <li class="tag-mini">Google Play</li>
+              <li class="tag-mini">Trello</li>
+            </ul>
+          </div>
+        </li>
 
-			<li class="experience-list_work" data-date="2019/2019">
-				<div class="experience__date subtext">Май 2019 - Октябрь 2019 (6 месяцев)</div>
-        <div class="experience__work individ">
-          <h2 class="experience__position subtitle">Junior Frontend Developer</h2>
-          <p class="experience__company subtext"><a href="https://platonfinance.com" target="_blank">Platon Finance<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
-          <p>Platon Finance — это цифровая экосистема блокчейна, которая включает в себя цифровой кошелёк, собственную валюту Platin Cion и собственный платежный шлюз для подключения бизнеса к экосистеме Platon Life. Я устроилась на временный проект, в котором разрабатывался внутренний сайт Platon Wallet, который доступен только клиентам кампании и представляет из себя цифровой кошелёк. Я отвечала за вёрстку и анимации сайта, включая некоторую логику и оптимизацию, а так же обучалась под наставничеством старшего разработчика.</p>
-          <ul class="experience__responsibility">
-            <li>Разработала Vue компоненты: страница подтверждения платежа, карусель последних транзакций и чат с онлайн-поддержкой через socket.io;</li>
-            <li>Сверстала новые элементы на HTML и SCSS: добавление нового кошелька криптовалюты, смена языка сайта;</li>
-            <li>Исправила проблемы и баги с вёрсткой: неправильная анимация на странице Logout, неправильно скрывающийся TapBar на мобильном;</li>
-            <li>Оживила страницы при помощи JavaScript: анимация совершения и фейла платежа, анимация загрузки страницы, автоскроллинг баннеров на дашбоарде;</li>
-          </ul>
-          <ul class="experience__stack">
-            <li class="tag-mini">Vue.js 2</li>
-            <li class="tag-mini">vue-router</li>
-            <li class="tag-mini">JQuery</li>
-            <li class="tag-mini">Bootstrap 4</li>
-            <li class="tag-mini">GIT</li>
-            <li class="tag-mini">socket.io</li>
-            <li class="tag-mini">SCSS</li>
-            <li class="tag-mini">JavaScript</li>
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">CSS</li>
-          </ul>
-        </div>
-			</li>
+        <li class="experience-list_work" data-date="2019/2019">
+          <div class="experience__date subtext">Май 2019 - Октябрь 2019 (6 месяцев)</div>
+          <div class="experience__work individ">
+            <h2 class="experience__position subtitle">Junior Frontend Developer</h2>
+            <p class="experience__company subtext"><a href="https://platonfinance.com" target="_blank">Platon Finance<img
+              class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
+            <p>Platon Finance — цифровая экосистема блокчейна с собственным кошельком, валютой и платёжным шлюзом.
+              Я пришла на стажировку в команду криптовалютного кошелька Platon Wallet под наставничеством старшего
+              разработчика, который обучил меня Vue (2 версия) с нуля. За 4 месяца прошла путь от полного незнания
+              вёрстки до уверенного джуна: исправляла баги интерфейса, верстала новые элементы, а ближе к концу
+              стажировки самостоятельно написала логику встроенного чата поддержки. Также познакомилась с Lighthouse,
+              SEO-оптимизацией и разметкой Schema.org.</p>
+            <ul class="experience__responsibility">
+              <li>разработала логику чата поддержки на сайте на основе socket.io;</li>
+              <li>сверстала страницу истории транзакций и почитала анимации платежей;</li>
+              <li>исправила баги вёрстки: анимация на странице выхода, неправильно скрывающийся TabBar на мобильных устройствах;</li>
+              <li>добавила новые элементы интерфейса: подключение нового кошелька криптовалюты, переключение языка сайта;</li>
+              <li>изучила основы SEO и Lighthouse-метрик, разметку Schema.org;</li>
+            </ul>
+            <ul class="experience__stack">
+              <li class="tag-mini">Vue.js 2</li>
+              <li class="tag-mini">vue-router</li>
+              <li class="tag-mini">JQuery</li>
+              <li class="tag-mini">Bootstrap 4</li>
+              <li class="tag-mini">GIT</li>
+              <li class="tag-mini">socket.io</li>
+              <li class="tag-mini">SCSS</li>
+              <li class="tag-mini">JavaScript</li>
+              <li class="tag-mini">HTML</li>
+              <li class="tag-mini">CSS</li>
+            </ul>
+          </div>
+        </li>
 
-			<li class="experience-list_work" data-date="2019/2021">
-				<div class="experience__date subtext">Ноябрь 2019 - Август 2022 (2 года и 10 месяца)</div>
-        <div class="experience__work individ">
-          <h2 class="experience__position subtitle">Middle Fullstack Developer</h2>
-          <p class="experience__company subtext"><a href="https://blackwood.cloud" target="_blank">Blackwood.cloud<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
-          <p>Blackwood Software — это аутсорсинговая компания по разработке ПО, которая создаёт веб-приложения и веб-сайты. Кампания включает одну небольшую, но очень сплочённую команду, в которой я отвечала за основную работу над веб-сайтами, а именно за разработку и поддержку, а так же рефакторинг и обновление легаси-кода. Оказала поддержку многим существующим веб-сайтам. Лично отвечала за разработку веб-сайтов.</p>
-          <ul class="experience__responsibility">
-            <li>Разработала пользовательские интерфейсы на Vue.js на сайтах: Mitilena, scammercoin, med-revolution, localcrypto;</li>
-            <li>Интегрировалась с внешними сервисами через API (RESTful, axios) на вышеупомянутых сайтах;</li>
-            <li>Обеспечила кроссбраузерную совместимость и адаптивность на сайтах: CZTransfer, K&LRock, Blackwood Software;</li>
-            <li>Рефакторила код таких сайтов: CZTransfer, Zlato pro radost;</li>
-          </ul>
-          <ul class="experience__stack">
-            <li class="tag-mini">Vue.js 2</li>
-            <li class="tag-mini">Vuex</li>
-            <li class="tag-mini">Vue-router</li>
-            <li class="tag-mini">Vue cli</li>
-            <li class="tag-mini">Nuxt.js 2</li>
-            <li class="tag-mini">WebPack</li>
-            <li class="tag-mini">npm</li>
-            <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">ejs</li>
-            <li class="tag-mini">MySQL</li>
-            <li class="tag-mini">SASS</li>
-            <li class="tag-mini">REST API</li>
-            <li class="tag-mini">Websockets</li>
-          </ul>
-        </div>
-			</li>
+        <li class="experience-list_work" data-date="2019/2021">
+          <div class="experience__date subtext">Ноябрь 2019 - Август 2022 (2 года и 10 месяцев)</div>
+          <div class="experience__work individ">
+            <h2 class="experience__position subtitle">Middle Fullstack Developer</h2>
+            <p class="experience__company subtext"><a href="https://blackwood.cloud" target="_blank">Blackwood.cloud<img
+              class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
+            <p>Blackwood Software — аутсорсинговая компания, которая вела одновременно множество разноплановых проектов.
+              Начинала здесь как часть пары с тимлидом, но со временем стала вести проекты самостоятельно — от мини-магазинов
+              и сайтов-визиток до криптовалютных и инвестиционных платформ. Тестировщиков и продуктовых менеджеров на
+              проектах часто не было, поэтому многие решения по архитектуре и реализации принимала единолично. Пик
+              самостоятельности — сайт доставки продуктов на дом, который разработала полностью одна, от backend до frontend.
+              Всего за это время реализовала около 12 проектов, включая работу с легаси-кодом и WordPress.</p>
+            <ul class="experience__responsibility">
+              <li>самостоятельно разработала сайт доставки продуктов на дом «под ключ» (backend на Node.js, frontend на Vue);</li>
+              <li>реализовала пользовательские интерфейсы на Vue.js на проектах: Mitilena, Scammercoin, Med-Revolution, LocalCrypto;</li>
+              <li>интегрировала внешние API (RESTful, axios) на нескольких проектах;</li>
+              <li>обеспечила кроссбраузерную совместимость и адаптивность на сайтах CZTransfer, K&LRock, Blackwood Software;</li>
+              <li>провела рефакторинг легаси-кода на проектах CZTransfer и Zlato pro radost;</li>
+              <li>выросла из чистого frontend в fullstack: писала backend на Node.js, параллельно перешла с Vue 2 на Vue 3 в новых проектах;</li>
+            </ul>
+            <ul class="experience__stack">
+              <li class="tag-mini">Vue.js 2/3</li>
+              <li class="tag-mini">Vuex</li>
+              <li class="tag-mini">Vue-router</li>
+              <li class="tag-mini">Vue CLI</li>
+              <li class="tag-mini">Nuxt.js 2</li>
+              <li class="tag-mini">WebPack</li>
+              <li class="tag-mini">npm</li>
+              <li class="tag-mini">Node.js</li>
+              <li class="tag-mini">ejs</li>
+              <li class="tag-mini">MySQL</li>
+              <li class="tag-mini">SASS</li>
+              <li class="tag-mini">WordPress</li>
+              <li class="tag-mini">REST API</li>
+              <li class="tag-mini">Websockets</li>
+            </ul>
+          </div>
+        </li>
 
-			<li class="experience-list_work" data-date="2022/2024">
-				<div class="experience__date subtext">Сентябрь 2022 - Ноябрь 2024 (2 года и 3 месяца)</div>
-        <div class="experience__work individ">
-          <h2 class="experience__position subtitle">Senior Frontend Developer</h2>
-          <p class="experience__company subtext"><a href="https://wee.ae" target="_blank">Wee.ae<img class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
-          <p>Wee — это маркетплейс, который специализируется на быстрой доставке товаров в ОАЭ за 1 час. Кампания включает в себя 3 команды по разработке. Я пришла на проект в команду маркетплейса ещё до публикации проекта и отвечала за разработку сайта, включая лендинги, unit-тесты и документацию. Создала с нуля такие важные функции, как корзина, карта выбора адресов и страница избранного. Активно участвовала в создании проекта и получила два повышения за время работы.</p>
-          <ul class="experience__responsibility">
-            <li>Поддержка, разработка сайта wee.ae на Nuxt 3;</li>
-            <li>Разработка новых компонентов Vue на основе дизайн-макетов из Figma;</li>
-            <li>Интеграция с backend API, написанным на PHP;</li>
-            <li>Создание лендингов по готовым дизайн-макетам с использованием HTML, CSS и ejs;</li>
-            <li>Плотное взаимодействие с командой, включая регулярные созвоны;</li>
-            <li>Участие в архитектурных и технических обсуждениях;</li>
-            <li>Написание и поддержка unit-тестов (Vitest) и интеграционных тестов (Cypress);</li>
-            <li>Участие в код-ревью (code review) и создание документации;</li>
-            <li>Сохранение кода и выпуск релизов через GitLab;</li>
-            <li>Проведение рефакторинга существующего кода, доработка текущих задач и техдолга;</li>
-            <li>Устранение багов и проблем производительности (lazy-loading, throttling и debouncing);</li>
-          </ul>
-          <ul class="experience__stack">
-            <li class="tag-mini">Vue 3</li>
-            <li class="tag-mini">Nuxt 3</li>
-            <li class="tag-mini">Vuex</li>
-            <li class="tag-mini">VueRouter</li>
-            <li class="tag-mini">Composition Api</li>
-            <li class="tag-mini">Java Script</li>
-            <li class="tag-mini">ejs</li>
-            <li class="tag-mini">Stylus</li>
-            <li class="tag-mini">БЭМ</li>
-            <li class="tag-mini">Vitest</li>
-            <li class="tag-mini">Jest</li>
-            <li class="tag-mini">Git</li>
-            <li class="tag-mini">Figma</li>
-            <li class="tag-mini">Jira</li>
-          </ul>
-        </div>
-			</li>
-		</ol>
-	</div>
+        <li class="experience-list_work" data-date="2022/2024">
+          <div class="experience__date subtext">Сентябрь 2022 - Ноябрь 2024 (2 года и 3 месяца)</div>
+          <div class="experience__work individ">
+            <h2 class="experience__position subtitle">Senior Frontend Developer</h2>
+            <p class="experience__company subtext"><a href="https://wee.ae" target="_blank">Wee.ae<img
+              class="experience__position-icon" src="../img/icons/link.svg" alt=""/></a></p>
+            <p>Wee — маркетплейс быстрой доставки товаров в ОАЭ за 1 час, с полноценной командой: дейли-встречи,
+              продуктовый менеджер, тестировщик, UX-дизайнеры, девопсы. Пришла на проект ещё на старте, когда сайт был
+              на PHP и Vue CLI с Webpack, и всё лето вела масштабное переписывание проекта на Nuxt 3 с переходом на
+              Vue 3, Composition API и TypeScript (который освоила в рамках этой работы). Предложила улучшения процесса
+              ревью и релизов, которые со временем переняла вся команда, включая разработчиков мобильного приложения.
+              Полностью в одиночку выстроила процесс тестирования: освоила Jest и Vitest, написала unit-тесты на каждый
+              компонент проекта и e2e-тесты для ключевых сценариев (корзина, личный кабинет). Вместе с тимлидом внедрила
+              автоматические проверки ESLint и Stylelint в pipeline на GitLab. Из-за продолжительной болезни тимлида
+              неоднократно принимала решения за него и фактически взяла на себя часть его обязанностей. Ушла из проекта
+              из-за задержки зарплаты более чем на полгода — позже коллеги добились возврата денег через суд.</p>
+            <ul class="experience__responsibility">
+              <li>руководила переписыванием проекта с PHP/Vue CLI на Nuxt 3, Vue 3 и Composition API;</li>
+              <li>внедрила TypeScript в проект и обучила этому процессу часть команды;</li>
+              <li>предложила и внедрила новый процесс код-ревью и релизов, который переняла вся компания;</li>
+              <li>выстроила процесс тестирования с нуля: unit-тесты на Jest/Vitest, e2e-тесты ключевых сценариев;</li>
+              <li>совместно с тимлидом настроила автоматические проверки ESLint и Stylelint при ревью на GitLab;</li>
+              <li>писала разметку Schema.org для улучшения SEO;</li>
+              <li>временно брала на себя обязанности тимлида во время его болезни, ставила задачи продуктовым менеджерам, дизайнерам и
+                backend-команде;
+              </li>
+            </ul>
+            <ul class="experience__stack">
+              <li class="tag-mini">Vue 3</li>
+              <li class="tag-mini">Nuxt 3</li>
+              <li class="tag-mini">TypeScript</li>
+              <li class="tag-mini">Composition Api</li>
+              <li class="tag-mini">JavaScript</li>
+              <li class="tag-mini">ejs</li>
+              <li class="tag-mini">Stylus</li>
+              <li class="tag-mini">БЭМ</li>
+              <li class="tag-mini">Vitest</li>
+              <li class="tag-mini">Jest</li>
+              <li class="tag-mini">ESLint</li>
+              <li class="tag-mini">Stylelint</li>
+              <li class="tag-mini">Git</li>
+              <li class="tag-mini">Figma</li>
+              <li class="tag-mini">Jira</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="experience-list_work" data-date="2025/2026">
+          <div class="experience__date subtext">Февраль 2025 - Июнь 2026 (1 год и 5 месяцев)</div>
+          <div class="experience__work individ">
+            <h2 class="experience__position subtitle">Lead Frontend Developer</h2>
+            <p class="experience__company subtext">ООО «Трасис» (ранее ООО «Остров Сокровищ»)</p>
+            <p>Проект, выросший из ООО «Остров Сокровищ» в резидента «Сколково», — сервис туристических экскурсий по
+              Таиланду и Вьетнаму с отдельной административной панелью для менеджеров и гидов. Была единственным
+              frontend-разработчиком в команде с самого начала и работала как самозанятая. Основной сайт был построен
+              на Laravel и Livewire — я предложила и в одиночку реализовала переход на Vue 3, переписав все 4 страницы
+              на Livewire и добавив ещё 7 новых, превратив проект в частично SPA с микрофронтом на Pinia. Самостоятельно
+              ставила себе задачи, проводила ревью с тимлидом и нередко принимала решения вопреки изначальному плану,
+              если видела, что так команда сэкономит время. Когда сайт начал утекать по памяти из-за стороннего пакета,
+              оперативно написала собственный компонент взамен и убрала проблемную зависимость из проекта — это позволило
+              поднять PageSpeed с 50 до 92 баллов и значительно улучшить позиции блога в поиске. Также вела разработку
+              административной панели: спроектировала план её переноса на Nuxt 3 и реализовала страницы создания,
+              редактирования и просмотра экскурсий, управления доступностью мест, тегами, категориями, подборками и
+              достопримечательностями, включая санитайз пользовательского HTML в собственном текстовом редакторе.</p>
+            <ul class="experience__responsibility">
+              <li>предложила и самостоятельно реализовала полный переход основного сайта с Laravel Livewire на Vue 3 (4 переписанные и 7 новых
+                страниц);
+              </li>
+              <li>выстроила архитектуру проекта на Vue 3 + Pinia без vue-router (роутинг оставался на стороне Laravel);</li>
+              <li>в одиночку вела весь frontend проекта: сама ставила себе задачи, выполняла их и отправляла на ревью тимлиду;</li>
+              <li>оперативно устранила критическую утечку памяти на проде, заменив сторонний пакет собственным компонентом;</li>
+              <li>подняла показатели PageSpeed с 50 до 92 баллов и улучшила позиции блога в поисковой выдаче;</li>
+              <li>спроектировала и частично реализовала перенос административной панели с Vue 2 на Nuxt 3: экскурсии, доступность мест, теги,
+                категории, подборки, достопримечательности;
+              </li>
+              <li>внедрила в команде процесс автоматического AI-ревью кода и выстроила рабочий процесс фронтенд-разработки;</li>
+              <li>регулярно использовала ESLint, Stylelint и проверку типов TypeScript для поддержания качества кода;</li>
+            </ul>
+            <ul class="experience__stack">
+              <li class="tag-mini">Vue 3</li>
+              <li class="tag-mini">Pinia</li>
+              <li class="tag-mini">TypeScript</li>
+              <li class="tag-mini">Laravel</li>
+              <li class="tag-mini">Livewire</li>
+              <li class="tag-mini">Blade</li>
+              <li class="tag-mini">Vite</li>
+              <li class="tag-mini">SCSS</li>
+              <li class="tag-mini">ESLint</li>
+              <li class="tag-mini">Stylelint</li>
+              <li class="tag-mini">Git</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
   </div>
 </section>
 
-<section class="contact main-block">
+<section class="contact main-block" role="region" aria-label="Контакты и способы связи">
   <div class="center-block individ-big">
-    <h1 class="contact__header title">Готовы поговорить? <span>Свяжитесь со мной!</span></h1>
+    <h1 class="contact__header title">
+      Готовы обсудить <span>сотрудничество?</span>
+    </h1>
+
     <div class="contact__block">
       <div class="contact__left">
+
         <div class="contact__qr">
-          <img src="../img/qr-code.png" alt=""/>
-          <div class="social-links">
-            <a href="https://github.com/swenlii?tab=repositories"><img src="../img/icons/github-2.svg" alt=""/></a>
-            <a href="https://t.me/swenlii"><img src="../img/icons/telegram-2.svg" alt=""/></a>
-            <a href="https://wa.me/79042374704"><img src="../img/icons/whatsapp-1.svg" alt=""/></a>
-          </div>
-          <div></div>
+          <img src="../img/qr-code.png" alt="QR-код для быстрого перехода к контактам" />
         </div>
+
         <div class="contact__text">
-          <p>Для связи вы можете использовать QR код Telegram или кнопку "Написать email" ниже. </p>
-          <p>Есть вакансия? Я готова рассмотреть ваше предложение о трудоустройстве. Есть проект? Могу принять участие на любом этапе проекта.</p>
+          <p>Если у вас есть вакансия или проект, буду рада познакомиться и обсудить детали.</p>
+          <p>Выберите удобный способ связи — Telegram или email.</p>
+
           <div class="contact__actions">
-            <a href="mailto:ira.swenlii@gmail.com" class="btn-secondary"><img src="../img/icons/send.svg" alt=""/>Написать email</a>
-            <a href="../public/resume_en.pdf" download="dyakova_cv.pdf" class="btn"><img src="../img/icons/download-2.svg" alt=""/>Скачать CV</a>
+            <a href="mailto:ira.swenlii@gmail.com"
+               class="btn-secondary"
+               aria-label="Написать письмо на email"
+               rel="noopener noreferrer">
+              <img src="../img/icons/send.svg" alt="Иконка отправки сообщения" />
+              Написать email
+            </a>
+
+            <a href="../public/resume_en.pdf"
+               download="dyakova_cv.pdf"
+               class="btn"
+               aria-label="Скачать резюме в формате PDF"
+               rel="noopener noreferrer">
+              <img src="../img/icons/download-2.svg" alt="Иконка скачивания файла" />
+              Скачать CV
+            </a>
           </div>
         </div>
 
-      </div>
-      <div class="contact__right">
-        <div class="contact__abov-cam">Мы всегда можем созвониться для разговора!</div>
-        <div class="contact__webcam">
-          <img src="../img/photo/webcamPhoto.jpg" alt=""/>
-          <div class="contact__webcam-micro">
-            <img src="../img/icons/micro.svg" alt=""/>
-            Dyakova Irina
-          </div>
-        </div>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
+<footer role="contentinfo" aria-label="Футер сайта">
 
   <div class="footer-top">
     <div class="footer__attention">
-      <h2 class="subtitle-h3"><span><img src="../img/icons/privacy.svg" alt=""/></span>Уведомление о конфиденциальности</h2>
-      <span>Этот сайт не использует аналитику и не собирает данные. Он не добавляет файлы cookie на устройство, не собирает личную информацию и не отслеживает вас!</span></div>
-
+      <h2 class="subtitle-h3">
+        <span>
+          <img src="../img/icons/privacy.svg" alt="Иконка конфиденциальности" />
+        </span>
+        Конфиденциальность
+      </h2>
+      <span>
+        Этот сайт не использует аналитику, не сохраняет файлы cookie и не собирает персональные данные.
+        Никакого отслеживания посетителей здесь нет.
+      </span>
+    </div>
   </div>
+
   <div class="footer-bottom individ-big">
+
     <div>
       <div class="footer__title">
-      <h2 class="subtitle">Как со мной связаться?</h2>
-      <p>Можно использовать соцсети, позвонить или написать!</p>
-    </div>
-
-    <div class="footer__contacts">
-      <div class="footer__contact">
-        <div class="footer__contact-icon"><img src="../img/icons/call.svg" alt=""/></div>
-        <div>
-          <div class="footer__contact-dt subtext">Позвони мне</div>
-          <div class="footer__contact-dd subtitle-h5">+7 (904) 237 47 04</div>
-        </div>
+        <h2 class="subtitle">Контакты</h2>
+        <p>Выберите удобный способ связи.</p>
       </div>
 
-      <div class="footer__contact">
-        <div class="footer__contact-icon"><img src="../img/icons/mail.svg" alt=""/></div>
-        <div>
-          <div class="footer__contact-dt subtext">Письма принимаются сюда</div>
-          <div class="footer__contact-dd subtitle-h5">ira.swenlii@gmail.com</div>
-        </div>
-      </div>
+      <div class="footer__contacts">
 
-      <div class="footer__contact">
-        <div class="footer__contact-icon"><img src="../img/icons/pin.svg" alt=""/></div>
-        <div>
-          <div class="footer__contact-dt subtext">Я живу здесь</div>
-          <div class="footer__contact-dd subtitle-h5">Россия, Сыктывкар</div>
+        <div class="footer__contact">
+          <div class="footer__contact-icon">
+            <img src="../img/icons/call.svg" alt="Иконка телефона" />
+          </div>
+          <div>
+            <div class="footer__contact-dt subtext">Телефон</div>
+            <div class="footer__contact-dd subtitle-h5">+7 (904) 237 47 04</div>
+          </div>
         </div>
+
+        <div class="footer__contact">
+          <div class="footer__contact-icon">
+            <img src="../img/icons/mail.svg" alt="Иконка email" />
+          </div>
+          <div>
+            <div class="footer__contact-dt subtext">Email</div>
+            <div class="footer__contact-dd subtitle-h5">ira.swenlii@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__contact-icon">
+            <img src="../img/icons/pin.svg" alt="Иконка местоположения" />
+          </div>
+          <div>
+            <div class="footer__contact-dt subtext">Город</div>
+            <div class="footer__contact-dd subtitle-h5">Россия, Сыктывкар</div>
+          </div>
+        </div>
+
       </div>
     </div>
-    </div>
+
     <div class="footer__info">
       <div>@2025 Dyakova Irina</div>
+
       <div class="social-links">
-        <a href="https://github.com/swenlii?tab=repositories"><img src="../img/icons/github-2.svg" alt=""/></a>
-        <a href="https://t.me/swenlii"><img src="../img/icons/telegram-2.svg" alt=""/></a>
-        <a href="https://vk.com/swenlii"><img src="../img/icons/vk.svg" alt=""/></a>
-        <a href="https://wa.me/79042374704"><img src="../img/icons/whatsapp-1.svg" alt=""/></a>
+        <a href="https://github.com/swenlii?tab=repositories"
+           aria-label="GitHub профиль"
+           rel="noopener noreferrer">
+          <img src="../img/icons/github-2.svg" alt="Иконка GitHub" />
+        </a>
+
+        <a href="https://t.me/swenlii"
+           aria-label="Telegram профиль"
+           rel="noopener noreferrer">
+          <img src="../img/icons/telegram-2.svg" alt="Иконка Telegram" />
+        </a>
+
+        <a href="https://vk.com/swenlii"
+           aria-label="VK профиль"
+           rel="noopener noreferrer">
+          <img src="../img/icons/vk.svg" alt="Иконка VK" />
+        </a>
+
+        <a href="https://wa.me/79042374704"
+           aria-label="WhatsApp чат"
+           rel="noopener noreferrer">
+          <img src="../img/icons/whatsapp-1.svg" alt="Иконка WhatsApp" />
+        </a>
       </div>
-      <nav class="footer__sitemap">
-        <a href="index.html">Главная</a>
-        <a href="projects.html">Проекты</a>
+
+      <nav class="footer__sitemap" role="navigation" aria-label="Карта сайта">
+        <a href="index.html" rel="noopener noreferrer">Главная</a>
+        <a href="projects.html" rel="noopener noreferrer">Проекты</a>
       </nav>
     </div>
+
   </div>
 </footer>
 
@@ -682,7 +1340,7 @@
 <script>
   function clickDate (event) {
     event.preventDefault();
-    const timelineContent = document.querySelectorAll('.experience-list')[0];
+    const timelineContent = document.querySelectorAll(".experience-list")[0];
     let eventDate = event.target.getAttribute("data-date");
     let marker = false;
 
@@ -691,11 +1349,11 @@
       marker = true;
     }
 
-    const timelinePoint = document.querySelectorAll('.timeline_events-list .selected')[0];
+    const timelinePoint = document.querySelectorAll(".timeline_events-list .selected")[0];
 
 
-    const visibleContent = document.querySelectorAll('.experience-list .selected')[0];
-    const selectedContent = document.querySelectorAll('.experience-list .experience-list_work[data-date="' + eventDate + '"]')[0];
+    const visibleContent = document.querySelectorAll(".experience-list .selected")[0];
+    const selectedContent = document.querySelectorAll(".experience-list .experience-list_work[data-date=\"" + eventDate + "\"]")[0];
 
     let height = selectedContent.offsetHeight
 
@@ -705,19 +1363,19 @@
     if (visibleIdx === selectedIdx) return;
 
     timelinePoint.classList.remove("selected");
-    marker ?  event.target.parentElement.classList.add("selected") : event.target.classList.add("selected")
-    const fillingLine = document.querySelectorAll('.filling-line')[0];
+    marker ? event.target.parentElement.classList.add("selected") : event.target.classList.add("selected")
+    const fillingLine = document.querySelectorAll(".filling-line")[0];
 
-    fillingLine.style.width = `calc(${25 * selectedIdx}% - ${10 * selectedIdx}px)`;
+    fillingLine.style.width = `calc(${20 * selectedIdx}% - ${10 * selectedIdx}px)`;
 
     let classEnetering, classLeaving;
     if (selectedIdx > visibleIdx) {
-			classEnetering = ['selected', 'enter-right'];
-			classLeaving = 'leave-left';
-		} else {
-			classEnetering = ['selected', 'enter-left'];
-			classLeaving = 'leave-right';
-		}
+      classEnetering = ["selected", "enter-right"];
+      classLeaving = "leave-left";
+    } else {
+      classEnetering = ["selected", "enter-left"];
+      classLeaving = "leave-right";
+    }
 
     selectedContent.classList.add(...classEnetering);
     visibleContent.classList.remove("selected");
@@ -729,25 +1387,26 @@
 
     timelineContent.style.height = height;
   }
-  const timelineEvents = document.querySelectorAll('.timeline_events-list li');
+
+  const timelineEvents = document.querySelectorAll(".timeline_events-list li");
 
   timelineEvents.forEach(el => {
     el.addEventListener("click", clickDate)
   })
 
-  const timelineEventsS = document.querySelectorAll('.timeline_events-list li .marker');
+  const timelineEventsS = document.querySelectorAll(".timeline_events-list li .marker");
 
   timelineEventsS.forEach(el => {
     el.addEventListener("click", clickDate)
   })
 
-  const goToUp = document.querySelectorAll('.goto-up')[0];
+  const goToUp = document.querySelectorAll(".goto-up")[0];
 
   goToUp.addEventListener("click", () => {
     window.scroll({
       top: 0,
       left: 0,
-      behavior: 'smooth'
+      behavior: "smooth"
     });
   })
 

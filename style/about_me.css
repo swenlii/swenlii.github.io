@@ -21,6 +21,10 @@
   justify-content: space-between;
 }
 
+.about-me__block p {
+  margin: 16px 0;
+}
+
 .about-me__block p:first-child {
   margin-top: 0;
 }
@@ -76,7 +80,7 @@
   min-width: 40%;
   height: 350px;
   border: 1px solid #e9eaf1;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 5px 10px 2px;
   border-radius: 12px;
   overflow: hidden;
   float: right;
@@ -120,7 +124,7 @@
 
 .about-page__one-project {
   border: 1px solid #e9eaf1;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 10px 2px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 5px 10px 2px;
   border-radius: 12px;
   overflow: hidden;
   padding: 16px;

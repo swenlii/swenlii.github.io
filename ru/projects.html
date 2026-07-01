@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Мои проекты | Dyakova Irina</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Проекты | Дьякова Ирина — Frontend Разработчик | Vue.js, Nuxt.js, TypeScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta
+    name="description"
+    content="Список проектов. Портфолио Ирины Дьяковой: Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, SCSS. Коммерческий опыт более 7 лет.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Irina Dyakova">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Дьякова Ирина — Frontend Developer. Список проектов.">
+  <meta
+    property="og:description"
+    content="Frontend Developer. Vue.js, Nuxt.js, TypeScript. Более 5 лет коммерческого опыта.">
+  <meta property="og:image" content="https://swenlii.github.io/img/photo/portrait.png">
+  <meta property="og:url" content="https://swenlii.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Дьякова Ирина — Frontend Developer. Список проектов.">
+  <meta
+    name="twitter:description"
+    content="Frontend Developer. Vue.js, Nuxt.js, TypeScript.">
+  <meta
+    name="twitter:image"
+    content="https://swenlii.github.io/img/photo/portrait.png">
+  <meta name="theme-color" content="#efeff1">
+  <link rel="canonical" href="https://swenlii.github.io/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
+  <link rel="apple-touch-icon" href="/public/favicons/apple-touch-icon.png">
   <link rel="manifest" href="../public/favicons/site.webmanifest">
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/works.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Irina Dyakova",
+      "jobTitle": "Frontend Developer",
+      "url": "https://swenlii.github.io/",
+      "sameAs": [
+        "https://github.com/swenlii",
+        "https://www.linkedin.com/in/swenlii/",
+        "https://vk.com/swenlii/"
+      ]
+    }
+  </script>
 </head>
 <body>
 <header class="header">
@@ -25,11 +62,11 @@
   </div>
 
   <div class="header__menu-links">
-      <a href="index.html">Главная</a>
-      <a href="projects.html">Проекты</a>
-      <a href="https://github.com/swenlii?tab=repositories">Github</a>
-      <a href="https://t.me/swenlii">Телеграм</a>
-    </div>
+    <a href="index.html">Главная</a>
+    <a href="projects.html">Проекты</a>
+    <a href="https://github.com/swenlii?tab=repositories">Github</a>
+    <a href="https://t.me/swenlii">Телеграм</a>
+  </div>
 
   <div class="header__menu">
 
@@ -40,28 +77,217 @@
 </header>
 
 <section class="works-page center-block">
-    <div class="works-page--head">
-      <h1 class="works__header title">Проекты</h1>
-      <p>На этой странице вы можете увидеть все мои проекты, в которых я принимала участие.
-        Сначала перечислены все мои личные проекты, код которых вы можете увидеть на моём Github.
-        В конце списка перечислены проекты кампаний, в которых я работала.
-        Конечно я не стала перечислять проекты, которые уже не существуют в сети.</p>
-    </div>
+  <div class="works-page--head">
+    <h1 class="works__header title">Проекты</h1>
+    <p>На этой странице вы можете увидеть все мои проекты, в которых я принимала участие.
+      Сначала перечислены в которых я работала.
+      В конце списка перечислены все мои личные проекты, код которых вы можете увидеть на моём Github.
+      Конечно я не стала перечислять проекты, которые уже не существуют в сети, но я могу рассказать о них лично.</p>
+  </div>
 
-    <div class="works-page__blocks">
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/marketplace.png"><img src="../img/projects/marketplace.png" alt="work"/></a>
+  <div class="works-page__blocks">
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/tisland.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/tisland.png" alt="Скриншот проекта Остров Сокровищ"/>
+        </a>
+      </div>
+
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://www.tisland.travel/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть сайт Остров Сокровищ в новой вкладке"
+            >
+              Остров Сокровищ
+            </a>
+          </h2>
+
+          <p class="works-project__year">
+            <strong>Год разработки:</strong> 2025
+          </p>
+
+          <p>
+            Туристический сервис для онлайн-бронирования и оплаты экскурсий за рубежом (Таиланд, Вьетнам): AI‑помощник
+            для подбора экскурсии, подборки лучших туров, прайс‑листы, отзывы клиентов и блог со статьями о странах.
+            Я — единственный frontend‑разработчик проекта: перевела сайт с Laravel Livewire на Vue 3, реализовала быстрый
+            бронирование, корзину, чекаут, AI‑тест подбора экскурсии, избранное, личный кабинет, каталог, форму отзыва,
+            вёрстку блога и ключевые разделы админ‑панели. Устранила утечку памяти, подняла PageSpeed с 50 до 92 и улучшила SEO.
+          </p>
         </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_marketplace" target="_blank">Marketplace</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2025</p>
-            <p>Современный функциональный вебсайт, созданный на основе публичного API, отдающего данные для маркетплейса.
-            На сайте можно просмотреть продукты, отсортированные по категориям, добавить понравившийся продукт в корзину,
-            поделиться им или добавить его в избранное. Сайт реализован на Nuxt.js v3 с использованием препроцессора Stylus.</p>
-            <a href="https://github.com/swenlii/swenlii_marketplace" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
+
+        <div>
+          <a
+            href="https://www.tisland.travel/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на сайт Остров Сокровищ"
+          >
+            Перейти на сайт
+            <img
+              class="works__header-icon"
+              src="../img/icons/link-2.svg"
+              alt="Иконка ссылки"
+            />
+          </a>
+
+          <ul class="works-project__stack">
+            <li class="tag-mini">Laravel</li>
+            <li class="tag-mini">Vue.js</li>
+            <li class="tag-mini">Pinia</li>
+            <li class="tag-mini">TypeScript</li>
+            <li class="tag-mini">SCSS</li>
+            <li class="tag-mini">Vite</li>
+            <li class="tag-mini">ESLint</li>
+            <li class="tag-mini">Stylelint</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/wee.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/wee.png" alt="Скриншот проекта Wee.ae"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://wee.ae/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть сайт Wee.ae в новой вкладке">
+              Wee.ae
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2024</p>
+          <p>Современный многофункциональный маркетплейс с доставкой за короткое время: множество продавцов и товаров,
+            скидки, AI-помощники, избранное и подробные страницы продавцов. Я участвовала во всех этапах разработки —
+            от планирования задач до релиза и поддержки, реализовала корзину, страницу товара, избранное, чекаут и страницу
+            подтверждения платежа. Летом вместе с командой переписала проект с PHP + Vue CLI/Webpack на Nuxt 3 с Vue 3,
+            Composition API и TypeScript. Самостоятельно покрыла компоненты тестами на Jest и Vitest, написала несколько
+            e2e-тестов, внедрила вместе с коллегой автопроверки ESLint и Stylelint на ревью, а также предложила новый
+            формат отчётов для код-ревью, который в итоге переняла вся команда, включая мобильную разработку.</p>
+        </div>
+        <div>
+          <a
+            href="https://wee.ae/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на сайт Wee.ae"
+          >
+            Перейти на сайт
+            <img
+              class="works__header-icon"
+              src="../img/icons/link-2.svg"
+              alt="Иконка ссылки"
+            />
+          </a>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Nuxt.js</li>
+            <li class="tag-mini">Vue.js</li>
+            <li class="tag-mini">Vuex</li>
+            <li class="tag-mini">TypeScript</li>
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">Stylus</li>
+            <li class="tag-mini">i18n</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/mitilena.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/mitilena.png" alt="Скриншот проекта Mitilena"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://mitilena.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть сайт Mitilena в новой вкладке">
+              Mitilena
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2021</p>
+          <p>Онлайн-кошелёк для мгновенных криптопереводов с минимальной комиссией: поддержка множества валют,
+            офлайн-подпись транзакций, шифрование NFC-картами и реферальные ссылки. Я сверстала почти все страницы сайта
+            и реализовала логику транзакций — как онлайн через Socket.io, так и офлайн. В результате сайт получил
+            стабильный real-time обмен данными с backend и возможность совершать переводы даже без постоянного соединения,
+            что расширило аудиторию сервиса.</p>
+        </div>
+        <div>
+          <a
+            href="https://mitilena.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на сайт Mitilena"
+          >
+            Перейти на сайт
+            <img
+              class="works__header-icon"
+              src="../img/icons/link-2.svg"
+              alt="Иконка ссылки"
+            />
+          </a>
+          <ul class="works-project__stack">
+            <li class="tag-mini">JQuery</li>
+            <li class="tag-mini">Vue.js</li>
+            <li class="tag-mini">Webpack</li>
+            <li class="tag-mini">Socket.io</li>
+            <li class="tag-mini">Node.js</li>
+            <li class="tag-mini">SCSS</li>
+            <li class="tag-mini">HTML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/marketplace.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/marketplace.png" alt="Скриншот пет-проекта Marketplace"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii_marketplace"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код Marketplace в новой вкладке">
+              Marketplace
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2025</p>
+          <p>Функциональный маркетплейс на основе публичного API, отдающего данные о товарах. Реализовала главную
+            страницу, каталог товаров с сортировкой по категориям, страницу товара, корзину и избранное с возможностью
+            поделиться товаром. Оформление заказа не реализовано намеренно — на проекте нет собственного backend.
+            Сайт написан на Nuxt.js v3 с препроцессором Stylus.</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii_marketplace"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта Marketplace">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
           <ul class="works-project__stack">
             <li class="tag-mini">Nuxt.js</li>
             <li class="tag-mini">Vue.js</li>
@@ -72,19 +298,90 @@
           </ul>
         </div>
       </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/conspectus.png"><img src="../img/projects/conspectus.png" alt="work"/></a>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/cztransfer.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/cztransfer.png" alt="Скриншот проекта CZTransfer"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://www.cztransfer.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть сайт CZTransfer в новой вкладке">
+              CZTransfer
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
+          <p>Туристическая компания с упором на экскурсии в Праге и соседних странах (Германия, Австрия), с онлайн-заказом
+            трансфера и бронированием отеля с оплатой на сайте. Клиент аутсорс-компании Blackwood, проект вела самостоятельно:
+            переписала легаси-код на WordPress и плагин авторизации пользователей, очистила БД от лишних таблиц. Нашла и
+            устранила критический баг — новые заказы переставали создаваться из-за переполнения БД: оказалось, что не
+            работали куки, из-за чего каждый визит любого пользователя создавал новую запись сессии. Почистила БД, починила
+            куки и переписала логику плагина — приём заказов восстановился.</p>
         </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_conspectus" target="_blank">CONSPECTUS</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2022</p>
-            <p>Сайт для блога, реализованный при помощи Nuxt.js v2, JavaScript и SCSS. Backend реализован при помощи axios.
-            Для хранения данных я использовала базу данных PostgreeSQL. Сайт включает в себя не только статические страницы
-            с различной информацией, но и возможность добавить статью через административную панель.</p>
-            <a href="https://github.com/swenlii/swenlii_conspectus" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
+        <div>
+          <a
+            href="https://www.cztransfer.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на сайт CZTransfer"
+          >
+            Перейти на сайт
+            <img
+              class="works__header-icon"
+              src="../img/icons/link-2.svg"
+              alt="Иконка ссылки"
+            />
+          </a>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Wordpress</li>
+            <li class="tag-mini">PHP</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/conspectus.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/conspectus.png" alt="Скриншот пет-проекта Conspectus"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii_conspectus"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код Conspectus в новой вкладке">
+              CONSPECTUS
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2022</p>
+          <p>Сайт для блога с полноценным циклом публикации статей. Реализовала главную страницу с подборкой лучших
+            статей, страницу со списком всех статей и поиском по ним, страницу отдельной статьи и админ-панель для
+            добавления новых материалов. Данные хранятся в PostgreSQL, backend-запросы реализованы через axios. Сайт
+            написан на Nuxt.js v2, JavaScript и SCSS.</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii_conspectus"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта Conspectus">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
           <ul class="works-project__stack">
             <li class="tag-mini">Nuxt.js</li>
             <li class="tag-mini">Vue.js</li>
@@ -96,19 +393,192 @@
           </ul>
         </div>
       </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/delivery.png"><img src="../img/projects/delivery.png" alt="work"/></a>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/platonfinance.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/platonfinance.png" alt="Скриншот проекта Platon Finance"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://platonfinance.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть сайт Platon Finance в новой вкладке">
+              Platon Finance
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
+          <p>Проект компании по продаже собственной криптовалюты PLTC, включающий три сайта: главный сайт, криптокошелёк
+            и бизнес-сайт. На внутреннем сайте Platon Wallet самостоятельно разработала страницу истории транзакций, чат
+            онлайн-поддержки и страницу подтверждения платежа, а также участвовала в вёрстке главной страницы. Здесь
+            освоила Vue.js, вёрстку и базовую логику с нуля, а также познакомилась с Lighthouse, SEO и Schema.org —
+            этот проект стал стартовой точкой моего роста от новичка до junior frontend-разработчика.</p>
         </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii-delivery" target="_blank">Swenlii's delivery</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
-            <p>Лёгкое и простое приложение, позволяющее стать курьером за 2 минуты и получать быстрый доход или стать
-            клиентом и заказывать доставку на дом чего угодно (от посылки с почты до продуктов и косметики).
-            Создано при помощи чистого Vue.js на сервере express/node.js, в стиле используется bootstrap и чистый css.</p>
-            <a href="https://github.com/swenlii/swenlii-delivery" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
+        <div>
+          <a
+            href="https://platonfinance.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на сайт Platon Finance"
+          >
+            Перейти на сайт
+            <img
+              class="works__header-icon"
+              src="../img/icons/link-2.svg"
+              alt="Иконка ссылки"
+            />
+          </a>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Vue.js</li>
+            <li class="tag-mini">JQuery</li>
+            <li class="tag-mini">Bootstrap</li>
+            <li class="tag-mini">JavaScript</li>
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">Axios</li>
+            <li class="tag-mini">Node.js</li>
+            <li class="tag-mini">Express</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/portfolio.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/portfolio.png" alt="Скриншот пет-проекта Портфолио"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii_portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код swenlii_portfolio в новой вкладке">
+              swenlii_portfolio
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2022</p>
+          <p>Личный сайт-портфолио, выполняющий также функцию резюме: подробная информация обо мне, описания проектов,
+            опыт работы и навыки. Отдельная фишка сайта — форма обратной связи, которая отправляет сообщение напрямую мне
+            в Telegram через бота. Данные для страницы хранятся в JSON и подтягиваются через ejs, сервер — на node.js
+            и express.</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii_portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта swenlii_portfolio">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
+          <ul class="works-project__stack">
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">JS</li>
+            <li class="tag-mini">ejs</li>
+            <li class="tag-mini">Node.js</li>
+            <li class="tag-mini">Express</li>
+            <li class="tag-mini">JSON</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/med-revolution.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/med-revolution.png" alt="Скриншот пет-проекта MED Revolution"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii_med_consultation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код MED Revolution в новой вкладке">
+              MED Revolution
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2021</p>
+          <p>Приложение для онлайн-консультации со специалистом без регистрации: любой пользователь может задать вопрос
+            через форму на главной странице и оставить комментарий-ответ на странице конкретного вопроса. Backend —
+            на node.js и express, оплата консультаций реализована через Coinbase.</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii_med_consultation"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта MED Revolution">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Vue.js</li>
+            <li class="tag-mini">ejs</li>
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">coinbase</li>
+            <li class="tag-mini">axios</li>
+            <li class="tag-mini">Node.js</li>
+            <li class="tag-mini">Express</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/delivery.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/delivery.png" alt="Скриншот пет-проекта Swenlii's delivery"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii-delivery"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код Swenlii's delivery в новой вкладке">
+              Swenlii's delivery
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
+          <p>Приложение доставки, позволяющее стать курьером и получать быстрый доход или заказывать доставку чего
+            угодно на дом. Реализовала страницу со всеми заказами, личный кабинет с двумя ролями — заказчик и курьер,
+            форму создания заказа и страницу для курьера с выбором и принятием заказов. Сайт написан на чистом Vue.js,
+            сервер — express/node.js, стиль — на Bootstrap и чистом CSS.</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii-delivery"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта Swenlii's delivery">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
           <ul class="works-project__stack">
             <li class="tag-mini">Vue.js</li>
             <li class="tag-mini">ejs</li>
@@ -122,67 +592,91 @@
           </ul>
         </div>
       </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/med-revolution.png"><img src="../img/projects/med-revolution.png" alt="work"/></a>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/blackwood.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/blackwood.png" alt="Скриншот проекта Blackwood software"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://blackwood.cloud/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть сайт Blackwood software в новой вкладке">
+              Blackwood software
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2021</p>
+          <p>Сайт-визитка аутсорс-компании по разработке ПО для привлечения клиентов и специалистов. Полностью сверстала
+            главную страницу — стиль на CSS с Bootstrap, сложные анимации на JQuery, а также реализовала форму обратной
+            связи (отправку сообщений через Socket.io настроил коллега). Понятный и лаконичный лендинг стал витриной
+            компании для новых клиентов.</p>
         </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_med_consultation" target="_blank">MED Revolution</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2021</p>
-            <p>Небольшое приложение, идея которого заключается в онлайн-констультации у специалиста (доктора или врача).
-            Страницы реализованы при помощи Vue.js и чистого CSS, backend на node.js и express, а оплату можно провести через coinbase.</p>
-            <a href="https://github.com/swenlii/swenlii_med_consultation" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
+        <div>
+          <a
+            href="https://blackwood.cloud/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на сайт Blackwood software"
+          >
+            Перейти на сайт
+            <img
+              class="works__header-icon"
+              src="../img/icons/link-2.svg"
+              alt="Иконка ссылки"
+            />
+          </a>
           <ul class="works-project__stack">
-            <li class="tag-mini">Vue.js</li>
-            <li class="tag-mini">ejs</li>
             <li class="tag-mini">HTML</li>
             <li class="tag-mini">CSS</li>
-            <li class="tag-mini">coinbase</li>
-            <li class="tag-mini">axios</li>
+            <li class="tag-mini">JQuery</li>
+            <li class="tag-mini">Bootstrap</li>
+            <li class="tag-mini">Socket.io</li>
             <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">Express</li>
           </ul>
         </div>
       </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/portfolio.png"><img src="../img/projects/portfolio.png" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_portfolio" target="_blank">swenlii_portfolio</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2022</p>
-            <p>Небольшой личный сайт-портфолио, так же выполняющий функцию резюме. Полная и подробная информация обо мне,
-            в том числе описания моих проектов, подробное описание опыта работы и навыков. Сайт написан на html с использованием ejs.
-            Сервер на node.js & express. Данные для сайта хранятся в JSON и подтягиваются на страницу при помощи ejs..</p>
-            <a href="https://github.com/swenlii/swenlii_portfolio" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">CSS</li>
-            <li class="tag-mini">JS</li>
-            <li class="tag-mini">ejs</li>
-            <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">Express</li>
-            <li class="tag-mini">JSON</li>
-          </ul>
-        </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/localcrypto.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/localcrypto.png" alt="Скриншот проекта Localcrypto"/>
+        </a>
       </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/localcrypto.png"><img src="../img/projects/localcrypto.png" alt="work"/></a>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii_localcrypto"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код Localcrypto в новой вкладке">
+              Localcrypto
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
+          <p>Площадка для обмена и продажи криптовалюты с привязкой кошельков, сделками и чатом перед их совершением.
+            Реализовала главную страницу со списком заказов и боковой фильтр — по типу сделки (покупка/продажа/обмен),
+            сумме и другим параметрам. Проект разрабатывался в паре с ещё одним разработчиком и не был доведён до конца.</p>
         </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_localcrypto" target="_blank">Localcrypto</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
-            <p>Сайт, созданный с целью обмениваться любой поддерживаемой криптовалютой или получить быстрый доход от продажи.
-              Возможность подключать свои кошельки к аккаунту, совершать сделки и общаться в чате перед совершением сделки.
-              Сайт не был доделан до конца. Единственный момент, когда я попросила помощи - api совершения сделок.</p>
-            <a href="https://github.com/swenlii/swenlii_localcrypto" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii_localcrypto"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта Localcrypto">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
           <ul class="works-project__stack">
             <li class="tag-mini">Vue.js</li>
             <li class="tag-mini">ejs</li>
@@ -197,21 +691,88 @@
           </ul>
         </div>
       </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/scammercoin.png"><img src="../img/projects/scammercoin.png" alt="work"/></a>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/curr-project.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/curr-project.png" alt="Скриншот пет-проекта Currency check"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii-curr-pr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код Currency check в новой вкладке">
+              Currency check project
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
+          <p>Бот для отслеживания валютных пар: сохраняет цены, отслеживает движение курса через Binance и присылает
+            уведомления в Telegram и терминал при значимых изменениях. Любой желающий может подписаться на бота и выбрать
+            свои валюты для отслеживания. Реализован на Node.js.</p>
         </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_scammercoin" target="_blank">Scammercoin</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
-            <p>Сайт создан исключительно ради опыта и шутки. Многие сайты, посвященные криптовалюте, обещают, что именно
-              с ними вы точно разбогатеете. Но каким сайтам верить, а каким нет? Этот сайт говорит исключительно правду!
-              Ведь наша криптовалюта растёт только вниз - 100% гарантия скама! Ниже объясняется, что сайт создан, чтобы
-              поделиться историями, когда вас обманули на криптовалюте. Для этого на сайте можно рассказать свою историю.
-            </p>
-            <a href="https://github.com/swenlii/swenlii_scammercoin" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii-curr-pr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта Currency check">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
+          <ul class="works-project__stack">
+            <li class="tag-mini">Node.js</li>
+            <li class="tag-mini">Express</li>
+            <li class="tag-mini">JavaScript</li>
+            <li class="tag-mini">JSON</li>
+            <li class="tag-mini">node-binance-api</li>
+            <li class="tag-mini">node-telegram-bot-api</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/scammercoin.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/scammercoin.png" alt="Скриншот пет-проекта Scammercoin"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii_scammercoin"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код Scammercoin в новой вкладке">
+              Scammercoin
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
+          <p>Ироничный проект-платформа для историй о крипто-скамах — противовес сайтам, обещающим лёгкое обогащение
+            на криптовалюте. Реализовала 4 страницы: главную, список статей, страницу статьи с комментариями и форму
+            написания собственной истории с оформлением (картинки, цитаты).</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii_scammercoin"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта Scammercoin">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
           <ul class="works-project__stack">
             <li class="tag-mini">Vue.js</li>
             <li class="tag-mini">ejs</li>
@@ -226,237 +787,138 @@
           </ul>
         </div>
       </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/curr-project.png"><img src="../img/projects/curr-project.png" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii-curr-pr" target="_blank">Currency check project</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
-            <p>Этот проект отслеживает валютные пары, сохраняет их цены, отслеживает движения валюты через binance и
-            сообщает о нужных изменениях в телеграм и в терминал. Реализован на Node.js</p>
-            <a href="https://github.com/swenlii/swenlii-curr-pr" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">Express</li>
-            <li class="tag-mini">JavaScript</li>
-            <li class="tag-mini">JSON</li>
-            <li class="tag-mini">node-binance-api</li>
-            <li class="tag-mini">node-telegram-bot-api</li>
-          </ul>
-        </div>
+    </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/tajam.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/tajam.png" alt="Скриншот пет-проекта Tajam"/>
+        </a>
       </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/tajam.png"><img src="../img/projects/tajam.png" alt="work"/></a>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii_visitka"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код Tajam в новой вкладке">
+              Tajam
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
+          <p>Адаптивная страница-визитка без функциональности — реализация готового бесплатного PSD-макета с помощью
+            CSS Flexbox. Проект остаётся полностью верным исходному дизайну и оптимизирован под любое устройство,
+            на странице собрано множество разнообразных CSS-эффектов.</p>
         </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_visitka" target="_blank">Tajam</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
-            <p>Реализация дизайна из бесплатного psd макета. В дизайне использовался CSS Flexbox.
-            Проект представляет собой адаптивную веб-страницу без функциолнальности с использованием HTML, CSS и JavaScript.
-            Проект остаётся верным изначальному дизайну и оптимизированным под любое устройство.
-            На сайте реализовано множество css эффектов, которые интересно изучить.</p>
-            <a href="https://github.com/swenlii/swenlii_visitka" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
-
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii_visitka"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта Tajam">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
           <ul class="works-project__stack">
             <li class="tag-mini">HTML</li>
             <li class="tag-mini">CSS</li>
             <li class="tag-mini">JavaScript</li>
             <li class="tag-mini">Node.js</li>
-          </ul>
-        </div>
-      </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/astrochild.png"><img src="../img/projects/astrochild.png" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://github.com/swenlii/swenlii_astrochild" target="_blank">AstroChild</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2022</p>
-            <p>Шуточный проект, идея которого заключалась в создании главной страницы онлайн-школы астрономии.
-            Сайт должен был включать рекламу занятий по астрономии, призывающую обучать детей астрономии в силу актуальности
-            данного предмета. Страница без функциональности реализована на ejs и чистом css.</p>
-            <a href="https://github.com/swenlii/swenlii_astrochild" target="_blank" class="btn"><img class="works__header-icon" src="../img/icons/github-1.svg" alt=""/>Исходный код</a>
-          </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">CSS</li>
-            <li class="tag-mini">JavaScript</li>
-            <li class="tag-mini">Node.js</li>
-          </ul>
-        </div>
-      </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/cztransfer.png"><img src="../img/projects/cztransfer.png" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://www.cztransfer.com/" target="_blank">CZTransfer</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2020</p>
-            <p>Один из клиентов аутсорс кампании Blackwood. Обратились к нам для обновления и добавления некоторой информации на сайте,
-            а так же подключения и настройки плагинов Wordpress. Проект небольшой, поэтому работой занималась я самостоятельно. </p>
-            <a href="https://www.cztransfer.com/r" target="_blank" class="btn">Перейти на сайт<img class="works__header-icon" src="../img/icons/link-2.svg" alt=""/></a>
-          </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">Wordpress</li>
-            <li class="tag-mini">PHP</li>
-          </ul>
-        </div>
-      </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/mitilena.png"><img src="../img/projects/mitilena.png" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://mitilena.com/" target="_blank">Mitilena</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2021</p>
-            <p>Онлайн-кошелёк криптовалют. Создан для совершения мгновенных криптопереводов с минимальной комиссией.
-            Свободный обмен криптовалютой Сайт поддерживает множество криптовалют. Доступны подпись транзакции оффлайн,
-            шифрование NFC-картами и реферальные ссылки. Сайт реализован на Vue.js и JQuery, обмен с backend происходит
-            через Socket.io, сборкой проекта занимается Webpack.</p>
-            <a href="https://mitilena.com/" target="_blank" class="btn">Перейти на сайт<img class="works__header-icon" src="../img/icons/link-2.svg" alt=""/></a>
-          </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">JQuery</li>
-            <li class="tag-mini">Vue.js</li>
-            <li class="tag-mini">Webpack</li>
-            <li class="tag-mini">Socket.io</li>
-            <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">SCSS</li>
-            <li class="tag-mini">HTML</li>
-          </ul>
-        </div>
-      </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/platonfinance.png"><img src="../img/projects/platonfinance.png" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://platonfinance.com/" target="_blank">Platon Finance</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2019</p>
-            <p>Проект кампании, занимающейся продажей собственной криптовалюты PLTC.
-              Проект включал три сайта: главный сайт кампании, криптокошелёк и бизнес.
-              Моей задачей на проекте было создание вёрстки и простой логики на внутреннем сайте кампании Platon Wallet.
-              Я самостоятельно разработала страницу со списком транзакций, чат онлайн-поддержки и страницу подтверждения платежа.
-              Я так же приняла участие в разработке вёрстки главной страницы сайта, который можно посмотреть по ссылке ниже.
-            </p>
-            <a href="https://platonfinance.com/" target="_blank" class="btn">Перейти на сайт<img class="works__header-icon" src="../img/icons/link-2.svg" alt=""/></a>
-          </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">Vue.js</li>
-            <li class="tag-mini">JQuery</li>
-            <li class="tag-mini">Bootstrap</li>
-            <li class="tag-mini">JavaScript</li>
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">CSS</li>
-            <li class="tag-mini">Axios</li>
-            <li class="tag-mini">Node.js</li>
-            <li class="tag-mini">Express</li>
-          </ul>
-        </div>
-      </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/blackwood.png"><img src="../img/projects/blackwood.png" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://blackwood.cloud/" target="_blank">Blackwood software</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2021</p>
-            <p>Сайт аутсорс кампании по разработке ПО. Создан для привлечения клиентов и новых специалистов.
-            Реализован с помощью JQuery, стилизован на CSS с использованием Bootstrap. Обмен с Backend реализован через
-            Socket.io, сервер написан на Node.js. Моя работа в данном проекте - вёрстка главной страницы.</p>
-            <a href="https://blackwood.cloud/" target="_blank" class="btn">Перейти на сайт<img class="works__header-icon" src="../img/icons/link-2.svg" alt=""/></a>
-          </div>
-          <ul class="works-project__stack">
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">CSS</li>
-            <li class="tag-mini">JQuery</li>
-            <li class="tag-mini">Bootstrap</li>
-            <li class="tag-mini">Socket.io</li>
-            <li class="tag-mini">Node.js</li>
-          </ul>
-        </div>
-      </div>
-      <div class="works-project">
-        <div class="works-project__img">
-          <a href="../img/projects/wee.png"><img src="../img/projects/wee.png" alt="work"/></a>
-        </div>
-        <div class="works-project__text individ">
-          <div>
-            <h2 class="subtitle"><a href="https://wee.ae/" target="_blank">Wee.ae</a></h2>
-            <p class="works-project__year"><strong>Год разработки:</strong> 2024</p>
-            <p>Современный и многофункциональный маркетплейс с множеством товаров, делающий упор на доставке за короткое время.
-          На сайте множество продавцов и их товаров, дающих огромный выбор для покупки. Есть множество скидок,
-            AI помощники, страница избранного и подробная информация о каждом продавце на его личной странице. Сайт
-          реализован при помощи Nuxt.js, для стиля используется препроцессор Stylus, каждый релиз тестируется автотестами,
-            написанными на Vitest, сайт переведён с помощью i18n. Я принимала участие во всех сферах разработки - от планирования до релиза и поддержки.</p>
-            <a href="https://wee.ae/" target="_blank" class="btn">Перейти на сайтe<img class="works__header-icon" src="../img/icons/link-2.svg" alt=""/></a>
-          </div>
-
-          <ul class="works-project__stack">
-            <li class="tag-mini">Nuxt.js</li>
-            <li class="tag-mini">Vue.js</li>
-            <li class="tag-mini">Vuex</li>
-            <li class="tag-mini">JS</li>
-            <li class="tag-mini">HTML</li>
-            <li class="tag-mini">Stylus</li>
-            <li class="tag-mini">i18n</li>
           </ul>
         </div>
       </div>
     </div>
+    <div class="works-project">
+      <div class="works-project__img">
+        <a href="../img/projects/astrochild.png" aria-hidden="true" tabindex="-1">
+          <img src="../img/projects/astrochild.png" alt="Скриншот пет-проекта AstroChild"/>
+        </a>
+      </div>
+      <div class="works-project__text individ">
+        <div>
+          <h2 class="subtitle">
+            <a
+              href="https://github.com/swenlii/swenlii_astrochild"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть исходный код AstroChild в новой вкладке">
+              AstroChild
+            </a>
+          </h2>
+          <p class="works-project__year"><strong>Год разработки:</strong> 2022</p>
+          <p>Шуточный проект — рекламная главная страница онлайн-школы астрономии для детей, реализованная на чистом
+            HTML и CSS с большим количеством анимаций. JavaScript используется только для запуска сайта на node.js.</p>
+        </div>
+        <div>
+          <a
+            href="https://github.com/swenlii/swenlii_astrochild"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+            aria-label="Перейти на источник исходного кода проекта AstroChild">
+            <img
+              class="works__header-icon"
+              src="../img/icons/github-1.svg"
+              alt="Иконка Github"/>
+            Исходный код
+          </a>
+          <ul class="works-project__stack">
+            <li class="tag-mini">HTML</li>
+            <li class="tag-mini">CSS</li>
+            <li class="tag-mini">JavaScript</li>
+            <li class="tag-mini">Node.js</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
 
   <div class="footer-top">
     <div class="footer__attention">
-      <h2 class="subtitle-h3"><span><img src="../img/icons/privacy.svg" alt=""/></span>Уведомление о конфиденциальности</h2>
-      <span>Этот сайт не использует аналитику и не собирает данные. Он не добавляет файлы cookie на устройство, не собирает личную информацию и не отслеживает вас!</span></div>
+      <h2 class="subtitle-h3"><span><img src="../img/icons/privacy.svg" alt=""/></span>Конфиденциальность</h2>
+      <span>Этот сайт не использует аналитику, не сохраняет файлы cookie и не собирает персональные данные. Никакого отслеживания посетителей здесь нет.</span>
+    </div>
 
   </div>
   <div class="footer-bottom individ-big">
     <div>
       <div class="footer__title">
-      <h2 class="subtitle">Как со мной связаться?</h2>
-      <p>Можно использовать соцсети, позвонить или написать!</p>
-    </div>
-
-    <div class="footer__contacts">
-      <div class="footer__contact">
-        <div class="footer__contact-icon"><img src="../img/icons/call.svg" alt=""/></div>
-        <div>
-          <div class="footer__contact-dt subtext">Позвони мне</div>
-          <div class="footer__contact-dd subtitle-h5">+7 (904) 237 47 04</div>
-        </div>
+        <h2 class="subtitle">Контакты</h2>
+        <p>Выберите удобный способ связи.</p>
       </div>
 
-      <div class="footer__contact">
-        <div class="footer__contact-icon"><img src="../img/icons/mail.svg" alt=""/></div>
-        <div>
-          <div class="footer__contact-dt subtext">Письма принимаются сюда</div>
-          <div class="footer__contact-dd subtitle-h5">ira.swenlii@gmail.com</div>
+      <div class="footer__contacts">
+        <div class="footer__contact">
+          <div class="footer__contact-icon"><img src="../img/icons/call.svg" alt=""/></div>
+          <div>
+            <div class="footer__contact-dt subtext">Телефон</div>
+            <div class="footer__contact-dd subtitle-h5">+7 (904) 237 47 04</div>
+          </div>
         </div>
-      </div>
 
-      <div class="footer__contact">
-        <div class="footer__contact-icon"><img src="../img/icons/pin.svg" alt=""/></div>
-        <div>
-          <div class="footer__contact-dt subtext">Я живу здесь</div>
-          <div class="footer__contact-dd subtitle-h5">Россия, Сыктывкар</div>
+        <div class="footer__contact">
+          <div class="footer__contact-icon"><img src="../img/icons/mail.svg" alt=""/></div>
+          <div>
+            <div class="footer__contact-dt subtext">Email</div>
+            <div class="footer__contact-dd subtitle-h5">ira.swenlii@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__contact-icon"><img src="../img/icons/pin.svg" alt=""/></div>
+          <div>
+            <div class="footer__contact-dt subtext">Город</div>
+            <div class="footer__contact-dd subtitle-h5">Россия, Сыктывкар</div>
+          </div>
         </div>
       </div>
-    </div>
     </div>
     <div class="footer__info">
       <div>@2025 Dyakova Irina</div>
